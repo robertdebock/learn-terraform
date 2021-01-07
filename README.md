@@ -58,7 +58,7 @@ Having state means Terraform will remove resources that are not described anymor
 
 #### moment-0.tf
 
-```json
+```
 resource "digitalocean_ssh_key" "example" {
   name       = "example"
   public_key = file("id_rsa.pub")
@@ -75,7 +75,7 @@ resource "digitalocean_droplet" "web-1" {
 
 #### moment-1.tf
 
-```json
+```
 resource "digitalocean_ssh_key" "example" {
   name       = "example"
   public_key = file("id_rsa.pub")
