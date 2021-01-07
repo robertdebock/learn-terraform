@@ -14,7 +14,21 @@ Let's break that down:
 - Cloud services: Terraform describes "resources", which can be: machines, ip-addresses, loadbalancers, etc.
 - declarative configuration: You describe the infrastructure, Terraform will build (or destroy) it.
 
+[This video by IBM](https://www.youtube.com/watch?v=HmxkYNv1ksg) explains Terraform, just as [this video from HashiCorp](https://www.youtube.com/watch?v=h970ZBgKINg) .
+
 ## Introduction to Infrastructure as Code with Terraform (30 min.) 
+
+## Why Infrastructure as Code (IaC)?
+
+- Code is repeatable.
+- It's easy to work together.
+- Faster. (After you've learned the tools)
+- Code can have a version.
+- Modules can be tested.
+- Easy to test on a non-production environment.
+- Easy to learn by reading, less documentation.
+
+[Benefits are listed here](https://phoenixnap.com/blog/infrastructure-as-code-best-practices-tools)
 
 ## Using GIT for version control. (60 min.) 
 
