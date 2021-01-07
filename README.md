@@ -143,12 +143,15 @@ You're done when you can use these commands: (Likely scenario 1, 2 and 3.)
 
 To test your knowledge: fix this misteeke by making a pull request:
 
+(`YOURNAME` should be replaced by your name, no spaces, for example: `robertdebock`.)
+
 1. `git clone git@github.com:robertdebock/learn-terraform.git`
-2. `git checkout -b YOURNAME`
-3. Edit README.md, change "misteeke" to "mistake".
-4. `git add README.md`
-5. `git commit -m "Fixed a typo"`
-6. `git push -u origin YOURNAME`
+2. `cd learn-terraform`
+3. `git checkout -b YOURNAME`
+4. Edit README.md, change "misteeke" to "mistake".
+5. `git add README.md`
+6. `git commit -m "Fixed a typo"`
+7. `git push -u origin YOURNAME`
 
 More [hints here](https://opensource.com/article/19/7/create-pull-request-github)
 
