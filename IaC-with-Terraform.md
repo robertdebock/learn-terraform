@@ -1,4 +1,4 @@
-# Introduction to Infrastructure as Code with Terraform (30 min.) 
+# Introduction to Infrastructure as Code with Terraform
 
 ## Why Infrastructure as Code (IaC)?
 

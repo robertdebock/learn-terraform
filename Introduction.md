@@ -1,4 +1,4 @@
-# Introduction (30 min.) 
+# Introduction
 
 - Who are you?
 - From 0 to 10, what's your experience with: linux, cloud, git, terraform?

@@ -1,4 +1,4 @@
-# Using GIT for version control. (60 min.) 
+# Using GIT for version control.
 
 ## Introduction
 
