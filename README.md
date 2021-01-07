@@ -16,11 +16,13 @@ Let's break that down:
 - Infrastructure as code: You can describe in [plain text](https://github.com/robertdebock/terraform-demo/blob/master/do.tf) what infrastructure you need.
 - CLI workflow: From a Linux machines, you can use the `terraform` binary.
 - Cloud services: Terraform describes "resources", which can be: machines, ip-addresses, loadbalancers, etc.
-- declarative configuration: You describe the infrastructure, Terraform will build (or destroy) it.
+- Declarative configuration: You describe the infrastructure, Terraform will build (or destroy) it.
 
 ## Introduction to Infrastructure as Code with Terraform (30 min.) 
 
 ### Why Infrastructure as Code (IaC)?
+
+Not specifically Terraform, but IaC in general has these benefits:
 
 - Code is repeatable.
 - It's easy to work together.
@@ -130,6 +132,25 @@ Git is a [version control system](https://en.wikipedia.org/wiki/Version_control)
 - csv
 
 Let's [learn Git](https://www.katacoda.com/courses/git)
+
+You're done when you can use these commands: (Likely scenario 1, 2 and 3.)
+
+- git clone
+- git add
+- git commit
+- git push
+- git pull
+
+To test your knowledge: fix this misteeke by making a pull request:
+
+1. `git clone git@github.com:robertdebock/learn-terraform.git`
+2. `git checkout -b YOURNAME`
+3. Edit README.md, change "misteeke" to "mistake".
+4. `git add README.md`
+5. `git commit -m "Fixed a typo"`
+6. `git push -u origin YOURNAME`
+
+More [hints here](https://opensource.com/article/19/7/create-pull-request-github)
 
 ## Build Infrastructure, incl. syntax explanation.(120 min.)
 
