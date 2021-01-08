@@ -30,3 +30,5 @@ To test your knowledge: fix this misteeke by making a pull request:
 7. `git push -u origin YOURNAME`
 
 More [hints here](https://opensource.com/article/19/7/create-pull-request-github)
+
+[An explanation on Git](https://www.youtube.com/watch?v=Y9XZQO1n_7c) if you've got time to spare.
