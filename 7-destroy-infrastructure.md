@@ -1,7 +1,7 @@
 # Destroy infrastructure
 
-|expected time|requirements                        |
-|-------------|------------------------------------|
+|expected time|requirements                                    |
+|-------------|------------------------------------------------|
 |30 minutes   |a computer with terraform installed, lab 6 done.|
 
 Learn how to destroy infrastructure:

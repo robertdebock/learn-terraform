@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|90 minutes   |a computer  |
+|60 minutes   |a computer  |
 
 Let's build your first resources with Terraform, this does differ per provider.
 

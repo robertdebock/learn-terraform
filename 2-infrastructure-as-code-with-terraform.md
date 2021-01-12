@@ -108,3 +108,9 @@ This differs from for example Ansible, that only ensures described resources exi
 ```
 
 If you would apply `moment-0.yml` followed by `moment-1.tml`, the droplet `web-1` would **NOT** be removed. Droplet `web-1` has been orphaned now.
+
+# Questions
+
+1. Terraform keeps state, what is the benefit?
+2. Terraform and Ansible differ, for what situation would you use either?
+3. In your own words, what are some benefits of infrastructure as code?
