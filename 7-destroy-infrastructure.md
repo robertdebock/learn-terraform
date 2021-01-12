@@ -10,7 +10,7 @@ Learn how to destroy infrastructure:
 - [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-destroy?in=terraform/azure-get-started).
 - [GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-destroy?in=terraform/gcp-get-started).
 
-Bonus questions:
+# Questions:
 
 1. Now that you know how to destroy all resources defined, how do you destroy only on resource?
 2. Why would you use `terraform destroy`?

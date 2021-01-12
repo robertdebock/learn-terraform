@@ -1,7 +1,7 @@
 # Change infrastructure
 
-|expected time|requirements                        |
-|-------------|------------------------------------|
+|expected time|requirements                                    |
+|-------------|------------------------------------------------|
 |30 minutes   |a computer with terraform installed, lab 5 done.|
 
 Learn how to change infrastructure:
@@ -15,3 +15,8 @@ In this case it's nice to see your changes in the provider console:
 - [AWS](https://aws.amazon.com/console/).
 - [Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 - [GCP](https://console.cloud.google.com/).
+
+
+# Questions:
+
+1. Can I still change stuff (resources) manually on the providers console?
