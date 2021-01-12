@@ -6,7 +6,7 @@
 4. [Install Terraform](4-install-terraform.md). (30 minutes)
 5. [Build Infrastructure](5-build-infrastructure.md). (90 minutes)
 6. [Change Infrastructure](6-change-infrastructure.md). (30 minutes)
-7. [Destroy Infrastructure](). (30 minutes)
+7. [Destroy Infrastructure](7-destroy-infrastructure.md). (30 minutes)
 8. [Define Input Variables](). (60 minutes)
 9. [Query Data with Output Variables](). (60 minutes) 
 10. [Store Remote State](). (60 minutes) 
