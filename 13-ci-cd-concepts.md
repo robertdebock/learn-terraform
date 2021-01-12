@@ -26,6 +26,14 @@ Best practices for modules:
 
 ## Repository
 
+```text
+
+\O/      +--- GitHub|GitLab ---+
+ |  ---> | main.tf             |
+/ \      | versions.tf         | -> Terraform Registry
+         +---------------------+
+```
+
 A typical repository uses either providers directly or modules. The repository contains all information required to build the infrastructure. (Except sensitive values such as usernames and password.)
 
 By applying (`terraform apply`) the Terraform code, your environment will be modified. If you setup CI/CD, you have the benefit of automatic changes, but the drawback of unexpected (automatic) changes happening to your environment.
@@ -33,22 +41,24 @@ By applying (`terraform apply`) the Terraform code, your environment will be mod
 Here is an example for BitBucket:
 
 ```yaml
+---
 image: hashicorp/terraform:full
+
 pipelines:
-    default:
-        - step:
-            script:
-                - terraform init
-                - terraform validate
-                - terraform plan
-    branches:
-        master:
-            - step:
-                script:
-                    - terraform init
-                    - terraform validate
-                    - terraform plan -out "planfile"
-                    - terraform apply -input=false -auto-approve "planfile"
+  default:
+    - step:
+      script:
+        - terraform init
+        - terraform validate
+        - terraform plan
+  branches:
+    master:
+      - step:
+        script:
+          - terraform init
+          - terraform validate
+          - terraform plan -out "planfile"
+          - terraform apply -input=false -auto-approve "planfile"
 ```
 
 Here is an example that can be used for GitLab:
