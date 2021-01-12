@@ -15,3 +15,7 @@ To verify that you are done, please enter this command:
 ```shell
 terraform --version
 ```
+
+# Questions
+
+1. What installation method would you prefer?

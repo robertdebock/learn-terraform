@@ -11,6 +11,6 @@
 9. [Define Input Variables](9-define-input-variables.md). (60 minutes)
 10. [Query Data with Output Variables](10-query-data-with-output-variables.md). (60 minutes) 
 11. [Store Remote State](11-store-remote-state.md). (60 minutes) 
-12. [Writing modules](). (120 minutes) 
-13. [CI/CD concepts](). (30 minutes)
+12. [Writing modules](12-writing-modules.md). (120 minutes) 
+13. [CI/CD concepts](13-ci-cd-concepts.md). (30 minutes)
 14. [Use-cases (bonus)](). (120 minutes)

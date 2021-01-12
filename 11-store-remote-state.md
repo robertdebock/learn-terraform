@@ -2,7 +2,7 @@
 
 |expected time|requirements                                     |
 |-------------|-------------------------------------------------|
-|60 minutes   |a computer with terraform installed, lab 10 done.|
+|60 minutes   |A computer with terraform installed, lab 10 done.|
 
 Learn how to store remote state:
 
@@ -13,4 +13,4 @@ Learn how to store remote state:
 # Questions:
 
 1. What is so critical about the state?
-2. 
+2. Does the state contain sensitive information?

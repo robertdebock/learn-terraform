@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|60 minutes   |a computer with terraform installed, lab 8 done.|
+|60 minutes   |A computer with terraform installed, lab 8 done.|
 
 Learn how to define input variables:
 

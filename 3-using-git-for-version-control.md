@@ -25,5 +25,5 @@ You're done when you can use these commands: (Likely scenario 1, 2 and 3.)
 
 # Questions
 
-1. What is the difference between `git` and [GitHub](https://github.com/)?
+1. What is the difference between `git` and [GitHub](https://github.com/)|[GitLab](https://gitlab.com/)?
 2. `git` and CI/CD are commonly used together, do you know the differences?
