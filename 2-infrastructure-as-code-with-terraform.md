@@ -22,7 +22,7 @@ Not specifically Terraform, but IaC in general has these benefits:
 
 Let's learn a bit more on Terraform:
 
-- Terraform about IaC. [AWS](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started), [Azure](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/azure-get-started), [GCP](https://learn.hashicorp.com/collections/terraform/gcp-get-started)
+- Terraform about IaC. [AWS](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started), [Azure](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/azure-get-started), [GCP](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/gcp-get-started)
 - [This video by IBM](https://www.youtube.com/watch?v=HmxkYNv1ksg) (08:43).
 - [This video from HashiCorp](https://www.youtube.com/watch?v=h970ZBgKINg) (18:38).
 
