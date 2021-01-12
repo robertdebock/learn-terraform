@@ -54,6 +54,7 @@ pipelines:
   branches:
     master:
       - step:
+        trigger: manual
         script:
           - terraform init
           - terraform validate
