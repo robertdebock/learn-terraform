@@ -1,5 +1,9 @@
 # Introduction to Infrastructure as Code with Terraform
 
+|expected time|requirements|
+|-------------|------------|
+|30 minutes   |none        |
+
 ## Why Infrastructure as Code (IaC)?
 
 Not specifically Terraform, but IaC in general has these benefits:
@@ -102,4 +106,4 @@ This differs from for example Ansible, that only ensures described resources exi
     ssh_pub_key: 'ssh-rsa AAAA...'
 ```
 
-If you would apply `moment-0.yml` followed by `moment-1.tml`, the droplet `web-1` would **NOT** be removed.
+If you would apply `moment-0.yml` followed by `moment-1.tml`, the droplet `web-1` would **NOT** be removed. Droplet `web-1` has been orphaned now.
