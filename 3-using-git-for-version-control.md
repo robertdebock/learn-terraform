@@ -1,5 +1,9 @@
 # Using GIT for version control.
 
+|expected time|requirements|
+|-------------|------------|
+|60 minutes   |a browser   |
+
 ## Introduction
 
 Git is a [version control system](https://en.wikipedia.org/wiki/Version_control). Alternatives are:
