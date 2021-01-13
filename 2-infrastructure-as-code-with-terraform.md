@@ -6,7 +6,7 @@
 
 ## Why Infrastructure as Code (IaC)?
 
-Not specifically Terraform, but IaC in general has these benefits:
+Not specifically Terraform, but IaC (Infrastructure as Code) in general has these benefits:
 
 - Code is repeatable.
 - It's easy to work together.
@@ -107,10 +107,19 @@ This differs from for example Ansible, that only ensures described resources exi
     ssh_pub_key: 'ssh-rsa AAAA...'
 ```
 
-If you would apply `moment-0.yml` followed by `moment-1.tml`, the droplet `web-1` would **NOT** be removed. Droplet `web-1` has been orphaned now.
+If you would apply `moment-0.yml` followed by `moment-1.yml`, the droplet `web-1` would **NOT** be removed. Droplet `web-1` has been orphaned now.
 
 # Questions
 
 1. Terraform keeps state, what is the benefit?
 2. Terraform and Ansible differ, for what situation would you use either?
 3. In your own words, what are some benefits of infrastructure as code?
+
+## What tools to use when
+
+There is no clear answer to this question. I suggest to use the right tool for the type of work. Most companies use Terraform and some other configuration management system, for example.
+
+- Terraform to manage infrastructure.
+- Ansible|Puppet|Chef|Salt for the configuration of the instances.
+
+In other words, just Terraform is not sufficient in most cases.
