@@ -12,10 +12,7 @@ Learn how to change infrastructure:
 
 In this case it's nice to see your changes in the provider console:
 
-- [AWS](https://aws.amazon.com/console/).
-- [Azure](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
-- [GCP](https://console.cloud.google.com/).
-
+[AWS Console](https://aws.amazon.com/console/) | [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) | [GCP Console](https://console.cloud.google.com/).
 
 # Questions:
 
