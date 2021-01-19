@@ -19,3 +19,4 @@ terraform --version
 # Questions
 
 1. What installation method would you prefer?
+2. How was terraform installed? (If it was installed for you.)
