@@ -16,7 +16,8 @@ You'll likely have questions, don't hesitate to ask them.
 
 1. If I have difficulties making some resource, can I manually create it?
 2. Can you explain in your own words what `terraform init` does?
-3. How many resources are in the example code below?
+3. What are benefits (and drawbacks) of `terraform.tfstate`?
+4. How many resources are in the example code below?
 
 ```
 variable "do_token" {}
