@@ -18,3 +18,4 @@ Learn how to define input variables:
 
 1. Why is the command line a best practice location for specifying sensitive variables?
 2. What would be one or more drawbacks of not using variables?
+3. Can I list my variables in `input.tf` instead of `variables.tf`?
