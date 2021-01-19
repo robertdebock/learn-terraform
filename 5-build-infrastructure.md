@@ -12,6 +12,10 @@ Let's build your first resources with Terraform, this does differ per provider.
 
 You'll likely have questions, don't hesitate to ask them.
 
+# View the results
+
+| [AWS Console](https://aws.amazon.com/console/) | [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) | [GCP Console](https://console.cloud.google.com/) |
+
 # Questions
 
 1. If I have difficulties making some resource, can I manually create it?

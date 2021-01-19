@@ -10,9 +10,9 @@ Learn how to change infrastructure:
 - [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-change?in=terraform/azure-get-started).
 - [GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-change?in=terraform/gcp-get-started).
 
-In this case it's nice to see your changes in the provider console:
+# View the results
 
-[AWS Console](https://aws.amazon.com/console/) | [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) | [GCP Console](https://console.cloud.google.com/).
+| [AWS Console](https://aws.amazon.com/console/) | [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) | [GCP Console](https://console.cloud.google.com/) |
 
 # Questions:
 
