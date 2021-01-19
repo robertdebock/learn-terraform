@@ -22,3 +22,4 @@ In this case it's nice to see your changes in the provider console:
 1. Can I still change stuff (resources) manually on the providers console?
 2. If I lost the state file, can I simply re-apply the same Terraform code?
 3. If I change the name of an instance, will the instance be recreated or renamed?
+4. Why would you append `-out=planfile` to `terraform plan`?
