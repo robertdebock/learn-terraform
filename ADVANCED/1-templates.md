@@ -43,6 +43,11 @@ Host ${ip}
   User ${username}
 ```
 
+Questions:
+
+1. How can you pin the version of `local_file`?
+2. Do you know a use case for using templates?
+
 ## Solution
 
 [Have a look](1-templates-solution.md).

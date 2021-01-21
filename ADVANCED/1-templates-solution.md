@@ -1,3 +1,5 @@
+# Templates solution
+
 1. Create `ssh_config.tf`:
 
 ```
