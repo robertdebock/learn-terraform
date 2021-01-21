@@ -4,9 +4,7 @@
 |-------------|---------------------------------------------------------|
 |60 minutes   |A computer with terraform installed, terraform knowledge.|
 
-
 Use Templates to customize your usage of Terraform.
-
 
 ## Explanation
 
@@ -43,7 +41,7 @@ Host ${ip}
   User ${username}
 ```
 
-Questions:
+## Questions:
 
 1. How can you pin the version of `local_file`?
 2. Do you know a use case for using templates?

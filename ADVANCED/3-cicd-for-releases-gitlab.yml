@@ -1,0 +1,41 @@
+image:
+  name: hashicorp/terraform:0.13.5
+  entrypoint:
+    - '/usr/bin/env'
+    - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+
+before_script:
+  - rm -rf .terraform
+  - terraform init
+
+stages:
+  - validate
+  - plan
+  - apply
+
+validate:
+  stage: validate
+  script:
+    - terraform validate
+
+plan:
+  stage: plan
+  script:
+    - terraform plan -out "planfile"
+  dependencies:
+    - validate
+  artifacts:
+    paths:
+      - planfile
+
+apply:
+  stage: apply
+  script:
+    - terraform apply -input=false -auto-approve "planfile"
+  retry: 2
+  dependencies:
+    - plan
+  when: manual
+  only:
+    refs:
+      - master
