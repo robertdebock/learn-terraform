@@ -20,24 +20,23 @@ Here is an example to store an IP address of hosts managed by Terraform:
 
 ```
 resource "local_file" "inventory" {
-    content  = templatefile("templates/inventory.tpl", { ips = data.azurerm_public_ip.*.ip_address })
+    content  = templatefile("templates/inventory.tpl", { ip = data.azurerm_public_ip.ipaddress.ip_address })
     filename = "${path.module}/inventory"
 }
 ```
 
+
 `templates/inventory.tpl`:
 
 ```
-%{ for ip in ips ~}
 ${ip}
-%{ endfor ~}
 ```
 
 ## Assignment
 
 You can start using [this Terraform configuration](https://github.com/hashicorp/learn-terraform-azure). (Remember: `az login`, `terraform init`)
 
-Please have Terraform write an ssh configurarion lists the host managed by Terraform and sets the user to the user that's specified in the input variables.. Use this format:
+Please have Terraform write an ssh configuration listing the host managed by Terraform and sets the user to the user that's specified in the input variables.. Use this format:
 
 ```
 Host ${ip}
