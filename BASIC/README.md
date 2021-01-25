@@ -7,7 +7,7 @@
 5. [Build Infrastructure](5-build-infrastructure.md). (60 minutes)
 6. [Change Infrastructure](6-change-infrastructure.md). (30 minutes)
 7. [Destroy Infrastructure](7-destroy-infrastructure.md). (30 minutes)
-8. [Create Resource Dependencies](8-create-resource-dependencies.md). (30 minuts)
+8. [Create Resource Dependencies](8-create-resource-dependencies.md). (30 minutes)
 9. [Define Input Variables](9-define-input-variables.md). (60 minutes)
 10. [Query Data with Output Variables](10-query-data-with-output-variables.md). (60 minutes) 
 11. [Store Remote State](11-store-remote-state.md). (60 minutes) 
