@@ -44,3 +44,7 @@ Use [cloud-init](https://cloudinit.readthedocs.io/en/latest/) in the Terraform c
   - Has a password of "My-P@s5w0rd". (use a hash `mkpasswd --method=SHA-512 --rounds=4096`)
   - Can use sudo (`sudo:  ALL=(ALL) NOPASSWD:ALL`).
 - Update the software on the instance. ([hint](https://cloudinit.readthedocs.io/en/latest/topics/examples.html#setup-and-run-puppet).)
+
+## Use case 4
+
+Add a resource manually, import and try to expand the memory.

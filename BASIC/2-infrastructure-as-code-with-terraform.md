@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|30 minutes   |none        |
+|60 minutes   |none        |
 
 ## Why Infrastructure as Code (IaC)?
 
