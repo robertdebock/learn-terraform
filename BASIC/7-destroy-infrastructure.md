@@ -16,6 +16,6 @@ Learn how to destroy infrastructure:
 
 # Questions:
 
-1. Now that you know how to destroy all resources defined, how do you destroy only on resource?
+1. Now that you know how to destroy all resources defined, how do you destroy only one resource?
 2. Why would you use `terraform destroy`?
 3. Can you destroy without `terraform.tfstate` or `terraform.tfstate.backup`?
