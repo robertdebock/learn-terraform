@@ -12,11 +12,11 @@ Write Terraform code for the cloud provider of your choice.
 Write Terraform code to:
 
 ```text
-          +--- loadbalancer1 ---+
-          | Listening on ports: |
-          |   - port 80         |
-          |   - port 443        |
-          +---------------------+
+        +--- loadbalancer1 ---+
+        | Listening on ports: |
+        |   - port 80         |
+        |   - port 443        |
+        +---------------------+
                |         |
                V         V
 +--- instance1 ---+   +--- instance2 ---+
