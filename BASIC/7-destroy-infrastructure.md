@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|30 minutes   |A computer with terraform installed, lab 6 done.|
+|15 minutes   |A computer with terraform installed, lab 6 done.|
 
 Learn how to destroy infrastructure:
 

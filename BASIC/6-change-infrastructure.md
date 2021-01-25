@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|30 minutes   |A computer with terraform installed, lab 5 done.|
+|15 minutes   |A computer with terraform installed, lab 5 done.|
 
 Learn how to change infrastructure:
 
