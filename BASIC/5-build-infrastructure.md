@@ -12,6 +12,16 @@ Let's build your first resources with Terraform, this does differ per provider.
 
 You'll likely have questions, don't hesitate to ask them.
 
+To use a device code, issue:
+
+```shell
+az login --use-device-code
+```
+
+```shell
+az account set --subscription x-y-z-a-b
+```
+
 # View the results
 
 | [AWS Console](https://aws.amazon.com/console/) | [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) | [GCP Console](https://console.cloud.google.com/) |
