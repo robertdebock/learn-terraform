@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|30 minutes   |none        |
+|45 minutes   |none        |
 
 Please tell something about yourself.
 

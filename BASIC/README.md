@@ -1,6 +1,6 @@
 # Learn Terraform Basic
 
-1. [Introduction](1-introduction.md). (30 minutes)
+1. [Introduction](1-introduction.md). (45 minutes)
 2. [Infrastructure as Code with Terraform](2-infrastructure-as-code-with-terraform.md). (30 minutes)
 3. [Using GIT for version control](3-using-git-for-version-control.md). (60 minutes)
 4. [Install Terraform](4-install-terraform.md). (30 minutes)
