@@ -24,12 +24,6 @@ You'll likely have questions, don't hesitate to ask them.
 4. How many resources are in the example code below?
 
 ```
-variable "do_token" {}
-
-provider "digitalocean" {
-  token = var.do_token
-}
-
 resource "digitalocean_ssh_key" "example" {
   name       = "example"
   public_key = file("id_rsa.pub")
@@ -77,5 +71,13 @@ resource "digitalocean_loadbalancer" "web" {
   }
 
   droplet_ids = [digitalocean_droplet.web-1.id, digitalocean_droplet.web-2.id,]
+}
+```
+
+6. An how many resources can you see here:
+
+```
+module "digitalocean_droplet" {
+  name = "my-droplet"
 }
 ```
