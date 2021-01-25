@@ -20,8 +20,12 @@ This is where [Terragrunt](https://terragrunt.gruntwork.io/) comes in. Terragrun
 
 ## Assignment
 
+1. Take an example repository containing Terraform code and introduce Terragrunt so that you can use different values for "development" and "production".
+
 ## Questions
 
 1. Do you see a purpose for Terragrunt in your organization?
 
 ## Solution
+
+Have a look at [this (imperfect) repository](https://github.com/robertdebock/terragrunt-demo).
