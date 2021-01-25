@@ -1,4 +1,4 @@
 # Learn Terraform
 
-- [Basic](BASIC/README.md)
-- [Advanced](ADVANCED/README.md)
+- [Basic](BASIC)
+- [Advanced](ADVANCED)
