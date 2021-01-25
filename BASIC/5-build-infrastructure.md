@@ -74,7 +74,7 @@ resource "digitalocean_loadbalancer" "web" {
 }
 ```
 
-6. An how many resources can you see here:
+5. An how many resources can you see here:
 
 ```
 module "digitalocean_droplet" {
