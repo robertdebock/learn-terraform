@@ -2,7 +2,7 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|60 minutes   |A computer with terraform installed, terraform knowledge.|
+|90 minutes   |A computer with terraform installed, terraform knowledge.|
 
 Use the most common best practices
 
@@ -29,6 +29,8 @@ Use the most common best practices
 - Use CI for modules and releases.
 - [`validate`](https://www.terraform.io/docs/commands/validate.html) and [format (`fmt`)](https://www.terraform.io/docs/commands/fmt.html) often.
 - Terraform updates [frequently](https://www.terraform.io/docs/commands/fmt.html), read [release notes](https://github.com/hashicorp/terraform/blob/master/CHANGELOG.md).
+- Use modules over resources.
+- It's a good idea to treat all repositories like a module. (variables.tf, output.tf, version.tf)
 
 ### Modules
 
@@ -41,10 +43,19 @@ Use the most common best practices
   5. versions.tf - Pin all dependencies.
   6. examples/* - Try your module yourself.
   7. LICENSE - Yes, likely a pretty open one like Apache-2.0
-  8. .gitignore
+  8. .gitignore - terraform.tfstate, terraform.tfstate.backup, .terraform
 
 ## Assignment
 
+Find as many improvements in this [example repository](https://github.com/robertdebock/terraform-demo/).
+
+Bonus: make pull requests for the improvements.
+
 ## Questions
 
+1. Do you know what to improve on your code now?
+2. Do you use other practices worth sharing?
+
 ## Solution
+
+See [here].
