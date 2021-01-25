@@ -18,6 +18,8 @@ To use a device code, issue:
 az login --use-device-code
 ```
 
+To use a specfic subscription, issue:
+
 ```shell
 az account set --subscription x-y-z-a-b
 ```
