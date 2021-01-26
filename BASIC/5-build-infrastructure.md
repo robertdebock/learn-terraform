@@ -4,6 +4,12 @@
 |-------------|------------|
 |60 minutes   |a computer  |
 
+# What?
+
+This is your first Terraform code. We'll start easy with a simple resource and build up from there.
+
+In this lab Terraform will connect to a cloud provider for the first time, it will take a bit of setting up. There should be sufficient time to troubleshoot and debug issues.
+
 Let's build your first resources with Terraform, this does differ per provider.
 
 - [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started).

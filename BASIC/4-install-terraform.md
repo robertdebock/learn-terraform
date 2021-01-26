@@ -4,6 +4,12 @@
 |-------------|------------|
 |30 minutes   |a computer  |
 
+## What?
+
+Terraform is a program that needs to be installed. It's quite simple, but required.
+
+The Terraform CLI is a simple binary, no services/servers/daemon, no specific users, etc.
+
 You first need to install terraform. Identical for all providers:
 
 - [AWS](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started)

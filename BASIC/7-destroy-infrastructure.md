@@ -2,7 +2,11 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|15 minutes   |A computer with terraform installed, lab 6 done.|
+|15 minutes   |A computer with Terraform installed, lab 6 done.|
+
+# What?
+
+Specifically for tests is quick and simple to spin up new resources like virtual machines, loadbalancers, disks, etc. Once you're done with testing or developing, it's time to take the test infrastructure down again.
 
 Learn how to destroy infrastructure:
 

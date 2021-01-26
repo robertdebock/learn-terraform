@@ -2,7 +2,11 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|15 minutes   |A computer with terraform installed, lab 5 done.|
+|15 minutes   |A computer with Terraform installed, lab 5 done.|
+
+# What?
+
+In the previous lab you were able to connect (and create a resource) on the cloud provider. Let's modify your code a bit and understand how Terraform reacts.
 
 Learn how to change infrastructure:
 

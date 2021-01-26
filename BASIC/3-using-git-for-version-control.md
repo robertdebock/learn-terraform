@@ -4,6 +4,14 @@
 |-------------|------------|
 |60 minutes   |a browser   |
 
+## What?
+
+You can write code on your laptop or a shared (bastion/jump) server. Without a [version control system](https://en.wikipedia.org/wiki/Version_control) system, it's difficult to work together, track changes, understand who has done what and many other issues.
+
+Using a version control system is sort of required when writing code.
+
+"It it's not in [git|svn|cvs], it does not exist."
+
 ## Introduction
 
 Git is a [version control system](https://en.wikipedia.org/wiki/Version_control). Alternatives are:
