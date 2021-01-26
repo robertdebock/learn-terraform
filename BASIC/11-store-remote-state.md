@@ -2,7 +2,16 @@
 
 |expected time|requirements                                     |
 |-------------|-------------------------------------------------|
-|60 minutes   |A computer with terraform installed, lab 10 done.|
+|60 minutes   |A computer with Terraform installed, lab 10 done.|
+
+## What?
+
+You've learned to work with a local state file so far. When you work with multiple people, you need to share the same state. If you do not share the same state, you can step on each-others toes when applying code.
+
+With remote state, you basically do two things:
+
+1. The state is saved centrally.
+2. Locking happens centrally.
 
 Learn how to store remote state:
 

@@ -2,9 +2,37 @@
 
 |expected time|requirements              |
 |-------------|--------------------------|
-|60 minutes   |Basic terraform knowledge.|
+|60 minutes   |Basic Terraform knowledge.|
 
 Now that you are familiar with Terraform, you can automate deployments.
+
+## What?
+
+Continuous Integration/Continouos Development (CI/CD) is the practice of testing frequently and pushing changes to production frequently. The idea is that small changes can be tested and integrated (into production) quickly and safely.
+
+CI/CD helps with these aspects:
+
+1. Catch mistakes as early as possible.
+2. Tests prove that changes work (or fail).
+3. It's easy to bring changed to production.
+
+(And likely many other benefits.)
+
+How you setup CI/CD depends a bit on the facilities you have, but generally speaking all version control systems (GitHub/GitLab/BitBucket/Jenkins/Travis) have some kind of `pipeline`-mechanism. Such a mechanism wakes up when a push (with commits) is done to a repository.
+
+With Terraform you'll probably have two types of repositories:
+
+1. Terraform Modules
+2. Terraform integrations
+
+The Terraform Modules are independent, small re-usable pieces. Tests should happen on these repositories frequently.
+The Terraform integrations use modules to describe an infrastructure of a product or service. Tests on these repositories can happen and eventually the integration can be `apply`-ed to the production environment. This is typically a manual step.
+
+CI/CD typically uses three stages:
+
+1. Build - You could see this as `terraform apply`.
+2. Test - Is the module or integration doing what it should?
+3. Release - Works? Release a new version.
 
 ## Modules
 
@@ -24,13 +52,13 @@ Best practices for modules:
 5. Release version upon succesful tests.
 6. Use [Semantic Versioning 2.0.0](https://semver.org/) versioning.
 
-## Repository
+## Integration
 
 ```text
 
 \O/      +--- GitHub|GitLab ---+
  |  ---> | main.tf             |
-/ \      | versions.tf         | -> Terraform Registry
+/ \      | versions.tf         | <- Terraform Registry
          +---------------------+
 ```
 

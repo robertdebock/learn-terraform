@@ -2,7 +2,30 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|60 minutes   |A computer with terraform installed, lab 9 done.|
+|60 minutes   |A computer with Terraform installed, lab 9 done.|
+
+## What?
+
+Sometimes you want to know a detail of the infrastructure that Terraform built. This could be an IP address of some device for example.
+
+For example, how do I know where to connect if I'm using this code:
+
+```hcl
+resource "digitalocean_ssh_key" "example" {
+  name       = "example"
+  public_key = file("id_rsa.pub")
+}
+
+resource "digitalocean_droplet" "web-1" {
+  image  = "fedora-32-x64"
+  name   = "web-1"
+  region = "ams3"
+  size   = "s-1vcpu-1gb"
+  ssh_keys = [digitalocean_ssh_key.example.fingerprint]
+}
+```
+
+You'll learn how Terraform
 
 Learn how to define input variables:
 
