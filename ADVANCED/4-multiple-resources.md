@@ -2,7 +2,7 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|120 minutes  |A computer with terraform installed, terraform knowledge.|
+|120 minutes  |A computer with Terraform installed, terraform knowledge.|
 
 Using multiple (relates) resources and providers.
 
