@@ -84,7 +84,6 @@ The [documentation](https://www.terraform.io/docs/modules/index.html) may also h
 6. Create a `README.md` explaining the features.
 7. Add a `LICENSE` before publishing.
 8. Put `terraform.tfstate`, `terraform.tfstate.backup`, `.terraform` and `*.tfvars` in [`.gitignore`](https://github.com/github/gitignore/blob/master/Terraform.gitignore).
-9. 
 
 # Questions:
 
