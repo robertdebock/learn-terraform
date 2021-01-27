@@ -67,6 +67,17 @@ Number can go beyond `9`, so a version a `3.2.13` is possible.
 
 Many vendors do not use [SemVer](https://semver.org/), rather use a new version for marketing purposes.
 
+To use a module stored on a version control system, use this code:
+
+```
+module "resourcegroup" {
+  source              = "git::shh://git@bitbucket.org/NAMESPACE/REPOSITORY.git"
+  resource_group_name = local.resource_group_name
+  location            = var.location
+  rg_tags             = var.rg_tags
+}
+```
+
 Learn how to write Terraform modules:
 
 - [HashiCorp teaches](https://learn.hashicorp.com/collections/terraform/modules)
