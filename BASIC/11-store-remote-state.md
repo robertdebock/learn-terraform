@@ -15,8 +15,8 @@ With remote state, you basically do two things:
 
 Learn how to store remote state:
 
-- [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-outputs?in=terraform/aws-get-started).
-- [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-outputs?in=terraform/azure-get-started).
+- [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-remote?in=terraform/aws-get-started).
+- [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-remote?in=terraform/azure-get-started).
 - [GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-outputs?in=terraform/gcp-get-started).
 
 A few extra steps are required for Azure, as [documented](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret#configuring-the-service-principal-in-terraform):
