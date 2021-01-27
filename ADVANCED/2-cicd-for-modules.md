@@ -20,6 +20,10 @@ This may take some time, but it's well worth the effort as these pipelines will 
 
 With CI/CD, always start with the smallest unit/component. This ensures you can deliver value incrementally instead of a "waterfall" approach.
 
+## Bonus assignment
+
+For a module you use/maintain, add [input validation](https://www.terraform.io/docs/language/values/variables.html#custom-validation-rules) to test if the input given was correct. Here is a [hint](2-cicd-for-modules-input-validation.md)
+
 ## Questions
 
 1. Would you `terraform apply` the code in CI when testing a module?
