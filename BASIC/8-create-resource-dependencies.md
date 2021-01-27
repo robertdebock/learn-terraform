@@ -49,6 +49,26 @@ resource "aws_instance" "example_c" {
 
 In the example above, an S3 bucket is created and apparently, the AWS instance needs it. From a Terraform perspective these resources are not related, but you or the developer known that the instance actually needs the S3 bucket.
 
+Sometimes you many need some details from a resource, but that resource is not managed by you. In that case you can use [data sources](https://www.terraform.io/docs/configuration-0-11/data-sources.html).
+
+In this example an image is found (that already exists) which can be reused later.
+
+```hcl
+data "aws_ami" "web" {
+  filter {
+    name   = "state"
+    values = ["available"]
+  }
+
+  filter {
+    name   = "tag:Component"
+    values = ["web"]
+  }
+
+  most_recent = true
+}
+```
+
 Learn how dependecies work in Terraform:
 
 NOTE: There are a few errors in the Azure documentation:
