@@ -6,6 +6,8 @@
 
 ## What?
 
+![input output](images/input-output.png "Input Output")
+
 Sometimes you want to know a detail of the infrastructure that Terraform built. This could be an IP address of some device for example.
 
 For example, how do I know where to connect if I'm using this code:
