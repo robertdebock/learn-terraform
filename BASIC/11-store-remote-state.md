@@ -21,13 +21,21 @@ Learn how to store remote state:
 
 To store the remote state in Azure, this can be used: (Change `MY_STATE_NAME` to something like `robertdebock`.
 
+Change the `terraform` parameter in `main.tf` to this.
+
 ```hcl
 terraform {
-    backend "azurerm" {
-    resource_group_name  = "rg-terraform-cmn-sbx"
-    storage_account_name = "stterraformcmnsbx"
-    container_name       = "c-terraform"
-    key                  = "rg-MY_STATE_NAME-sbx.tfstate"
+  backend "azurerm" {
+  resource_group_name  = "rg-terraform-cmn-sbx"
+  storage_account_name = "stterraformcmnsbx"
+  container_name       = "c-terraform"
+  key                  = "rg-wouterbruggeman-sbx.tfstate"
+  }
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = ">= 2.26"
+    }
   }
 }
 ```
