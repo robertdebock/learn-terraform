@@ -4,6 +4,19 @@
 |-------------|------------------------------------------------|
 |60 minutes   |A computer with Terraform installed, lab 8 done.|
 
+## What
+
+![input output](images/input-output.png "Input Output")
+
+Besides the code to build the infrastructure, you may need to have some details that are required to build the infrastructure. You can use Terrafor input variables.
+
+Examples of input are:
+
+- The amount of machines required.
+- The name of a machine.
+- The size of an instance.
+- (and many more.)
+
 Learn how to define input variables:
 
 - [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-variables?in=terraform/aws-get-started).
