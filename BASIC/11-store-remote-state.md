@@ -42,3 +42,4 @@ Run `terraform init` once.
 
 1. What is so critical about the state?
 2. Does the state contain sensitive information?
+3. What have you solved now that the state is remote?
