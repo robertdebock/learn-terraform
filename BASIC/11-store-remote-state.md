@@ -29,12 +29,6 @@ terraform {
     container_name       = "c-terraform"
     key                  = "rg-MY_STATE_NAME-sbx.tfstate"
   }
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "= 2.41.0"
-    }
-  }
 }
 ```
 
