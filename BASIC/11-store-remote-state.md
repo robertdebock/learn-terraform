@@ -29,7 +29,7 @@ terraform {
   resource_group_name  = "rg-terraform-cmn-sbx"
   storage_account_name = "stterraformcmnsbx"
   container_name       = "c-terraform"
-  key                  = "rg-wouterbruggeman-sbx.tfstate"
+  key                  = "rg-MY_STATE_NAME-sbx.tfstate"
   }
   required_providers {
     azurerm = {
