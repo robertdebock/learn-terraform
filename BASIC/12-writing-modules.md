@@ -80,10 +80,15 @@ module "resourcegroup" {
 
 Learn how to write Terraform modules:
 
-- [HashiCorp teaches](https://learn.hashicorp.com/collections/terraform/modules)
+- [HashiCorp teaches](https://learn.hashicorp.com/collections/terraform/modules).
 - [Terraform modules](https://learn.hashicorp.com/tutorials/terraform/module-create?in=terraform/modules).
 
 The [documentation](https://www.terraform.io/docs/modules/index.html) may also help.
+
+## Assignment
+
+1. Make a module that can create `azurerm_resource_group`s. [Solution](12-writing-modules-solution-1.md)
+2. Modify your root-module (`learn-terraform-azure`) to use the modules you've created. [Solution](12-writing-modules-solution-2.md)
 
 ## Best practices
 
