@@ -61,7 +61,7 @@ As you can see the `version = 1.0.0` is used. [Versioning](https://semver.org/) 
 
 1. The MAJOR version (`1`) indicates the compatibility. `2.0.0` is not compatible with `1.0.0`.
 2. The MINOR version (`0`) indicates the features. If this number increases, a new feature should be available.
-3. The PATH version (`0`) indicates the bugfixes. If this number increases, a problem has been fixed.
+3. The PATCH version (`0`) indicates the bugfixes. If this number increases, a problem has been fixed.
 
 Number can go beyond `9`, so a version a `3.2.13` is possible.
 
@@ -69,7 +69,8 @@ Many vendors do not use [SemVer](https://semver.org/), rather use a new version 
 
 Learn how to write Terraform modules:
 
-[HashiCorp teaches](https://learn.hashicorp.com/collections/terraform/modules) [Terraform modules](https://learn.hashicorp.com/tutorials/terraform/module-create?in=terraform/modules).
+- [HashiCorp teaches](https://learn.hashicorp.com/collections/terraform/modules)
+- [Terraform modules](https://learn.hashicorp.com/tutorials/terraform/module-create?in=terraform/modules).
 
 The [documentation](https://www.terraform.io/docs/modules/index.html) may also help.
 
