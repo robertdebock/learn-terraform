@@ -19,25 +19,26 @@ Learn how to store remote state:
 - [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-remote?in=terraform/azure-get-started).
 - [GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-outputs?in=terraform/gcp-get-started).
 
-A few extra steps are required for Azure, as [documented](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret#configuring-the-service-principal-in-terraform):
+To store the remote state in Azure, this can be used: (Change `MY_STATE_NAME` to something like `robertdebock`.
 
-On your terminal:
+```hcl
+terraform {
+    backend "azurerm" {
+    resource_group_name  = "rg-terraform-cmn-sbx"
+    storage_account_name = "stterraformcmnsbx"
+    container_name       = "c-terraform"
+    key                  = "rg-MY_STATE_NAME-sbx.tfstate"
+  }
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "= 2.41.0"
+    }
+  }
+}
+```
 
-1. Get the `id` using `az account list`.
-2. Get the `appId, `password` and `tenant` using `az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/${id}"
-
-Now go to [Terraform Cloud](https://app.terraform.io/) -> Workspaces -> ${workspace} -> Variables - Environment Variables.
-
-1. Add `ARM_CLIENT_ID` with the value from `appId`.
-2. Add `ARM_CLIENT_SECRET` with the value from `password`.
-3. Add `ARM_TENANT_ID` with the value from `tenant`.
-4. Add `ARM_SUBSCRIPTION_ID` with the value from `id` from the first command.
-
-While having [Terraform Cloud](https://app.terraform.io/) opend, you can run:
-
-- `terraform init`
-- `terraform plan`
-- `terraform apply`
+Run `terraform init` once.
 
 # View the results
 
