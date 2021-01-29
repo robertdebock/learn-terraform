@@ -8,6 +8,8 @@ Learn how to use [Terragrunt](https://terragrunt.gruntwork.io/).
 
 ## Explanation
 
+![terragrunt overview](images/key-features-terraform-code-dry.png "Terragrunt overview")
+
 Sometimes you've got an infrastructure coded that's almost identical for another environment. For example:
 
 - Development, Test, Acceptance & Prodction
