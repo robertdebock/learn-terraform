@@ -82,7 +82,7 @@ There are [many providers](https://registry.terraform.io/browse/providers) that 
 
 ## Assignment
 
-- [ ] In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Uses references to named values.
+- [ ] In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Use references to named values to dynamicall configure checkly.
 
 You need to sign-up to checkly. You can use your github account or email.
 
