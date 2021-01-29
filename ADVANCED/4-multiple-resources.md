@@ -4,7 +4,7 @@
 |-------------|---------------------------------------------------------|
 |120 minutes  |A computer with Terraform installed, terraform knowledge.|
 
-Using multiple (relates) resources and providers.
+Using multiple (related) resources and providers.
 
 ## Explanation
 
