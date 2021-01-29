@@ -30,7 +30,7 @@ In this case, we want to also `plan` and `apply`. BitBucket needs to [pass some 
 
 ## Assignment
 
-Write a pipline to apply terraform code. Use a manual step after all verification steps (validate, lint, etc) are done.
+- [ ] Write a pipline to apply terraform code. Use a manual step after all verification steps (validate, lint, etc) are done.
 
 ## Questions
 

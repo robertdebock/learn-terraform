@@ -1,4 +1,4 @@
-# Using multiple resources and providers
+# Using multiple providers
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
@@ -13,6 +13,30 @@ Sometimes you need to build infrastructure on more than 1 provider. Maybe you've
 Terraform can deal with multiple providers and basically becomes an [orchestrator](https://en.wikipedia.org/wiki/Orchestration_(computing)).
 
 ## Howto
+
+When using multiple providers, it's time to move the `provider` block into it's own file, something like this:
+
+`providers.tf`:
+
+```hcl
+terraform {
+  required_version = ">= 0.13"
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "2.45.1"
+    }
+    cloudflare = {
+      source = "cloudflare/cloudflare"
+      version = "2.13.2"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+```
 
 In Terraform you can refer to resources:
 
