@@ -2,15 +2,15 @@
 
 1. Tell Terraform how to authenticate.
 
-```
+```shell
 export TF_VAR_checkly_api_key="your-api-key"
 ```
 
 2. Pin the version of this provider.
 
-Add this to `providers.tf` or `versions.tf`:
+Add this to `versions.tf`:
 
-```
+```hcl
 terraform {
   required_providers {
     checkly = {
@@ -21,9 +21,19 @@ terraform {
 }
 ```
 
-3. Add this to your `main.tf`, or create a new file, for example `checkly.tf`.
+3. Add this to `providers.tf`:
 
+```hcl
+variable "checkly_api_key" {}
+
+provider "checkly" {
+  api_key = var.checkly_api_key
+}
 ```
+
+4. Add this to your `main.tf`, or create a new file, for example `checkly.tf`.
+
+```hcl
 resource "checkly_check" "example-check" {
   name                      = "Example check"
   type                      = "API"
@@ -49,3 +59,5 @@ resource "checkly_check" "example-check" {
   }
 }
 ```
+
+5. Run `terraform init`, `terraform plan` and `terraform apply`.
