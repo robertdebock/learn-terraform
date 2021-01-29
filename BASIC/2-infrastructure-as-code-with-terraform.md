@@ -4,6 +4,8 @@
 |-------------|------------|
 |60 minutes   |none        |
 
+Goal: Understand what Infrastructure as code is.
+
 ## Why Infrastructure as Code (IaC)?
 
 What is the problem IaC is trying to solve?
@@ -55,7 +57,7 @@ Having state means Terraform will remove resources that are not described anymor
 
 ### moment-0.tf
 
-```
+```hcl
 resource "digitalocean_ssh_key" "example" {
   name       = "example"
   public_key = file("id_rsa.pub")
@@ -72,7 +74,7 @@ resource "digitalocean_droplet" "web-1" {
 
 ### moment-1.tf
 
-```
+```hcl
 resource "digitalocean_ssh_key" "example" {
   name       = "example"
   public_key = file("id_rsa.pub")
@@ -116,7 +118,7 @@ This differs from for example Ansible, that only ensures described resources exi
 
 If you would apply `moment-0.yml` followed by `moment-1.yml`, the droplet `web-1` would **NOT** be removed. Droplet `web-1` has been orphaned now.
 
-# Questions
+## Questions
 
 1. Terraform keeps state, what is the benefit?
 2. Terraform and Ansible differ, for what situation would you use either?

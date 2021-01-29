@@ -4,7 +4,9 @@
 |-------------|------------|
 |60 minutes   |a browser   |
 
-## What?
+Goal: Learn to work with Git.
+
+## Explanation
 
 You can write code on your laptop or a shared (bastion/jump) server. Without a [version control system](https://en.wikipedia.org/wiki/Version_control) system, it's difficult to work together, track changes, understand who has done what and many other issues.
 
@@ -19,19 +21,7 @@ Git is a [version control system](https://en.wikipedia.org/wiki/Version_control)
 - svn
 - csv
 
-Let's [learn Git](https://www.katacoda.com/courses/git)
-
-You're done when you can use these commands: (Likely scenario 1, 2 and 3.)
-
-- `git clone`
-- `git add`
-- `git commit`
-- `git push`
-- `git pull`
-
-[An explanation on Git](https://www.youtube.com/watch?v=Y9XZQO1n_7c) if you've got time to spare.
-
-## How I use Git daily.
+## Howto
 
 Here is what I do to setup a new repository.
 
@@ -64,7 +54,23 @@ When contributions happen, I'll merge it online, but have to remember to pull.
 git pull
 ```
 
-# Questions
+## Demo
+
+## Assignment
+
+- [ ] Let's [learn Git](https://www.katacoda.com/courses/git)
+
+You're done when you can use these commands: (Likely scenario 1, 2 and 3.)
+
+- `git clone`
+- `git add`
+- `git commit`
+- `git push`
+- `git pull`
+
+[An explanation on Git](https://www.youtube.com/watch?v=Y9XZQO1n_7c) if you've got time to spare.
+
+## Questions
 
 1. What is the difference between `git` and [GitHub](https://github.com/)|[GitLab](https://gitlab.com/)?
 2. Can you explain what `git fetch`, `git merge`, `git pull` do?

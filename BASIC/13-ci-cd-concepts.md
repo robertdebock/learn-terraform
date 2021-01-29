@@ -4,9 +4,9 @@
 |-------------|--------------------------|
 |60 minutes   |Basic Terraform knowledge.|
 
-Now that you are familiar with Terraform, you can automate deployments.
+Goal: Now that you are familiar with Terraform, you can automate deployments.
 
-## What?
+## Explanation
 
 Continuous Integration/Continouos Development (CI/CD) is the practice of testing frequently and pushing changes to production frequently. The idea is that small changes can be tested and integrated (into production) quickly and safely.
 
@@ -43,7 +43,7 @@ CI/CD typically uses three stages:
 / \      +---------------------+
 ```
 
-Best practices for modules:
+## Best practices for modules
 
 1. Use one repository per module.
 2. Use `terraform validate`.
@@ -65,6 +65,13 @@ Best practices for modules:
 A typical repository uses either providers directly or modules. The repository contains all information required to build the infrastructure. (Except sensitive values such as usernames and password.)
 
 By applying (`terraform apply`) the Terraform code, your environment will be modified. If you setup CI/CD, you have the benefit of automatic changes, but the drawback of unexpected (automatic) changes happening to your environment.
+
+## Questions
+
+1. Do you have some form of CI/CD on repositories containing Terraform code?
+2. What do you see as the most important benefit of CI/CD?
+
+## Solution
 
 Here is an example for BitBucket:
 
@@ -88,52 +95,4 @@ pipelines:
           - terraform validate
           - terraform plan -out "planfile"
           - terraform apply -input=false -auto-approve "planfile"
-```
-
-Here is an example that can be used for GitLab:
-
-```yaml
----
-image:
-  name: hashicorp/terraform:0.13.5
-  entrypoint:
-    - '/usr/bin/env'
-    - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-
-before_script:
-  - rm -rf .terraform
-  - terraform --version
-  - terraform init
-
-stages:
-  - validate
-  - plan
-  - apply
-
-validate:
-  stage: validate
-  script:
-    - terraform validate
-
-plan:
-  stage: plan
-  script:
-    - terraform plan -out "planfile"
-  dependencies:
-    - validate
-  artifacts:
-    paths:
-      - planfile
-
-apply:
-  stage: apply
-  script:
-    - terraform apply -input=false -auto-approve "planfile"
-  retry: 2
-  dependencies:
-    - plan
-  when: manual
-  only:
-    refs:
-      - master
 ```

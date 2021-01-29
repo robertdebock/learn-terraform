@@ -6,7 +6,7 @@ There can be some differences, don't worry. This is what your module should look
 
 You should now have these files:
 
-```
+```text
 my_azurerm_resource_group/
 ├── examples (optional)
 │   └── default (optional)

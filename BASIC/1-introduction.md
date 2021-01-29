@@ -4,11 +4,15 @@
 |-------------|------------|
 |45 minutes   |none        |
 
+Goal: Get to know each other and hear about how the course will be held.
+
+## Assignment
+
 Please tell something about yourself.
 
-- Who are you?
-- From 0 to 10, what's your experience with: linux, cloud, git, terraform?
-- What do you want to learn?
+- [ ] Who are you?
+- [ ] From 0 to 10, what's your experience with: linux, cloud, git, terraform?
+- [ ] What do you want to learn?
 
 ## Terraform?
 

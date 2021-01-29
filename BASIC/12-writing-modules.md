@@ -4,7 +4,9 @@
 |-------------|-------------------------------------------------|
 |60 minutes   |A computer with Terraform installed, lab 11 done.|
 
-## What?
+Goal: learn how to write Terraform modules.
+
+## Explanation
 
 You've learned how to write Terraform code. When you write code, you'll see that you will be [repeating](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) yourself. That can be a waste.
 Modules to the rescue; with Terraform modules you can write (small) pieces of Terraform code that other (or yourself) can reuse. This prevents double code and makes maintaining your code much easier.
@@ -12,48 +14,26 @@ Modules to the rescue; with Terraform modules you can write (small) pieces of Te
 Imaging this example:
 
 ```hcl
-resource "digitalocean_droplet" "web-1" {
-  image  = "fedora-32-x64"
-  name   = "web-1"
-  region = "ams3"
-  size   = "s-1vcpu-1gb"
-  ssh_keys = [digitalocean_ssh_key.example.fingerprint]
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-robertdebock-sbx"
+  location = "west europe"
 }
 
-resource "digitalocean_droplet" "web-2" {
-  image  = "fedora-32-x64"
-  name   = "web-2"
-  region = "ams3"
-  size   = "s-1vcpu-1gb"
-  ssh_keys = [digitalocean_ssh_key.example.fingerprint]
+# Create a virtual network
+resource "azurerm_virtual_network" "vnet" {
+    name                = "myTFVnet-robert"
+    address_space       = ["10.0.0.0/16"]
+    location            = "west europe"
+    resource_group_name = azurerm_resource_group.rg.name
 }
 ```
 
 There are a lot of double values in the example above:
 
-1. The `image`.
-2. The `name` is almost identical.
-3. The `region`.
-4. The `size`.
-5. The `ssh_keys`.
+1. The `name` has `robert` in it.
+2. The `location` is set in both resources.
 
 You can make a module where some of these values are set to a default value, so you can prevent naming them.
-
-We'll work on writing modules so that you can reduce the example above to something like this:
-
-```hcl
-module "droplet" {
-  source  = "robertdebock/droplet/digitalocean"
-  version = "1.0.0"
-  name    = "web-1"
-}
-
-module "droplet" {
-  source  = "robertdebock/droplet/digitalocean"
-  version = "1.0.0"
-  name    = "web-2"
-}
-```
 
 The benefit of using a module is that you can fix mistakes just once, (in the module) and you do not need to change your Terraform code that uses the module.
 
@@ -67,28 +47,31 @@ Number can go beyond `9`, so a version a `3.2.13` is possible.
 
 Many vendors do not use [SemVer](https://semver.org/), rather use a new version for marketing purposes.
 
-To use a module stored on a version control system, use this code:
+## Howto
 
-```
-module "resourcegroup" {
-  source              = "git::shh://git@bitbucket.org/NAMESPACE/REPOSITORY.git"
-  resource_group_name = local.resource_group_name
-  location            = var.location
-  rg_tags             = var.rg_tags
-}
-```
-
-Learn how to write Terraform modules:
+1. Make a new directory, maybe `tf-module-azure-resouce_group`.
+2. Describe all input in `variables.tf.
+3. Describe all output in `outputs.tf`
+4. Add a `README.md`.
+5. Describe all resources in `main.tf`.
+6. Describe all versions in `versions.tf`
+7. Add `examples/default/main.tf` the uses the module.
 
 - [HashiCorp teaches](https://learn.hashicorp.com/collections/terraform/modules).
 - [Terraform modules](https://learn.hashicorp.com/tutorials/terraform/module-create?in=terraform/modules).
 
 The [documentation](https://www.terraform.io/docs/modules/index.html) may also help.
 
+## Demo
+
 ## Assignment
 
-1. Make a module that can create `azurerm_resource_group`s. [Solution](12-writing-modules-solution-1.md)
-2. Modify your root-module (`learn-terraform-azure`) to use the modules you've created. [Solution](12-writing-modules-solution-2.md)
+- [ ] Make a module that can create `azurerm_resource_group`s. [Solution](12-writing-modules-solution-1.md)
+- [ ] Try your module by running `terraform init` from the `examples/default` directory.
+
+## Bonus assignment
+
+- [ ] Modify your root-module (`learn-terraform-azure`) to use the modules you've created. [Solution](12-writing-modules-solution-2.md)
 
 ## Best practices
 
@@ -101,8 +84,21 @@ The [documentation](https://www.terraform.io/docs/modules/index.html) may also h
 7. Add a `LICENSE` before publishing.
 8. Put `terraform.tfstate`, `terraform.tfstate.backup`, `.terraform` and `*.tfvars` in [`.gitignore`](https://github.com/github/gitignore/blob/master/Terraform.gitignore).
 
-# Questions:
+## Questions:
 
 1. Why would you write a module?
 2. Where can you find and download modules?
 3. By looking at the downloads, what is the most used provider? (AWS, Azure or GCP)
+
+## Extra
+
+To use a module stored on a version control system, use this code:
+
+```hcl
+module "resourcegroup" {
+  source              = "git::ssh://git@bitbucket.org/NAMESPACE/REPOSITORY.git"
+  resource_group_name = local.resource_group_name
+  location            = var.location
+  rg_tags             = var.rg_tags
+}
+```
