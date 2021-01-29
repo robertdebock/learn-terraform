@@ -5,8 +5,8 @@
 ```
 export TF_VAR_checkly_api_key="your-api-key"
 ```
-2. Pin the version of this provider.
 
+2. Pin the version of this provider.
 
 Add this to versions.tf
 
@@ -39,7 +39,7 @@ resource "checkly_check" "example-check" {
   ]
 
   request {
-    url              = "https://${data.azurerm_public_ip.ip.ip_address}/"
+    url              = "https://${azurerm_public_ip.publicip.ip_address}/"
     follow_redirects = true
     assertion {
       source     = "STATUS_CODE"

@@ -12,12 +12,13 @@ Use the most common best practices
 
 - Put variables in a [tfvars file](https://www.terraform.io/docs/configuration/variables.html#variable-definitions-tfvars-files).
 - Set sensitive variables in [environment variables](https://www.terraform.io/docs/commands/environment-variables.html#tf_var_name).
-- Use [Terragrunt](https://terragrunt.gruntwork.io/) for environment differences.
+- Use [Terragrunt](https://terragrunt.gruntwork.io/) for environmental differences.
 
 ### Dependencies
 
 - Pin all used providers and modules in `versions.tf`.
-- For air-gapped installations, use [terraform-bundle](https://github.com/hashicorp/terraform/tree/master/tools/terraform-bundle).
+- When writing modules, keep the dependency chain as flat/short as possible.
+- For air-gapped installations, use [terraform-bundle](https://github.com/hashicorp/terraform/tree/master/tools/terraform-bundle) or refer to your local SCM.
 
 ### State
 
@@ -35,7 +36,7 @@ Use the most common best practices
 ### Modules
 
 - Spend a good amount of time on a [README.md](https://www.makeareadme.com/).
-- Use this order when writing new modules:
+- Suggest to use this order when writing new modules:
   1. README.md - Define the purpose of the module.
   2. variables.tf - Think about what to ask for.
   3. output.tf. - Consider what to expose.
@@ -47,9 +48,11 @@ Use the most common best practices
 
 ## Assignment
 
-Find as many improvements in this [example repository](https://github.com/robertdebock/terraform-demo/).
+- [ ] Find as many improvements in this [example repository](https://github.com/robertdebock/terraform-demo/).
 
-Bonus: make pull requests for the improvements.
+## Bonus assignment
+
+- [ ] Make pull requests for the improvements.
 
 ## Questions
 

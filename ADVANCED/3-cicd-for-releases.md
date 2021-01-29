@@ -28,8 +28,6 @@ pipelines:
 
 In this case, we want to also `plan` and `apply`. BitBucket needs to [pass some secrets](https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/) to Terraform in order to connect to the configured providers.
 
-## Demo
-
 ## Assignment
 
 Write a pipline to apply terraform code. Use a manual step after all verification steps (validate, lint, etc) are done.

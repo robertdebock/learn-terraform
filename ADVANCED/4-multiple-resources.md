@@ -8,51 +8,63 @@ Using multiple (relates) resources and providers.
 
 ## Explanation
 
+Sometimes you need to build infrastructure on more than 1 provider. Maybe you've got resources running on Azure and would like to add Cloudflare as a CDN.
+
+Terraform can deal with multiple providers and basically becomes an [orchestrator](https://en.wikipedia.org/wiki/Orchestration_(computing)).
+
+## Howto
+
 In Terraform you can refer to resources:
 
 ```
-resource "digitalocean_ssh_key" "example" {
-  name       = "example"
-  public_key = file("id_rsa.pub")
+resource "azurerm_resource_group" "rg" {
+  name     = "rf-robertdebock-sbx"
+  location = "west europe"
 }
 
-resource "digitalocean_droplet" "web-1" {
-  image  = "fedora-32-x64"
-  name   = "web-1"
-  region = "ams3"
-  size   = "s-1vcpu-1gb"
-  ssh_keys = [digitalocean_ssh_key.example.fingerprint]
+# Create a virtual network
+resource "azurerm_virtual_network" "vnet" {
+    name                = "myTFVnet-robert"
+    address_space       = ["10.0.0.0/16"]
+    location            = "west europe"
+    resource_group_name = azurerm_resource_group.rg.name
 }
 ```
+
+In the example above, the value of the parameter `resource_group_name` refers to `azurerm_resource_group.rg.name`.
 
 You can also refer to resources hosted on different cloud providers:
 
 ```
-resource "digitalocean_droplet" "web-1" {
-  image  = "fedora-32-x64"
-  name   = "web-1"
-  region = "ams3"
-  size   = "s-1vcpu-1gb"   
+resource "azurerm_public_ip" "publicip" {
+  name                = "myTFPublicIP-robert"
+  location            = "west europe"
+  resource_group_name = azurerm_resource_group.rg.name
+  allocation_method   = "Static"
 }
 
 resource "cloudflare_record" "foobar" {
   zone_id = "example.com"
   name    = "www"
-  value   = digitalocean_droplet.web-1.ipv4_address
+  value   = azurerm_public_ip.publicip.ip_address
   type    = "A"
   ttl     = 3600
 }
 ```
 
+In the exampe above, the `azurerm_public_ip.publicip.ip_address` is used to configure a `cloudflare_record`.
+
+There are [many providers](https://registry.terraform.io/browse/providers) that have something to offer.
+
 ## Assignment
 
-In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Uses references to named values.
+- [ ] In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Uses references to named values.
 
 You need to sign-up to checkly. You can use your github account or email.
 
 ## Questions
 
-1. The second example can be improved, do you see how?
+1. Browse through [the registry](https://registry.terraform.io/browse/providers). Do you see any providers that could help you?
 
 ## Solution
 
