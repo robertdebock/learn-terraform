@@ -8,6 +8,8 @@ Use the most common best practices
 
 ## Explanation
 
+Let's go over a few best practices. Likey you/your company also has best practices. There is time to discuss these.
+
 ### Variables
 
 - Put variables. Either in a `variables.tf`, [tfvars file](https://www.terraform.io/docs/configuration/variables.html#variable-definitions-tfvars-files), or set them in the environment.
