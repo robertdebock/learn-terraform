@@ -8,3 +8,4 @@
 6. [Using Terragrunt](6-terragrunt.md) (120 minutes)
 7. [Self-service options](7-self-service.md) (60 minutes)
 8. [Troubleshooting (bonus)](8-troubleshooting.md) (30 minutes)
+9. [Use Cases (bonus)](..BASIC/14-use-cases.md) (90 minuten)
