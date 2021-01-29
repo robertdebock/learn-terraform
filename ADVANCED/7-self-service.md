@@ -30,7 +30,9 @@ In this scenario it's time to give the hundreds of team a way to describe their 
 
 Here multiple groups get to use Terraform. Each team has a limited view of the infrastructure; just the resources required for their product or service.
 
-[Terraform Cloud](https://app.terraform.io/) or [Terraform Enterprise](https://www.terraform.io/docs/enterprise/index.html) become required.
+Remote state, [Terraform Cloud](https://app.terraform.io/) or [Terraform Enterprise](https://www.terraform.io/docs/enterprise/index.html) become required.
+
+[Terraform Cloud](https://app.terraform.io/) is free to use and has many features that [Terraform Enterprise](https://www.terraform.io/docs/enterprise/index.html) offers.
 
 [Terraform Enterprise](https://www.terraform.io/docs/enterprise/index.html) offers these capabilities.
 - Private module registry.
@@ -41,12 +43,29 @@ Here multiple groups get to use Terraform. Each team has a limited view of the i
 - Auditable.
 - Support
 
+## Demo
+
+Let's go to [Terraform Cloud](https://app.terraform.io/) and walk through the setup of a workspace connected to a repository.
+
+1. Open [Terraform Cloud](https://app.terraform.io/).
+2. Select `New workspace`.
+3. Select `Version control workflow`.
+4. Choose `GitHub`.
+5. Enter `robertdebock/terraform-demo` in the bottom.
+6. Under `Advanced options` set the branch to `cloud`.
+7. Click `Create workspace`.
+8. Click `Configure variables`.
+9. Add a Terraform Variable called `do_token`. (Select `Sensitive`).
+
+You can now manually queue a plan.
+
 ## Assignment
+
+- [ ] Discuss what a good way of doing self-service is with each other.
 
 ## Questions
 
 1. Is your organization "small", "medium" or "large"?
 2. Do you have self-service capabilities in place?
-
 
 ## Solution

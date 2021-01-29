@@ -2,7 +2,7 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|90 minutes   |A computer with Terraform installed, terraform knowledge.|
+|30 minutes   |A computer with Terraform installed, terraform knowledge.|
 
 Troubleshoot Terraform issues.
 
