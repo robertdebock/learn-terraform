@@ -7,4 +7,4 @@
 5. Nothing is variable, `variables.tf` is missing.
 6. No output is shown on `apply`. (`outputs.tf`)
 
-Bonus: An ssh-key in a public repository is never a good idea.
+Bonus: (In the `three` branch) An ssh-key in a public repository is never a good idea.
