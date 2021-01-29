@@ -8,7 +8,7 @@ Setup CI/CD for Terraform modules.
 
 ## Explanation
 
-Testing help you to keep your modules in a good state and makes it easier to contribute.
+Testing helps you to keep your modules in a good state and makes it easier to contribute.
 
 - [ ] A discussion before we begin: "What can we test of a Terraform module?" ([Possible-answers](2-cicd-for-modules-test.md))
 
