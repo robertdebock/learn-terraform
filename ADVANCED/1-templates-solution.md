@@ -8,9 +8,8 @@ resource "local_file" "ssh_config" {
   {
     ip       = azurerm_public_ip.publicip.ip_address,
     username = var.admin_username
-   }
-   )
-    filename = "./ssh_config"
+  } )
+  filename = "./ssh_config"
 }
 ```
 
@@ -26,4 +25,7 @@ Host ${ip}
 ```
 export TF_VAR_admin_password="Password1234!"
 export TF_VAR_admin_username="my_username"
+terraform init
+terraform plan
+terraform apply
 ```

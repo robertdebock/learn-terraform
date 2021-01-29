@@ -27,5 +27,7 @@ Let's break that down:
 ## How
 
 - Please ask questions when you have them.
+- Please keep your camera on most of the time.
+- If you run into issues, please share your screen to troubleshoot together.
 - A typical chapter has an explanation, exercises and a summary.
 - You can take a break whenever you need to. 

@@ -6,13 +6,20 @@
 
 ## Why Infrastructure as Code (IaC)?
 
+What is the problem IaC is trying to solve?
+
+1. Manual work is difficult.
+2. Manual work is error prone.
+3. Manual work is slow.
+4. Manual work leads to "pets" over "cattle".
+
 Not specifically Terraform, but IaC (Infrastructure as Code) in general has these benefits:
 
 - Code is repeatable.
 - It's easy to work together.
 - Faster. (After you've learned the tools)
 - Code can have a version.
-- Modules can be tested.
+- Modules (or units) can be tested.
 - Easy to test on a non-production environment.
 - Easy to learn by reading, less documentation.
 

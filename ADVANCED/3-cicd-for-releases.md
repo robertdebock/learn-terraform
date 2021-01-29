@@ -8,7 +8,27 @@ Setup CI/CD for Terraform releases.
 
 ## Explanation
 
-When you've used Terraform modules, you can start to integrate different modules. The pipeline looks quite similar to the Terraform module pipeline.
+When you've used Terraform modules, you can start to integrate different modules into a root-module. The pipeline looks quite similar to the Terraform module pipeline.
+
+## Howto
+
+Start with a `bitbucket-pipelines.yml`:
+
+
+```yaml
+---
+image: hashicorp/terraform:full
+
+pipelines:
+  default:
+    - step:
+      script:
+        - terraform init
+```
+
+In this case, we want to also `plan` and `apply`. BitBucket needs to [pass some secrets](https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/) to Terraform in order to connect to the configured providers.
+
+## Demo
 
 ## Assignment
 

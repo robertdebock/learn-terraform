@@ -93,6 +93,7 @@ pipelines:
 Here is an example that can be used for GitLab:
 
 ```yaml
+---
 image:
   name: hashicorp/terraform:0.13.5
   entrypoint:
