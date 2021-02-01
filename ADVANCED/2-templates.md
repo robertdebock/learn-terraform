@@ -48,14 +48,11 @@ Host ${ip}
 
 1. How can you pin the version of `local_file`?
 2. Do you know a use case for using templates?
+3. Will the `local_file` be remove when running `terraform destroy`?
 
 ## Conclusion
 
 You can use generated content or input variables to create file, both locally and remote.
-
-## Questions
-
-1. Will the `local_file` be remove when running `terraform destroy`?
 
 ## Solution
 
