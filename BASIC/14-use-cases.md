@@ -59,3 +59,8 @@ Add a resource manually, import and try to expand the memory.
 ## Questions
 
 ## Solution
+
+- [Use case 1](use-case-1.md)
+- [Use case 2](use-case-2.md)
+- [Use case 3](use-case-3.md)
+- [Use case 4](use-case-4.md)

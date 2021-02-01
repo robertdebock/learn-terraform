@@ -33,4 +33,27 @@ resource "azurerm_resource_group" "rg" {
 }
 ```
 
+## Mapping values
 
+You can define a map, and later lookup details from that map.
+
+In `variables.tf` you can define:
+
+```hcl
+variable "sizes" {
+  default = {
+    small   = "Standard_DS1_v2"
+    medium  = "Standard_DS2_v2"
+    large   = "Standard_DS3_v2"
+  }
+}
+```
+
+In `main.tf` you can looup the variable:
+
+```hcl
+resource "azurerm_virtual_machine" "vm" {
+  vm_size               = var.sizes["medium"]
+  # This is similar, but uses `lookup`:
+  # vm_size             = lookup(var.sizes, "medium")
+```
