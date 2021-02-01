@@ -2,9 +2,9 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|60 minutes   |A computer with Terraform installed, terraform knowledge.|
+|75 minutes   |A computer with Terraform installed, terraform knowledge.|
 
-Setup CI/CD for Terraform modules.
+Goal: Setup CI/CD for Terraform modules.
 
 ## Explanation
 

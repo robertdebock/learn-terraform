@@ -2,9 +2,9 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|60 minutes   |A computer with Terraform installed, terraform knowledge.|
+|45 minutes   |A computer with Terraform installed, terraform knowledge.|
 
-Use Templates to customize your usage of Terraform.
+Goal: Use Templates to customize your usage of Terraform.
 
 ## Explanation
 

@@ -4,7 +4,7 @@
 |-------------|---------------------------------------------------------|
 |120 minutes  |A computer with Terraform installed, terraform knowledge.|
 
-Using multiple (related) resources and providers.
+Goal: Using multiple (related) resources and providers.
 
 ## Explanation
 

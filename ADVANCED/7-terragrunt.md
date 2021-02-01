@@ -2,9 +2,9 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|120 minutes  |A computer with Terraform installed, terraform knowledge.|
+|90 minutes   |A computer with Terraform installed, terraform knowledge.|
 
-Learn how to use [Terragrunt](https://terragrunt.gruntwork.io/).
+Goal: Learn how to use [Terragrunt](https://terragrunt.gruntwork.io/).
 
 ## Explanation
 

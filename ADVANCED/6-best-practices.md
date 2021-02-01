@@ -4,7 +4,7 @@
 |-------------|---------------------------------------------------------|
 |90 minutes   |A computer with Terraform installed, terraform knowledge.|
 
-Use the most common best practices
+Goal: Use the most common best practices
 
 ## Explanation
 

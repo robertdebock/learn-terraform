@@ -2,9 +2,9 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+|15 minutes   |A computer with Terraform installed, terraform knowledge.|
 
-Troubleshoot Terraform issues.
+Goal: Troubleshoot Terraform issues.
 
 ## Explanation
 
