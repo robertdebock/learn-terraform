@@ -53,6 +53,10 @@ Host ${ip}
 
 You can use generated content or input variables to create file, both locally and remote.
 
+## Questions
+
+1. Will the `local_file` be remove when running `terraform destroy`?
+
 ## Solution
 
 - [Have a look at the steps](2-templates-solution.md).
