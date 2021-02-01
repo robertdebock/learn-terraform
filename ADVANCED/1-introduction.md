@@ -32,7 +32,7 @@ az account set --subscription x-y-z-a-b
 
 ### Let's get some code
 
-In the [BASIC](../BASIC) course, people have built [this code](git@github.com:hashicorp/learn-terraform-azure.git). Please `git clone` it to your workspace, we'll start with that.
+In the [BASIC](../BASIC) course, people have built [this code](https://github.com/hashicorp/learn-terraform-azure). Please `git clone` it to your workspace, we'll start with that.
 
 ## Explanation
 
