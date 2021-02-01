@@ -38,4 +38,4 @@ In this case, we want to also `plan` and `apply`. BitBucket needs to [pass some 
 
 ## Solution
 
-- [GitLab](3-cicd-for-releases-gitlab.yml)
+- [GitLab](4-cicd-for-releases-gitlab.yml)

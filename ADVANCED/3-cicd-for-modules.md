@@ -10,7 +10,7 @@ Setup CI/CD for Terraform modules.
 
 Testing helps you to keep your modules in a good state and makes it easier to contribute.
 
-- [ ] A discussion before we begin: "What can we test of a Terraform module?" ([Possible-answers](2-cicd-for-modules-test.md))
+- [ ] A discussion before we begin: "What can we test of a Terraform module?" ([Possible-answers](3-cicd-for-modules-test.md))
 
 ## Howto
 
@@ -39,7 +39,7 @@ With CI/CD, always start with the smallest unit/component. This ensures you can 
 
 ## Bonus assignments
 
-- [ ] For a module you use/maintain, add [input validation](https://www.terraform.io/docs/language/values/variables.html#custom-validation-rules) to test if the input given was correct. Here is a [hint](2-cicd-for-modules-input-validation.md)
+- [ ] For a module you use/maintain, add [input validation](https://www.terraform.io/docs/language/values/variables.html#custom-validation-rules) to test if the input given was correct. Here is a [hint](3-cicd-for-modules-input-validation.md)
 - [ ] Once you have input validation, change the pipeline so it tests failing input. (So the input should be **incorrect**, maybe a `string` where `number` is only allowed, and the pipeline should successfully test the failure.) To reverse the exit-status of a command, use `!`, for example `! false` returns an exit-code of `0`.
 - [ ] If time permits; configure [bitbucket secrets](https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/) that allow `terraform apply` and `terraform destroy`.
 
@@ -50,5 +50,5 @@ With CI/CD, always start with the smallest unit/component. This ensures you can 
 
 ## Solution
 
-- A [GitLab](2-cicd-for-modules-gitlab.yml)
+- A [GitLab](3-cicd-for-modules-gitlab.yml)
 - A [GitHub Action](https://github.com/robertdebock/terraform-action).

@@ -92,5 +92,5 @@ You need to sign-up to checkly. You can use your github account or email.
 
 ## Solution
 
-- [Here you go](4-multiple-resources-solution.md).
+- [Here you go](5-multiple-resources-solution.md).
 - A [example repository, branch `checkly`](https://github.com/robertdebock/learn-terraform-azure/tree/checkly).

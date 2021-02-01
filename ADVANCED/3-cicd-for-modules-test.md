@@ -4,4 +4,5 @@
 2. Does `terraform init` work?
 3. Can you [lint](https://github.com/terraform-linters/tflint) Terraform code?
 3. Has the format changed after running `terraform fmt`?
-4. `plan` the integration.
+4. Make a dependency graph.
+5. `plan` the integration.
