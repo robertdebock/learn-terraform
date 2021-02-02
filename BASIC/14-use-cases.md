@@ -58,6 +58,8 @@ A [solution](https://github.com/robertdebock/learn-terraform-azure/tree/cloudini
 
 Add a resource manually, import and try to expand the memory.
 
+- [Solution](14-use-cases-solution-import.md)
+
 ### Use case 5
 
 How do you organize variables so that you have the least amount of locations to define variables, but keep flexibility.
