@@ -52,6 +52,8 @@ Use [cloud-init](https://cloudinit.readthedocs.io/en/latest/) in the Terraform c
   - Can use sudo (`sudo:  ALL=(ALL) NOPASSWD:ALL`).
 - Update the software on the instance. ([hint](https://cloudinit.readthedocs.io/en/latest/topics/examples.html#update-apt-database-on-first-boot).)
 
+A [solution](https://github.com/robertdebock/learn-terraform-azure/tree/cloudinit).
+
 ### Use case 4
 
 Add a resource manually, import and try to expand the memory.
