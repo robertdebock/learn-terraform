@@ -56,8 +56,6 @@ Use [cloud-init](https://cloudinit.readthedocs.io/en/latest/) in the Terraform c
 
 Add a resource manually, import and try to expand the memory.
 
-## Questions
-
 ### Use case 5
 
 How do you organize variables so that you have the least amount of locations to define variables, but keep flexibility.
@@ -67,3 +65,6 @@ For example:
 - [ ] The `location` where resources are provisioned is fixed for the company.
 - [ ] The `size` of a VM has a suggested value, but can be overwritten.
 - [ ] The `name` of a VM should be given by the user of the module.
+- [ ] A list of subscriptions (and their id), where different environments use specific subscriptions.
+
+## Questions
