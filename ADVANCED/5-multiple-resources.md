@@ -14,6 +14,8 @@ Terraform can deal with multiple providers and basically becomes an [orchestrato
 
 ## Howto
 
+### Multiple providers
+
 When using multiple providers, it's time to move the `provider` block into it's own file, something like this:
 
 `providers.tf`:
@@ -37,6 +39,8 @@ provider "azurerm" {
   features {}
 }
 ```
+
+### Refering
 
 In Terraform you can refer to resources:
 
