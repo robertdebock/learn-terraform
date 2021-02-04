@@ -7,7 +7,7 @@ For example:
 - You want to add a record to a domain, the domain already exists.
 - You need an IP address of a monitoring/backup/logging server.
 
-In such cases, you can use the "data source" a a provider.
+In such cases, you can use the [data sources](https://www.terraform.io/docs/configuration-0-11/data-sources.html).
 
 Here is an example: (shortened to improve readability.)
 
