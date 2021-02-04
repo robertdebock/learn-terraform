@@ -57,3 +57,14 @@ resource "azurerm_virtual_machine" "vm" {
   # This is similar, but uses `lookup`:
   # vm_size             = lookup(var.sizes, "medium")
 ```
+
+In the example above a value of (literally) "medium" is used. That can also be a vvariable:
+
+```hcl
+variable "size" {
+  default = "medium"
+}
+
+resource "azurerm_virtual_machine" "vm" {
+  vm_size               = var.sizes[size]
+```
