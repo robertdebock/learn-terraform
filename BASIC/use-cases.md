@@ -31,7 +31,7 @@ Use [cloud-init](https://cloudinit.readthedocs.io/en/latest/) in the Terraform c
 
 Add a resource manually, import and try to expand the memory.
 
-- [Solution](14-use-cases-solution-import.md)
+- [Solution](use-cases-solution-import.md)
 
 ### Use case 3
 
@@ -44,7 +44,7 @@ For example:
 - [ ] The `name` of a VM should be given by the user of the module.
 - [ ] A list of subscriptions (and their id), where different environments use specific subscriptions.
 
-- [Solution](14-use-cases-solution-organizing.md)
+- [Solution](use-cases-solution-organizing.md)
 
 ### Use case 4
 

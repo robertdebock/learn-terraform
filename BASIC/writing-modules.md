@@ -66,12 +66,12 @@ The [documentation](https://www.terraform.io/docs/modules/index.html) may also h
 
 ## Assignment
 
-- [ ] Make a module that can create `azurerm_resource_group`s. [Solution](12-writing-modules-solution-1.md)
+- [ ] Make a module that can create `azurerm_resource_group`s. [Solution](writing-modules-solution-1.md)
 - [ ] Try your module by running `terraform init` from the `examples/default` directory.
 
 ## Bonus assignment
 
-- [ ] Modify your root-module (`learn-terraform-azure`) to use the modules you've created. [Solution](12-writing-modules-solution-2.md)
+- [ ] Modify your root-module (`learn-terraform-azure`) to use the modules you've created. [Solution](writing-modules-solution-2.md)
 
 ## Best practices
 
