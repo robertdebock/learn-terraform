@@ -36,7 +36,7 @@ resource "azurerm_virtual_network" "vnet" {
 
 You can ask [Terraform to show the dependencies](https://www.terraform.io/docs/cli/commands/graph.html) using `terraform graph`. To make an image, the binary `dot` (in the package `graphviz`) is required.
 
-[![A graphviz image of Terraform dependecies.](images/graph.svg) "Dependency graph")](images/graph.svg)
+[![A graphviz image of Terraform dependecies.](images/graph.svg)](images/graph.svg)
 
 Sometimes Terraform can't calculate the dependencies by itself and needs some help using the `depends_on` argument, something like this:
 
