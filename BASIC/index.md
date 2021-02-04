@@ -21,4 +21,4 @@
 - [Count](count.md)
 - [Remote state](remote-state.md)
 - [CI/CD Concepts](ci-cd-concepts.md)
-- [Install Terraform](install-terraform.md). (30 minutes)
+- [Install Terraform](install-terraform.md)
