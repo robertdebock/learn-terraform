@@ -16,7 +16,7 @@
 
 # Reference material
 
-- [Varibles](variables.md)
+- [Variables](variables.md)
 - [Data objects](data.md)
 - [Count](count.md)
 - [Remote state](remote-state.md)
