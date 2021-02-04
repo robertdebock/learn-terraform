@@ -1,6 +1,10 @@
 # Organization
 
+## Explanation
+
 The files you place in a repository can be split up. [Hashicorp](https://www.terraform.io/docs/language/modules/develop/structure.html) documents this, here is a summary.
+
+## Howto
 
 ```tree
 .
@@ -18,3 +22,13 @@ The files you place in a repository can be split up. [Hashicorp](https://www.ter
 You could also introduce a `providers.tf` to split provider specific details in.
 
 The intent of the splitting is that you and others can easily find how to use the role.
+
+## Demo
+
+## Assignment
+
+- [ ] Split the files in your repository into the files described above.
+
+## questions
+
+- [ ] Can you use `inputs.tf` instead of `variables.tf`?
