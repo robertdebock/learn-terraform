@@ -34,46 +34,29 @@ resource "azurerm_virtual_network" "vnet" {
 1. The `azurerm_resource_group` needs to be created.
 2. The `azurerm_virtual_network` refers to `azurerm_resource_group.rg.name`, so this resource comes secondly.
 
-You can ask [Terraform to show the dependencies](https://www.terraform.io/docs/cli/commands/graph.html) using `terraform graph`. To make an image, the binary `dot` is required.
+You can ask [Terraform to show the dependencies](https://www.terraform.io/docs/cli/commands/graph.html) using `terraform graph`. To make an image, the binary `dot` (in the package `graphviz`) is required.
 
-![A graphviz image of Terraform dependecies.](images/graph.svg) "Dependency graph")
+[![A graphviz image of Terraform dependecies.](images/graph.svg) "Dependency graph")](images/graph.svg)
 
 Sometimes Terraform can't calculate the dependencies by itself and needs some help using the `depends_on` argument, something like this:
 
 ```hcl
-resource "aws_s3_bucket" "example" {
-  acl    = "private"
+# Many parameters replaced by `...` to make this more readable.
+
+resource "azurerm_virtual_machine" "database" {
+  name                  = "database"
+  ...
 }
 
-resource "aws_instance" "example_c" {
-  ami           = data.aws_ami.amazon_linux.id
-  instance_type = "t2.micro"
-
-  depends_on = [aws_s3_bucket.example]
-}
-```
-
-In the example above, an S3 bucket is created and apparently, the AWS instance needs it. From a Terraform perspective these resources are not related, but you or the developer known that the instance actually needs the S3 bucket.
-
-Sometimes you many need some details from a resource, but that resource is not managed by you. In that case you can use [data sources](https://www.terraform.io/docs/configuration-0-11/data-sources.html).
-
-In this example an image is found (that already exists) which can be reused later.
-
-```hcl
-data "aws_ami" "web" {
-  filter {
-    name   = "state"
-    values = ["available"]
-  }
-
-  filter {
-    name   = "tag:Component"
-    values = ["web"]
-  }
-
-  most_recent = true
+resource "azurerm_virtual_machine" "webserver" {
+  name                  = "webserver"
+  ...
+  depends_on = [azurerm_virtual_machine.database]
 }
 ```
+
+In the example above, two virtual machines are created. We as developers may know that the `database` needs to be created first, before the `webserver` is created.
+From a Terraforms perspective, these are just two machines with no specific relation. By adding the `depends_on` parameter, Terraform knows it should first create the `database`, followed by the `webserver`.
 
 ## Howto
 
