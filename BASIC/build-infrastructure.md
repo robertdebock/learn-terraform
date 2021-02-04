@@ -158,10 +158,10 @@ data "azurerm_public_ip" "ip" {
 }
 ```
 
-5. An how many resources can you see here:
+5. (Trick question) An how many resources can you see here:
 
 ```hcl
-module "digitalocean_droplet" {
-  name = "my-droplet"
+module "my_module" {
+  name = "robert"
 }
 ```
