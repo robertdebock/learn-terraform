@@ -1,7 +1,14 @@
 # Setup Visual Studio Code for Terraform
 
-There are some plugins that make it easier to write Terraform code. These plugins are not required however.
+|expected time|requirements|
+|-------------|------------|
+|15 minutes   |a computer  |
 
+Goal: Be able to use Visual Studio Code with Terraform code.
+
+## Explanation
+
+There are some plugins that make it easier to write Terraform code. These plugins are not required however.
 
 ## Howto
 

@@ -1,5 +1,11 @@
 # Organization
 
+|expected time|requirements|
+|-------------|------------|
+|30 minutes   |a computer  |
+
+Goal: Understand how to best organize Terraform repositories.
+
 ## Explanation
 
 The files you place in a repository can be split up. [Hashicorp](https://www.terraform.io/docs/language/modules/develop/structure.html) documents this, here is a summary.
