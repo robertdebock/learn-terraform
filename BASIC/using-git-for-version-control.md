@@ -19,7 +19,7 @@ Using a version control system is sort of required when writing code.
 Git is a [version control system](https://en.wikipedia.org/wiki/Version_control). Alternatives are:
 
 - svn
-- csv
+- cvs
 
 ## Howto
 
