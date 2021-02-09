@@ -60,6 +60,10 @@ git pull
 
 - [ ] Let's [learn Git](https://www.katacoda.com/courses/git)
 
+## Bonus assignment
+
+- [ ] Correct this tyyypo by making an [merge reqeust](https://github.com/robertdebock/learn-terraform/edit/master/BASIC/using-git-for-version-control.md)
+
 You're done when you can use these commands: (Likely scenario 1, 2 and 3.)
 
 - `git clone`
