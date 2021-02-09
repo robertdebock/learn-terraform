@@ -50,7 +50,7 @@ resource "azurerm_resource_group" "rg" {
     costcenter   = "infra"
     solution     = "terraform opleiding"
     owner        = "UWNAAM"
-    environement = "sbx"
+    environment  = "SBX"
     creationdate = "9/02/2021"
     creator      = "UWADMUSERNAME"
   }
