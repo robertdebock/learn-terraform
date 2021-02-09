@@ -12,7 +12,7 @@ You can write code on your laptop or a shared (bastion/jump) server. Without a [
 
 Using a version control system is sort of required when writing code.
 
-"It it's not in [git|svn|cvs], it does not exist."
+"If it's not in git, svn or cvs, it does not exist."
 
 ## Introduction
 
