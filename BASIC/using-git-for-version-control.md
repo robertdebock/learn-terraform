@@ -36,7 +36,7 @@ When the code is sort of ready, I'll create a repository on GitHub and push the 
 ```shell
 git remote add origin https://github.com/robertdebock/bla.git
 git push -u origin master
-```
+```...
 
 By now CI/CD tests the code and it's never occurred to me that the code was flawless the first attempt. So, fix the issue, try again.
 
