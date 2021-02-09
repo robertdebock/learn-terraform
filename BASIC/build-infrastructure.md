@@ -40,6 +40,23 @@ az account set --subscription x-y-z-a-b
 
 - [ ] Follow the instuction in the `Howto`, eventually you should be able to run `terraform apply` and see your results in the cloud providers console/portal.
 
+Extra tags are required:
+
+```hcl
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-UWNAAM-sbx"
+  location = "westeurope"
+  tags     = {
+    costcenter    = "infra"
+    solution      = "terraform opleiding"
+    owner         = "UWNAAM"
+    environement  = "sbx"
+    creation_date = "9/02/2021"
+    creator       = "UWADMUSERNAME"
+  }
+}
+```
+
 ## View the results
 
 | [AWS Console](https://aws.amazon.com/console/) | [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups) | [GCP Console](https://console.cloud.google.com/) |
