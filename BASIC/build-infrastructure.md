@@ -47,12 +47,12 @@ resource "azurerm_resource_group" "rg" {
   name     = "rg-UWNAAM-sbx"
   location = "westeurope"
   tags     = {
-    costcenter    = "infra"
-    solution      = "terraform opleiding"
-    owner         = "UWNAAM"
-    environement  = "sbx"
-    creation_date = "9/02/2021"
-    creator       = "UWADMUSERNAME"
+    costcenter   = "infra"
+    solution     = "terraform opleiding"
+    owner        = "UWNAAM"
+    environement = "sbx"
+    creationdate = "9/02/2021"
+    creator      = "UWADMUSERNAME"
   }
 }
 ```
