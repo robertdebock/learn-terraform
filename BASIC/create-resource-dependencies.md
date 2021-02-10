@@ -64,10 +64,10 @@ From a Terraforms perspective, these are just two machines with no specific rela
 
 ## Howto
 
-NOTE: There are a few errors in the Azure documentation:
+NOTES:
 
-- The password must be `Password1234!`.
-- The username must be `plankton`.
+1. Use a `location` of `westeurope`.
+2. Keep your `azurerm_resource_group` that has the mandatory `tags`. (See above for an example.)
 
 - [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-dependency?in=terraform/aws-get-started).
 - [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-dependency?in=terraform/azure-get-started).
