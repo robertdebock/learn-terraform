@@ -49,8 +49,8 @@ Many vendors do not use [SemVer](https://semver.org/), rather use a new version 
 
 ## Howto
 
-1. Make a new directory, maybe `tf-module-azure-resouce_group`.
-2. Describe all input in `variables.tf.
+1. Make a new directory, maybe `terraform-module-azurerm-resource_group`.
+2. Describe all input in `variables.tf`.
 3. Describe all output in `outputs.tf`
 4. Add a `README.md`.
 5. Describe all resources in `main.tf`.

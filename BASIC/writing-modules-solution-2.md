@@ -29,5 +29,7 @@ module "my_azurerm_resource_group" {
 }
 ```
 
+NOTE: The `source` path (`../../`) depends on where your root-module and module are placed. This may need modification.
+
 4. Run `terraform init` do "download" the module. (This module is local...)
 5. Run `terraform plan`, and `terraform apply`.
