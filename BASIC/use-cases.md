@@ -27,7 +27,7 @@ Use [cloud-init](https://cloudinit.readthedocs.io/en/latest/) in the Terraform c
 
 - [solution](https://github.com/robertdebock/learn-terraform-azure/tree/cloudinit).
 
-### Use case 4
+### Use case 2
 
 Add a resource manually, import and try to expand the memory.
 
