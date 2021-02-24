@@ -49,3 +49,34 @@ In the example above, two tricks are used:
 
 1. `count = length(azurerm_virtual_machine.vm.count)`. This takes the `count` from `azure_virtual_machine_vm`. With this construction, you can specify `count` just once, and re-use it over and over again.
 2. `name = "instance-${count.index}"`. This `${count.index}` increases by 1 each loop. Be aware, counting starts at `0`.
+
+## Referencing a counted resource.
+
+Imagine you have some resource with a `count` in it:
+
+```hcl
+resource "azurerm_virtual_machine" "vm" {
+  name     = "myTFVM-robert-${count.index}"
+  count    = 3
+  location = "west europe"
+  vm_size  = "Standard_DS1_v2"
+}
+```
+
+You would get these machines:
+
+- myTFVM-robert-0
+- myTFVM-robert-1
+- myTFVM-robert-2
+
+That resource creates `id`. Image you'd like to use that `id` in another resource
+
+```hcl
+resource "example_does_not_exist" "example" {
+  name     = "something"
+  count    = length(azurerm_virtual_machine.vm.count)
+  vm_ids      = azurerm_virtual_machine.vm[*].id
+}
+```
+
+The above is called a `splat` expression.
