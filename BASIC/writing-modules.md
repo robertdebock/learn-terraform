@@ -2,7 +2,7 @@
 
 |expected time|requirements                                     |
 |-------------|-------------------------------------------------|
-|60 minutes   |A computer with Terraform installed, lab 11 done.|
+|60 minutes   |A computer with Terraform installed.             |
 
 Goal: learn how to write Terraform modules.
 

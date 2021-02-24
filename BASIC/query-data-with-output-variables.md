@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|60 minutes   |A computer with Terraform installed, lab 9 done.|
+|60 minutes   |A computer with Terraform installed,.           |
 
 Goal: Learn how to define input variables
 

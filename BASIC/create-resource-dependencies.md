@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, lab 7 done.|
+|30 minutes   |A computer with Terraform installed.            |
 
 Goal: Learn how dependecies work in Terraform.
 

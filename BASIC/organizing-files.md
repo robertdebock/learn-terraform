@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|30 minutes   |a computer  |
+|30 minutes   |a computer. |
 
 Goal: Understand how to best organize Terraform repositories.
 
