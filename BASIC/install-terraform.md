@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|30 minutes   |a computer  |
+|60 minutes   |a computer  |
 
 Goal: Have terraform installed.
 
@@ -18,6 +18,7 @@ This depends a bit on the environment you're working in.
 
 - There are repositories for Linux (`apt`, `dnf` and `yum`).
 - You can [download the binary](https://releases.hashicorp.com/terraform/).
+- To manage Azure infrastructure, you also need [azure-cli](https://pypi.org/project/azure-cli/). Follow [this guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) for Windows computers.
 
 ## Demo
 
