@@ -20,6 +20,8 @@ This depends a bit on the environment you're working in.
 - You can [download the binary](https://releases.hashicorp.com/terraform/).
 - To manage Azure infrastructure, you also need [azure-cli](https://pypi.org/project/azure-cli/). Follow [this guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) for Windows computers.
 
+Have a look at [this playground repository](https://github.com/robertdebock/terraform-playground) that can be used to spin up machine to try terraform on.
+
 ## Demo
 
 ## Assignment
