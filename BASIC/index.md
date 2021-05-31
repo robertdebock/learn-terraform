@@ -13,18 +13,19 @@
 
 ## Day 2
 
-7. [Build a DBAAS service](build-infrastructure-dbaas.md). (60 minutes)
-8. [Change Infrastructure](change-infrastructure.md). (15 minutes)
-9. [Destroy Infrastructure](destroy-infrastructure.md). (15 minutes)
+7. [Build a K8s cluster](build-infrastructure-k8s-cluster.md). (60 minutes)
+8. [Build a DBAAS service](build-infrastructure-dbaas.md). (60 minutes)
+9. [Change Infrastructure](change-infrastructure.md). (15 minutes)
+10. [Destroy Infrastructure](destroy-infrastructure.md). (15 minutes)
 
 ## Day 3
 
-10. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
-11. [Define Input Variables](define-input-variables.md). (60 minutes)
-12. [Query Data with Output Variables](query-data-with-output-variables.md). (60 minutes)
-13. [Organizating files](organizing-files.md). (30 minutes)
-14. [Writing modules](writing-modules.md). (120 minutes)
-15. [Use-cases (bonus)](use-cases.md). (120 minutes)
+11. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
+12. [Define Input Variables](define-input-variables.md). (60 minutes)
+13. [Query Data with Output Variables](query-data-with-output-variables.md). (60 minutes)
+14. [Organizating files](organizing-files.md). (30 minutes)
+15. [Writing modules](writing-modules.md). (120 minutes)
+16. [Use-cases (bonus)](use-cases.md). (120 minutes)
 
 # Reference material
 
