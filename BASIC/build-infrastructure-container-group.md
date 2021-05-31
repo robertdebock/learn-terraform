@@ -26,7 +26,7 @@ Once applied, the container group gets an IP address. (See the Azure portal)
 
 The terraform code in the [documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_group) show what port you may visit.
 
-- [ ] Try to visit the IP address. (`https://{{ IP_ADDRESS }}/`)
+- [ ] Try to visit the IP address. (`https://IP_ADDRESS/`)
 
 This does not work. Inspect the Azure Portal to understand what's wrong. (Hint below, but give yourself time to figure it out.)
 
