@@ -10,7 +10,7 @@ Goal: Get an account to play with Azure.
 
 You need some kind of an account to use service on Azure. We'll setup an account that you can use to experiment safely.
 
-You may use any account, but we'll expirment quite a bit, so have a separate account ensures you will not mix up production workloads with experiments.
+You may use any account, but we'll experiment quite a bit, so have a separate account ensures you will not mix up production workloads with experiments.
 
 
 ## Assignment

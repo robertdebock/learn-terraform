@@ -22,6 +22,10 @@ Let's build your first resources with Terraform, this does differ per provider.
 
 You'll likely have questions, don't hesitate to ask them.
 
+## Optional extra requirements
+
+With a "regular" account, these steps are not required, but for some configuration, these steps may be required.
+
 To use a device code, issue:
 
 ```shell
@@ -36,11 +40,13 @@ az account set --subscription x-y-z-a-b
 
 ## Demo
 
+See [this repository](https://github.com/robertdebock/learn-terraform-azure/tree/just-resourcegroup).
+
 ## Assignment
 
 - [ ] Follow the instuction in the `Howto`, eventually you should be able to run `terraform apply` and see your results in the cloud providers console/portal.
 
-Extra tags are required:
+Some policies require extra tags, this is not required for "standard" accounts:
 
 ```hcl
 resource "azurerm_resource_group" "rg" {
