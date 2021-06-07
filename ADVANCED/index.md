@@ -12,8 +12,9 @@
 10. [Troubleshooting (bonus)](troubleshooting.md) (15 minutes)
 11. [Use Cases (bonus)](../BASIC/use-cases.md) (90 minuten)
 
-2. [Lifecycle](lifecycle.md)
-3. [Workspaces](workspaces.md)
 4. [remote-exec](remote-exec.md)
 5. [local-exec](local-exec.md)
+
+2. [Lifecycle](lifecycle.md)
+3. [Workspaces](workspaces.md)
 6. [locals](locals.md)

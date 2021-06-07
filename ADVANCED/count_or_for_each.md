@@ -2,7 +2,7 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+|45 minutes   |A computer with Terraform installed, terraform knowledge.|
 
 Goal: Understand when to use `count` and when `for_each`.
 
