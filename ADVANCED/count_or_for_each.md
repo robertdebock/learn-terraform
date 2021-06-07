@@ -90,6 +90,7 @@ This is a little more complex, so use it with caution; newcomers to Terraform ma
 ## Questions
 
 1. In the example of `count` (scroll up a little), what are the names of resource groups that will be created?
+2. Can you think of (or even better: show) code that can be impoved using `count` or `for_each`?
 
 ## Solution
 

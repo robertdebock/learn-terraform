@@ -1,5 +1,8 @@
 # Assignment examples
 
+In these examples, multiple resource groups are created. They **must** have a unique `name` and identifier when not using `count` or `for_each`.
+On working out this example, you may use the same name and identifier.
+
 ## Example 1
 
 ```hcl
