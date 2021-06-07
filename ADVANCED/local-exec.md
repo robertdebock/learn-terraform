@@ -64,7 +64,6 @@ resource "azurerm_network_interface" "nic" {
     name                          = "myNICConfg-robert"
     subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "dynamic"
-    public_ip_address_id          = azurerm_public_ip.publicip.id
   }
 }
 
@@ -91,8 +90,8 @@ resource "azurerm_virtual_machine" "vm" {
 
   os_profile {
     computer_name  = "myTFVM-robert"
-    admin_username = "admin"
-    admin_password = "123nimda456"
+    admin_username = "my_admin"
+    admin_password = "Som3-P4s$W0rd."
   }
 
   os_profile_linux_config {
@@ -121,7 +120,6 @@ resource "azurerm_network_interface" "nic" {
     name                          = "myNICConfg-robert"
     subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "dynamic"
-    public_ip_address_id          = azurerm_public_ip.publicip.id
   }
   provisioner "local-exec" {
     command = "echo ${self.private_ip_address} >> my_file.txt"
