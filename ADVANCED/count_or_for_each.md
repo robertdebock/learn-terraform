@@ -94,9 +94,9 @@ This is a little more complex, so use it with caution; newcomers to Terraform ma
 
 ## Solution
 
-- [Example 1](count_or_for_each_solutions#example-1)
-- [Example 2](count_or_for_each_solutions#example-2)
-- [Example 3](count_or_for_each_solutions#example-3)
+- [Example 1](count_or_for_each_solutions#solution-to-example-1)
+- [Example 2](count_or_for_each_solutions#solution-to-example-2)
+- [Example 3](count_or_for_each_solutions#solution-to-example-3)
 
 ## Sources
 
