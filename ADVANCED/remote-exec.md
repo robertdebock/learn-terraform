@@ -2,7 +2,7 @@
 
 |expected time|requirements                                             |
 |-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+|60 minutes   |A computer with Terraform installed, terraform knowledge.|
 
 Goal: Be able to make use of `remote-exec` when required.
 
