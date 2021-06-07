@@ -40,3 +40,4 @@ resource "azurerm_resource_group" "example-2" {
   name     = "my_second_resource_group"
   location = "easteurope"
 }
+```
