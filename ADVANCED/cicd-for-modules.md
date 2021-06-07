@@ -10,7 +10,7 @@ Goal: Setup CI/CD for Terraform modules.
 
 Testing helps you to keep your modules in a good state and makes it easier to contribute.
 
-- [ ] A discussion before we begin: "What can we test of a Terraform module?" ([Possible-answers](3-cicd-for-modules-test.md))
+- [ ] A discussion before we begin: "What can we test of a Terraform module?" ([Possible-answers](cicd-for-modules-test.md))
 
 ## Howto
 
@@ -50,5 +50,5 @@ With CI/CD, always start with the smallest unit/component. This ensures you can 
 
 ## Solution
 
-- A [GitLab](3-cicd-for-modules-gitlab.yml)
+- A [GitLab](cicd-for-modules-gitlab.yml)
 - A [GitHub Action](https://github.com/robertdebock/terraform-action).

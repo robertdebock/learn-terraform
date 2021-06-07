@@ -56,5 +56,5 @@ You can use generated content or input variables to create file, both locally an
 
 ## Solution
 
-- [Have a look at the steps](2-templates-solution.md).
+- [Have a look at the steps](templates-solution.md).
 - [Here is a repository with the code](https://github.com/robertdebock/learn-terraform-azure/tree/template).

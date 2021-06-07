@@ -39,4 +39,4 @@ Crashlogs (`crash.log`) can be use to let HashiCorp troubleshoot issues.
 
 ## Solution
 
-Not difficult, but see [here](9-troubleshooting-solution.md).
+Not difficult, but see [here](troubleshooting-solution.md).
