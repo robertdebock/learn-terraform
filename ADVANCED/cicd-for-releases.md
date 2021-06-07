@@ -4,7 +4,7 @@
 |-------------|---------------------------------------------------------|
 |30 minutes   |A computer with Terraform installed, terraform knowledge.|
 
-Goal Setup CI/CD for Terraform releases.
+Goal: Setup CI/CD for Terraform releases.
 
 ## Explanation
 
