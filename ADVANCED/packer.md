@@ -25,7 +25,7 @@ Let's go over the [README.md](https://github.com/robertdebock/packer-azure-arm/b
 
 - [ ] Clone [this](https://github.com/robertdebock/packer-azure-arm) repository.
 - [ ] Install [Packer](https://www.packer.io/).
-- [ ] Follow the steps in the [README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md)) to build an image.
+- [ ] Follow the steps in the [README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md) to build an image.
 - [ ] Bonus; `16.04-LTS` is a bit old. Find a newer `sku`.
 
 ## Questions
