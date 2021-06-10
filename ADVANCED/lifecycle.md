@@ -48,7 +48,7 @@ azurerm_container_group.example: Destruction complete after 1m13s
 
 ## Solution
 
-3. About 2 minutes and 23 seconds.
+- See this [lifecycle branch](https://github.com/robertdebock/terraform-azurerm-container-group/tree/lifecycle).
 
 ## Sources
 
