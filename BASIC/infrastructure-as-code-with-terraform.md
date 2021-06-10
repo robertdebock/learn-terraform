@@ -70,6 +70,6 @@ Let's create and destroy [some infrastructure](https://github.com/robertdebock/l
 There is no clear answer to this question. I suggest to use the right tool for the type of work. Most companies use Terraform and some other configuration management system, for example.
 
 - Terraform to manage infrastructure.
-- Ansible|Puppet|Chef|Salt for the configuration of the instances.
+- Ansible, Puppet, Chef or SaltStack for the configuration of the instances.
 
 In other words, just Terraform is not sufficient in most cases.
