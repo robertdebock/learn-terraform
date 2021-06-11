@@ -14,43 +14,19 @@ There are many Azure resources available, lets setup a managed MySQL instance.
 
 Using the [azurerm_mysql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_server) resource, we're going to create a managed MySQL instance.
 
-```hcl
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
-}
-
-resource "azurerm_mysql_server" "example" {
-  name                = "example-mysqlserver"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
-
-  administrator_login          = "mysqladminun"
-  administrator_login_password = "H@Sh1CoR3!"
-
-  sku_name   = "B_Gen5_2"
-  storage_mb = 5120
-  version    = "5.7"
-
-  auto_grow_enabled                 = true
-  backup_retention_days             = 7
-  geo_redundant_backup_enabled      = false
-  infrastructure_encryption_enabled = true
-  public_network_access_enabled     = true
-  ssl_enforcement_enabled           = true
-  ssl_minimal_tls_version_enforced  = "TLS1_2"
-}
-```
-
 ## Demo
+
+[Example code](https://github.com/robertdebock/terraform-azurerm-mysql-server)
 
 ## Assignment
 
-Use the sample code above and change these settings:
+Use the [sample code](https://github.com/robertdebock/terraform-azurerm-mysql-server) and change these settings:
 
 - [ ] Set the `administrator_login` to 'my_admin'.
 - [ ] Set the `administrator_login_password` to `my_passw0rd.`
 - [ ] Use a size of 10 GB.
+
+You'll likely run into an error. Try to understand the issue and fix the problem. (Hint: `name`.)
 
 ## View the results
 
