@@ -14,7 +14,7 @@ Using Terraform to deploy a `azurerm_kubernetes_cluster` resource is quite simpl
 
 ## Howto
 
-Use [`azurerm_kubernetes_cluster`](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster) to setup a K8s cluser. The documented is a great starting point.
+Use [`azurerm_kubernetes_cluster`](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster) to setup a K8s cluser. The documention is a great starting point.
 
 ## Demo
 
