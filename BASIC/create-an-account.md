@@ -12,6 +12,11 @@ You need some kind of an account to use service on Azure. We'll setup an account
 
 You may use any account, but we'll experiment quite a bit, so have a separate account ensures you will not mix up production workloads with experiments.
 
+You will need:
+
+- A phone number.
+- A credit card.
+- A GitHub account.
 
 ## Assignment
 
