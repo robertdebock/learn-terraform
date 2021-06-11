@@ -24,3 +24,7 @@
 14. [Troubleshooting (bonus)](troubleshooting.md) (15 minutes)
 15. [Use Cases (bonus)](../BASIC/use-cases.md) (90 minuten)
 16. [Best practices](best-practices.md) (90 minutes)
+
+## Reference material
+
+- [SaaS or PaaS](saas-or-paas.md)

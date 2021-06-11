@@ -1,6 +1,5 @@
 # Learn Terraform Basic
 
-
 ## Day 1: Warming up
 
 1. [Introduction](introduction.md). (45 minutes)
@@ -29,7 +28,7 @@
 3. [Writing modules](writing-modules.md). (120 minutes)
 4. [Use-cases (bonus)](use-cases.md). (120 minutes)
 
-# Reference material
+## Reference material
 
 - [Variables](variables.md)
 - [Data objects](data.md)
