@@ -41,13 +41,14 @@ Let's go over a few best practices. Likey you/your company also has best practic
 - Suggest to use this order when writing new modules:
   1. `README.md` - Define the purpose of the module.
   2. `variables.tf` - Think about what to ask for.
-  3. `output.tf` - Consider what to expose.
-  4. `main.tf` - The "logic" for the module.
-  5. `versions.tf` - Pin all dependencies.
-  6. `providers.tf` - All provider specific configuration.
-  6. `examples/*` - Try your module yourself.
-  7. `LICENSE` - Yes, likely a pretty open one like Apache-2.0
-  8. `.gitignore` - terraform.tfstate, terraform.tfstate.backup, .terraform
+  3. `locals.tf` - Your place to map "simple" variables to complex variables.""
+  4. `output.tf` - Consider what to expose.
+  5. `main.tf` - The "logic" for the module.
+  7. `versions.tf` - Pin all dependencies.
+  8. `providers.tf` - All provider specific configuration.
+  9. `examples/*` - Try your module yourself.
+  10. `LICENSE` - Yes, likely a pretty open one like Apache-2.0
+  11. `.gitignore` - terraform.tfstate, terraform.tfstate.backup, .terraform
 
 ## Assignment
 
