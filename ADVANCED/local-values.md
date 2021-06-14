@@ -8,7 +8,13 @@ Goal: Be able to create and use `locals` to further abstract your data.
 
 ## Explanation
 
-Sometimes using input [variables](https://www.terraform.io/docs/language/values/variables.html) are not enough. For example: imagine you want to ask a user for a `size`, which can be `small`, `medium` or `large` and where the deployment uses much more technical terms to indicate the [size(https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions)]. In that case, using a `locals` is a great way to map input variables to sizes.
+Sometimes using input [variables](https://www.terraform.io/docs/language/values/variables.html) are not enough. For example: imagine you want to ask a user for a `size`, which can be"
+
+- `small`
+- `medium`
+- `large`
+
+And where the deployment uses much more technical terms to indicate the [size(https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions)]. In that case, using a `locals` is a great way to map input variables to sizes.
 
 You can also describe locals as variables that are not exposed; a user can't overwrite them. In situations where you refer to a certain value many times, you can place them in a local variable.
 
