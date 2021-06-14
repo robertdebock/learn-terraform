@@ -12,7 +12,7 @@ In some situations, Terraform needs to destroy and create a resource on changes.
 
 Be aware that you need to prevent conflicts in names of resources, ports, and likely other parameters.
 
-This type of deployment is ofter referred to as [blue-green deploymeny](https://en.wikipedia.org/wiki/Blue-green_deployment).
+This type of deployment is ofter referred to as [blue-green deployment](https://en.wikipedia.org/wiki/Blue-green_deployment).
 
 ## Howto
 
