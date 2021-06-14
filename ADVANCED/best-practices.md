@@ -31,7 +31,7 @@ Let's go over a few best practices. Likey you/your company also has best practic
 - Use variables for nearly all values. (In other words, write Terraform code like you are writing a Terraform module.)
 - Use CI for modules. (and possibly releases)
 - [`validate`](https://www.terraform.io/docs/commands/validate.html) and [format (`fmt`)](https://www.terraform.io/docs/commands/fmt.html) often.
-- Terraform updates [frequently](https://www.terraform.io/docs/commands/fmt.html), read [release notes](https://github.com/hashicorp/terraform/blob/master/CHANGELOG.md). You can "watch" a repository in [github](https://github.com/hashicorp/terraform).
+- Terraform updates [frequently](https://releases.hashicorp.com/terraform/), read [release notes](https://github.com/hashicorp/terraform/blob/master/CHANGELOG.md). You can "watch" a repository in [github](https://github.com/hashicorp/terraform).
 - Use modules over resources in your root repository.
 - It's a good idea to treat all repositories like a module. (variables.tf, output.tf, version.tf)
 
