@@ -20,11 +20,15 @@ We need to setup the environment where we are going to play on.
 
 ### Let's authenticate
 
+For most users:
+
 ```shell
-az login --use-device-code
+az login
 ```
 
-To use a specfic subscription, issue:
+You can add `--use-device-code` to authenticate using Microsoft Authenticator.
+
+To use a specific subscription, issue:
 
 ```shell
 az account set --subscription x-y-z-a-b
@@ -40,4 +44,4 @@ In the [BASIC](../BASIC) course, people have built [this code](https://github.co
 - Please keep your camera on most of the time.
 - If you run into issues, please share your screen to troubleshoot together.
 - A typical chapter has an explanation, exercises and a summary.
-- You can take a break whenever you need to. 
+- You can take a break whenever you need to.
