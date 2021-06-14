@@ -29,8 +29,7 @@ See [this example repository](https://github.com/robertdebock/terraform-azurerm-
 ## Assignment
 
 - [ ] Copy-paste the example from the [documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cdn_endpoint).
-- [ ] Change the `azurerm_cdn_profile.example.sku` to `Standard_Microsoft`.
-- [ ] Modify the example to create a CDN for `https://xkcd.com/`. (`host_name`)
+- [ ] Modify the example to create a CDN for some other website. (`host_name`)
 - [ ] Expose the this website under `https://YOUR_NAME.azureedge.net/`. (`azurerm_cdn_endpoint.example.name`)
 - [ ] Visit https://YOUR_NAME.azureedge.net/.
 
