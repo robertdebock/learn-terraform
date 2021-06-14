@@ -13,7 +13,7 @@ The `remote-exec` provisioner executes a command on the remote resource after cr
 A few use-cases:
 
 1. Install some package, enable some service, etc. (N.B. Disadvantages!)
-2. Hook up a system to some configuration management systems, for example [SaltStack](https://saltproject.io/).
+2. Hook up a instance to some configuration management systems, for example [SaltStack](https://saltproject.io/).
 
 Generally speaking; try to [limit](https://www.terraform.io/docs/language/resources/provisioners/syntax.html#provisioners-are-a-last-resort) the commands to the bare minimum to get going; there are better ways to configure a system.
 
