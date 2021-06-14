@@ -91,6 +91,7 @@ With those files, it's time to create infrastructure.
 
 1. Do you see a purpose for Terragrunt in your organization?
 2. Do you see resources that require a change if you'd like to deploy multiple of them?
+3. In [this terragrunt repositor](https://github.com/robertdebock/learn-terraform-azure/tree/terragrunt), can I run `terragrunt init && terragrunt apply` in both `applicationX` and `applicationY`?
 
 ## Solution
 
