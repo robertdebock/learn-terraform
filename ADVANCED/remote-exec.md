@@ -21,9 +21,9 @@ For Azure virtual machines, there is also a resource [azurerm_virtual_machine_ex
 
 ## Howto
 
-The example below adds a line to `resource_groups.txt` when the creation of the resource group is done.
+There are a few ways to execute commands on the remote host.
 
-### Inline
+### inline
 
 The `remote-exec` provisioner may need extra details on how to connect to the resource, you'll see them in the examples below.
 
@@ -60,6 +60,8 @@ resource "null_resource" "default" {
 }
 ```
 
+### script
+
 When you need to run a single script, that likely contains many commands, you can use `script`. The script is copied to the remote resource and executed.
 
 ```hcl
@@ -75,6 +77,8 @@ resource "null_resource" "default" {
   }
 }
 ```
+
+### scripts
 
 If there are multiple scripts to be executed, `scripts` can be used:
 
