@@ -41,7 +41,7 @@ With CI/CD, always start with the smallest unit/component. This ensures you can 
 
 - [ ] For a module you use/maintain, add [input validation](https://www.terraform.io/docs/language/values/variables.html#custom-validation-rules) to test if the input given was correct. Here is a [hint](cicd-for-modules-input-validation.md)
 - [ ] Once you have input validation, change the pipeline so it tests failing input. (So the input should be **incorrect**, maybe a `string` where `number` is only allowed, and the pipeline should successfully test the failure.) To reverse the exit-status of a command, use `!`, for example `! false` returns an exit-code of `0`.
-- [ ] If time permits; configure [bitbucket secrets](https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/) that allow `terraform apply` and `terraform destroy`.
+- [ ] If time permits; configure secrets that allow `terraform apply` and `terraform destroy`.
 
 ## Questions
 
