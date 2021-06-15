@@ -38,6 +38,6 @@ Use the sample code above and change these settings:
 ## Questions
 
 1. What would be a realistic `node_count`?
-2. What `vm_size` would be good?
+2. What [`vm_size`](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes) would be good?
 3. Was the cluster updated or recreated when changing the `vm_size`?
 4. Was the cluster updated or recreated when changing the `node_count`?
