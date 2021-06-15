@@ -17,6 +17,7 @@ The Terraform CLI is a simple binary, no services/servers/daemon, no specific us
 This depends a bit on the environment you're working in.
 
 - There are repositories for Linux (`apt`, `dnf` and `yum`).
+- [Chocolatey works too](https://community.chocolatey.org/packages/terraform).
 - You can [download the binary](https://releases.hashicorp.com/terraform/).
 - To manage Azure infrastructure, you also need [azure-cli](https://pypi.org/project/azure-cli/). Follow [this guide](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) for Windows computers.
 
