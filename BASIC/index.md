@@ -35,5 +35,3 @@
 - [Count](count.md)
 - [Remote state](remote-state.md)
 - [CI/CD Concepts](ci-cd-concepts.md)
-
-Regards, Robert.
