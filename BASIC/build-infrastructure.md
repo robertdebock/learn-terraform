@@ -24,7 +24,7 @@ You'll likely have questions, don't hesitate to ask them.
 
 ## Optional extra requirements
 
-With a "regular" account, these steps are not required, but for some configuration, these steps may be required.
+With a "regular" account (`az login`), these steps are not required, but for some configuration, these steps may be required.
 
 To use a device code, issue:
 
