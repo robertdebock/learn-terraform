@@ -4,7 +4,7 @@
 |-------------|------------------------------------------------|
 |30 minutes   |A computer with Terraform installed.            |
 
-Goal: Learn how dependecies work in Terraform.
+Goal: Learn how dependencies work in Terraform.
 
 ## Explanation
 
