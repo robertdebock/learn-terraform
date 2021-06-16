@@ -64,21 +64,23 @@ From a Terraforms perspective, these are just two machines with no specific rela
 
 ## Howto
 
-NOTES:
+A resource can have the `depends_on` meta-argument on any resource. The `depends_on`, refers to a list of other resources.
 
-1. Use a `location` of `westeurope`.
-2. Keep your `azurerm_resource_group` that has the mandatory `tags`. (See above for an example.)
-
-- [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-dependency?in=terraform/aws-get-started).
-- [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-dependency?in=terraform/azure-get-started).
+```hcl
+resource "azurerm_virtual_machine" "reversed_proxy" {
+  name                  = "reversed_proxy"
+  ...
+  depends_on = [azurerm_virtual_machine.webserver, azurerm_virtual_machine.syslogserver]
+}
+```
 
 ## Demo
 
 ## Assignment
 
-- [ ] Follow the instructions in the `Howto`.
-- [ ] Count how many implicit dependencies you now have in your code.
-- [ ] Count how many explicit dependencies you now have in your code.
+- [ ] In the [example repository] add an extra `azurerm_virtual_machine`. (Be aware; a lot of values need to be made unique...)
+- [ ] Build in a dependency between the 2 virtual machines.
+- [ ] Apply the code and see if the first machine was indeed provisioned first.
 
 ## Questions:
 
