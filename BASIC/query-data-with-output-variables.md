@@ -129,6 +129,8 @@ data "azurerm_public_ip" "ip" {
 
 ## Demo
 
+See [this file](https://github.com/robertdebock/learn-terraform-azure/blob/master/outputs.tf).
+
 ## Assignment
 
 - [ ] Follow the steps in the `Howto`.
