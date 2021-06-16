@@ -76,6 +76,8 @@ resource "azurerm_virtual_machine" "reversed_proxy" {
 
 ## Demo
 
+See [here](https://github.com/robertdebock/terraform-azurerm-dependencies)
+
 ## Assignment
 
 - [ ] In the [example repository] add an extra `azurerm_virtual_machine`. (Be aware; a lot of values need to be made unique...)
@@ -85,7 +87,7 @@ resource "azurerm_virtual_machine" "reversed_proxy" {
 ## Questions:
 
 1. Does the order of resources in `main.tf` matter?
-2. Where do dependecies between resources come from?
+2. Where do dependencies between resources come from?
 3. Can you explain what this means: `resource_group_name = azurerm_resource_group.rg.name`?
 4. How can you express a list in [HCL](https://github.com/hashicorp/hcl)?
 5. Can you login to the machine you've created?
