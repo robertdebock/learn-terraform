@@ -14,7 +14,7 @@ Sometimes using input [variables](https://www.terraform.io/docs/language/values/
 - `medium`
 - `large`
 
-And where the deployment uses much more technical terms to indicate the [size(https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions)]. In that case, using a `locals` is a great way to map input variables to sizes.
+And where the deployment uses much more technical terms to indicate the [size](https://docs.microsoft.com/en-us/azure/virtual-machines/vm-naming-conventions). In that case, using a `locals` is a great way to map input variables to sizes.
 
 You can also describe locals as variables that are not exposed; a user shouldn't/can't overwrite them. In situations where you refer to a certain value many times, you can place them in a local variable.
 
@@ -74,7 +74,7 @@ In the example above, you need variable called `environment` to map values.
 ```hcl
 variable "environment" {
   type    = string
-  default = "West Europe"
+  default = "development"
   validation {
     condition     = contains(["development", "production"])
     error_message = "Please use "development" or "production" for the environment."
