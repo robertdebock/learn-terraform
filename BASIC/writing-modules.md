@@ -64,6 +64,8 @@ The [documentation](https://www.terraform.io/docs/modules/index.html) may also h
 
 ## Demo
 
+See [this repository](https://github.com/robertdebock/terraform-azurerm-azurerm_resource_group)
+
 ## Assignment
 
 - [ ] Make a module that can create `azurerm_resource_group`s. [Solution](writing-modules-solution-1.md)
