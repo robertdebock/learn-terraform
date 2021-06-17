@@ -32,7 +32,7 @@ You'll likely run into an error. Try to understand the issue and fix the problem
 
 ### Hard
 
-Use the documentation to make a firewall. Try not to look at the [sample code](https://github.com/robertdebock/terraform-azurerm-mysql-server), but if you're stuck, use it as //inspiration//.
+Use the documentation to make a firewall. Try not to look at the [sample code](https://github.com/robertdebock/terraform-azurerm-mysql-server), but if you're stuck, use it as *inspiration*.
 
 
 ### Testing things
