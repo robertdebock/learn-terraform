@@ -57,7 +57,7 @@ This is the simples form; you simply pass a list of strings (actually a set) and
 ```hcl
 resource "azurerm_resource_group" "example" {
   for_each = toset( ["westeurope", "easteurope"] )
-  name     = "my_rg"
+  name     = "my_rg-${each.value}"
   location = each.value
 }
 ```
