@@ -12,7 +12,7 @@ There are many Azure resources available, lets setup a managed MySQL instance.
 
 ## Howto
 
-Using the [azurerm_mysql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_server) resource, we're going to create a managed MySQL instance.
+Using the [azurerm_mysql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_server) and [azurerm_mysql_database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mysql_database) resources, we're going to create a managed MySQL instance.
 
 ## Demo
 
