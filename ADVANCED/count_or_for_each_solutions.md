@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "example" {
 ```hcl
 resource "azurerm_resource_group" "example" {
   for_each = toset( ["westeurope", "easteurope"] )
-  name     = "example"
+  name     = "example-${each.value}"
   location = each.value
 }
 

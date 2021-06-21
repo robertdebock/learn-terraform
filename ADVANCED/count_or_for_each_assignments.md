@@ -21,12 +21,12 @@ resource "azurerm_resource_group" "example-1" {
 
 ```hcl
 resource "azurerm_resource_group" "example-1" {
-  name     = "example-1"
+  name     = "example-westeurope"
   location = "westeurope"
 }
 
 resource "azurerm_resource_group" "example-2" {
-  name     = "example-2"
+  name     = "example-easteurope"
   location = "easteurope"
 }
 ```
