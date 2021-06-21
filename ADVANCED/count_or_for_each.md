@@ -28,7 +28,7 @@ Typically you write a loop to [prevent repetition](https://en.wikipedia.org/wiki
 
 |parameter        |count      |for_each|
 |-----------------|-----------|--------|
-|terraform version|very early |1.12.6  |
+|terraform version|very early |0.12.6  |
 |input            |number     |map or list|
 |situation        |multiple **similar** resources|multiple **related** resources|
 
