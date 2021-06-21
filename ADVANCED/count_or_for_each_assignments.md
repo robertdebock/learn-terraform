@@ -7,12 +7,12 @@ On working out this example, you may use the same name and identifier.
 
 ```hcl
 resource "azurerm_resource_group" "example-0" {
-  name     = "example-1"
+  name     = "example-0"
   location = "West Europe"
 }
 
 resource "azurerm_resource_group" "example-1" {
-  name     = "example-2"
+  name     = "example-1"
   location = "West Europe"
 }
 ```
