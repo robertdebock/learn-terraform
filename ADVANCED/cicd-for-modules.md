@@ -48,6 +48,15 @@ With CI/CD, always start with the smallest unit/component. This ensures you can 
 1. Would you `terraform apply` the code in CI when testing a module?
 2. If you would `terraform apply`, how would you make sure `terraform destroy` runs whatever the output of `terraform apply`. ([hint](https://bitbucket.org/blog/after-scripts-now-available-for-bitbucket-pipelines)).
 
+## Hints
+
+You may need to place these "secret variables" to the CI system:
+
+- `AZURE_AD_CLIENT_ID`
+- `AZURE_AD_CLIENT_SECRET`
+- `AZURE_AD_TENANT_ID`
+- `AZURE_SUBSCRIPTION_ID`
+
 ## Solution
 
 - A [GitLab](cicd-for-modules-gitlab.yml)
