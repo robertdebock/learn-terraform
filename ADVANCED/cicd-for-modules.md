@@ -57,6 +57,8 @@ You may need to place these "secret variables" to the CI system:
 - `AZURE_AD_TENANT_ID`
 - `AZURE_SUBSCRIPTION_ID`
 
+For GitLab users, a [template](https://docs.gitlab.com/ee/user/infrastructure/#quick-start) can be used.
+
 ## Solution
 
 - A [GitLab](cicd-for-modules-gitlab.yml)
