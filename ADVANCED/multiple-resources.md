@@ -84,6 +84,35 @@ In the exampe above, the `azurerm_public_ip.publicip.ip_address` is used to conf
 
 There are [many providers](https://registry.terraform.io/browse/providers) that have something to offer.
 
+### Multiple variants of the same provider
+
+Sometimes you may need to create resources on one provider, but using different account or subscriptions. In such a case `alias` can be used uin the `provider` block:
+
+```hcl
+provider "azurerm" {
+  features {}
+}
+
+provider "azurerm" {
+  features {}
+  alias       = "foo"
+  environment = "german"
+}
+
+resource "azurerm_resource_group" "default" {
+  name     = "something"
+  location = "westeurope"
+}
+
+resource "azurerm_resource_group" "foo" {
+  name     = "someotherthing"
+  location = "westeurope"
+  provider = azurerm.foo
+}
+```
+
+The example above use the `german` `environment` and can be use by adding `provider = NAME`.
+
 ## Assignment
 
 - [ ] In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Use references to named values to dynamically configure checkly.
