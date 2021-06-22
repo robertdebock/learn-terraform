@@ -17,13 +17,14 @@
 10. [Using Terragrunt](terragrunt.md) (90 minutes)
 11. [Self-service options](self-service.md) (30 minutes)
 
-## Day 3 (4 hours, 45 minutes)
+## Day 3 (5 hours, 15 minutes)
 
 12. [Lifecycle](lifecycle.md) (60 minutes)
 13. [Packer](packer.md) (60 minutes)
-14. [Troubleshooting (bonus)](troubleshooting.md) (15 minutes)
-15. [Use Cases (bonus)](../BASIC/use-cases.md) (90 minuten)
-16. [Best practices](best-practices.md) (90 minutes)
+14. [Workspaces](workspaces.md) (30 minutes)
+15. [Troubleshooting (bonus)](troubleshooting.md) (15 minutes)
+16. [Use Cases (bonus)](../BASIC/use-cases.md) (90 minuten)
+17. [Best practices](best-practices.md) (90 minutes)
 
 ## Reference material
 
