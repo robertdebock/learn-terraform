@@ -99,6 +99,31 @@ resource "null_resource" "default" {
 }
 ```
 
+If you need to **always** run a script, you can use a pattern like this:
+
+```hcl
+resource "null_resource" "default" {
+  depends_on = [data.azurerm_public_ip.pip, ]
+  connection {
+    host     = data.azurerm_public_ip.pip.ip_address
+    user     = "my_user"
+    password = "Som3-P4s$W0rd."
+  }
+
+  # This trigger makes sure to ALWAYS run the provisioner, not very idempotent...
+  triggers = {
+    always_run = "${timestamp()}"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo apt-get update",
+      "sudo apt-get upgrade -y"
+    ]
+  }
+}
+```
+
 ## Assignment
 
 - [ ] Create a `azurerm_virtual_machine` and have update all packages. (Two commands: `sudo apt-get update` and `sudo apt-get upgrade -y`)
