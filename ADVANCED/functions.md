@@ -64,7 +64,7 @@ variable "example" {
   type        = string
   description = "Some variable"
   validation {
-    condition     = length(var.example) >= 4 && length(var.example) <= 16 && contains(var.example, "hello") && can(regex("[a-z]+", var.example))
+    condition     = length(var.example) >= 4 && length(var.example) <= 16 && contains([var.example], "hello") && can(regex("[a-z]+", var.example))
     error_message = "Nope, sorry."
 } 
 ```
