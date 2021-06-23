@@ -12,7 +12,7 @@ Terraform has many built-in [function](https://www.terraform.io/docs/language/fu
 
 - [`length`](https://www.terraform.io/docs/language/functions/length.html)
 - [`can`](https://www.terraform.io/docs/language/functions/can.html)
-- [`file`]https://www.terraform.io/docs/language/functions/file.html()
+- [`file`](https://www.terraform.io/docs/language/functions/file.html)
 - [`sensitive`](https://www.terraform.io/docs/language/functions/sensitive.html)
 - [`regex`](https://www.terraform.io/docs/language/functions/regex.html)
 - [`contains`](https://www.terraform.io/docs/language/functions/contains.html)
