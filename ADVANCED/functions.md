@@ -50,7 +50,7 @@ The validation should:
 
 - [ ] Check if the `length` of the input is at least `4` characters, at most `16` characters.
 - [ ] Check if the variable `contains` `hello`.
-- [ ] Check if the variable only contains lowecase letters
+- [ ] Check if the variable only contains lowercase letters
 
 ## Questions:
 
