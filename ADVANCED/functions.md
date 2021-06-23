@@ -63,8 +63,10 @@ The validation should:
 variable "example" {
   type        = string
   description = "Some variable"
+  default     = "hello there"
   validation {
-    condition     = length(var.example) >= 4 && length(var.example) <= 16 && contains([var.example], "hello") && can(regex("[a-z]+", var.example))
-    error_message = "Nope, sorry."
-} 
+    condition     = length(var.example) >= 4 && length(var.example) <= 16 && can(regex(".*hello.*", var.example)) && lower(var.example) == var.example
+    error_message = "The example variable must be 4 up to 16 characters, contain 'hello' and be lowercase."
+  }
+}
 ```
