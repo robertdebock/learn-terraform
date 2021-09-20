@@ -16,7 +16,7 @@
 9. [locals](local-values.md) (45 minutes)
 10. [Using Terragrunt](terragrunt.md) (90 minutes)
 11. [Self-service options](self-service.md) (30 minutes)
-12. [Try](try-someting.md) (30 minutes)
+12. [Try](try-something.md) (30 minutes)
 
 ## Day 3 (5 hours, 45 minutes)
 
