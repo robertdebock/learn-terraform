@@ -18,7 +18,7 @@ In some environments, Terraform Cloud may need to manage resources via an API th
 
 ## Howto
 
-Start with visiting ([Terraform Cloud](https://app.terraform.io/).
+Start with visiting [Terraform Cloud](https://app.terraform.io/).
 
 ## Demo
 
