@@ -6,7 +6,8 @@
 2. [Templates](templates.md) (45 minutes)
 3. [CI/CD for modules](cicd-for-modules.md) (75 minutes)
 4. [CI/CD for releases](cicd-for-releases.md) (30 minutes)
-5. [Using multiple resources and providers](multiple-resources.md) (120 minutes)6. [Terraform Cloud](terraform-cloud.md) (30 minutes)
+5. [Using multiple resources and providers](multiple-resources.md) (120 minutes)
+6. [Terraform Cloud](terraform-cloud.md) (30 minutes)
 
 ## Day 2 (5 hours, 30 minutes)
 
