@@ -59,6 +59,8 @@ Having state means Terraform will remove resources that are not described anymor
 
 Let's create and destroy [some infrastructure](https://github.com/robertdebock/learn-terraform-azure).
 
+Actually; let's create [your machines](https://github.com/robertdebock/terraform-playground).
+
 ## Questions
 
 1. Terraform keeps state, what is the benefit?
