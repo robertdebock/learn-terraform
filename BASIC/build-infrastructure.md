@@ -22,6 +22,30 @@ Let's build your first resources with Terraform, this does differ per provider.
 
 You'll likely have questions, don't hesitate to ask them.
 
+## Using variables
+
+You can also tell Terraform to use Azure using variables.
+
+### Linux
+
+```bash
+export AZURE_AD_CLIENT_ID="xyz"
+export AZURE_AD_CLIENT_SECRET="xyz"
+export AZURE_AD_TENANT_ID="xyz"
+export AZURE_SUBSCRIPTION_ID="xyz"
+```
+
+### Windows
+
+```powershell
+set AZURE_AD_CLIENT_ID "xyz"
+set AZURE_AD_CLIENT_SECRET "xyz"
+set AZURE_AD_TENANT_ID "xyz"
+set AZURE_SUBSCRIPTION_ID "xyz"
+```
+
+These variable are available for the current session. Once you close the application, you may need to set the variables again.
+
 ## Optional extra requirements
 
 With a "regular" account (`az login`), these steps are not required, but for some configuration, these steps may be required.
