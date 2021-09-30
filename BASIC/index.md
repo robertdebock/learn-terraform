@@ -12,7 +12,7 @@
 8. [Change infrastructure](change-infrastructure.md). (15 minutes)
 9. [Destroy infrastructure](destroy-infrastructure.md). (15 minutes)
 
-## Day 2: Building (5 hours, 15 minutes)
+## Day 2: Building (6 hours, 15 minutes)
 
 1. [Build a K8s cluster](build-infrastructure-k8s-cluster.md). (60 minutes)
 2. [Deploy a container group](build-infrastructure-container-group.md). (60 minutes)
@@ -20,6 +20,7 @@
 4. [Build a CDN](build-infrastructure-cdn-endpoint.md). (45 minutes)
 5. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
 6. [Define Input Variables](define-input-variables.md). (60 minutes)
+7. [Make a Scale Set](build-infrastructure-scale-set.md). (60 minutes)
 
 ## Day 3: Combining things (5 hours, 30 minutes)
 
