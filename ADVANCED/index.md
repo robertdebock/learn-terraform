@@ -10,7 +10,7 @@
 6. [Terraform Cloud](terraform-cloud.md) (30 minutes)
 7. [Terraform Cloud workspace design](terraform-cloud-workspace-design) (30 minutes)
 
-## Day 2 (5 hours, 30 minutes)
+## Day 2 (6 hours, 30 minutes)
 
 1. [Count or for_each](count_or_for_each.md) (45 minutes)
 2. [local-exec](local-exec.md) (30 minutes)
@@ -19,6 +19,7 @@
 5. [Using Terragrunt](terragrunt.md) (90 minutes)
 6. [Self-service options](self-service.md) (30 minutes)
 7. [Try](try-something.md) (30 minutes)
+8. [Sentinel](sentinel.md) (60 minutes)
 
 ## Day 3 (5 hours, 45 minutes)
 
