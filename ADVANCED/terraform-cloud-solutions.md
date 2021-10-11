@@ -4,7 +4,7 @@
 
 > Terraform is installed for you, no local installation of terraform required.
 
-> A managed service, updates (also to `terrafrom`) are done for you.
+> A managed service, updates (also to `terraform`) are done for you.
 
 > Allows you to store (sensitive) variables. Otherwise the variables would be stored in code.
 
