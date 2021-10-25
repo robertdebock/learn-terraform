@@ -24,9 +24,11 @@ Start with visiting [Terraform Cloud](https://app.terraform.io/).
 
 This [code](https://github.com/robertdebock/git-terraform-demo) is connected to this [Terraform Clould workspace](https://app.terraform.io/app/robertdebock/workspaces/git-terraform-demo).
 
+The file `versions.tf` can be modified to use remote state as well.
+
 ## Assignment
 
-There is a great [track](https://learn.hashicorp.com/collections/terraform/cloud-get-started) for this. That track covers much more than just workspaces, so i suggest to finish these labs:
+There is a great [track](https://learn.hashicorp.com/collections/terraform/cloud-get-started) for this. That track covers much more than just workspaces, so I suggest to finish these labs:
 
 - [ ] Sign up for Terraform Cloud
 - [ ] Create a Workspace
