@@ -33,6 +33,8 @@ ${ip}
 
 ## Demo
 
+Have a look [here](https://github.com/robertdebock/terraform-aws-cluster/blob/master/examples/vault/main.tf#L6).
+
 ## Assignment
 
 You can start using [this Terraform configuration](https://github.com/hashicorp/learn-terraform-azure). (Remember: `az login`, `terraform init`)
