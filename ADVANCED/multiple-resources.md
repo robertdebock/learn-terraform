@@ -116,6 +116,7 @@ The example above use the `german` `environment` and can be use by adding `provi
 ## Assignment
 
 - [ ] In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Use references to named values to dynamically configure checkly.
+- [ ] If time permits it, experiment with the [uptime robot status page](https://registry.terraform.io/providers/louy/uptimerobot/latest/docs).
 
 You need to sign-up to checkly. You can use your github account or email.
 

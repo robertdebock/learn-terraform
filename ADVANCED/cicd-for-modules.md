@@ -29,6 +29,8 @@ pipelines:
         - terraform init
 ```
 
+And a [GitHub actions example](https://github.com/robertdebock/terraform-aws-cluster/blob/master/.github/workflows/terraform.yml). Be aware the the different scenarios (directories in `examples` need to be listed in the action.
+
 ## Assignment
 
 - [ ] For your version control system, write a CI/CD file that tests a module. The tests may be simple, they can be extended later.
