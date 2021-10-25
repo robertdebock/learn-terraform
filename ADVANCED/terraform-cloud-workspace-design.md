@@ -83,3 +83,4 @@ Let's see what you came up with and if we can (re-)use a part of your design.
 ## Sources
 
 - [`terraform_remote_state`](https://www.terraform.io/docs/language/state/remote-state-data.html).
+- [MS CAF](https://github.com/Azure/caf-terraform-landingzones) may work for you.
