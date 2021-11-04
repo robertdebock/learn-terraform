@@ -8,7 +8,7 @@ Goal: Be able to create and use `locals` to further abstract your data.
 
 ## Explanation
 
-Sometimes using input [variables](https://www.terraform.io/docs/language/values/variables.html) are not enough. For example: imagine you want to ask a user for a `size`, which can be"
+Sometimes using input [variables](https://www.terraform.io/docs/language/values/variables.html) is not enough. For example: imagine you want to ask a user for a `size`, which can be"
 
 - `small`
 - `medium`
@@ -28,20 +28,17 @@ You typically add locals to a new file, like `locals.tf`:
 
 ```hcl
 locals {
-  my_prefix = "rg"
+  my_local = "xyz"
 }
 ```
 
-You can reuse these variables in your terraform code:
+You can reuse these locals in your terraform code:
 
 ```hcl
-resource "azurerm_resource_group" "rg" {
-  name     = "${local.my_prefix}_robert"
-  location = "westeurope"
+resource "x" "default" {
+  parameter = local.my_local
 }
 ```
-
-This will result in a `name` of `rg_robert`.
 
 ### More complicated
 
@@ -95,28 +92,25 @@ resource "azurerm_resource_group" "rg" {
 
 ## Assignment
 
-- [ ] Introduce `locals` to prevent duplicate code to the example below:
+- [ ] Introduce `locals` to maps `size` to these values: Standard_A1_v2, Standard_A2_v2 or Standard_A4_v2 using the below starting point:
 
 ```hcl
-resource "azurerm_resource_group" "rg" {
-  name     = "rg-robertdebock-test"
-  location = "westeurope"
+variable "size" {
+  description = "The size of the deployment."
+  type        = string
+  default     = "small"
+  validation {
+    condition     = contains(["small", "medium", "large"], var.size)
+    error_message = "Please use \"small\", \"medium\" or \"large\"."
+  }
 }
 
-resource "azurerm_virtual_network" "vnet" {
-  name                = "vnet-robertdebock-test"
-  address_space       = ["10.0.0.0/16"]
-  location            = "westeurope"
-  resource_group_name = azurerm_resource_group.rg.name
+resource "azurerm_virtual_machine" "default" {
+  name    = "my_name"
+  vm_size = "? FILL ME IN ?"
+  ...
 }
 ```
-
-These values contain duplicates:
-
-- The `location` is always `westeurope`.
-- Both `name` values of `azurerm_resource_group` and `azurerm_virtual_network` contain `robertdebock`.
-- Both `name` values of `azurerm_resource_group` and `azurerm_virtual_network` end with `test`.
-
 
 ## Questions
 
@@ -125,22 +119,29 @@ These values contain duplicates:
 ## Solution
 
 ```hcl
+variable "size" {
+  description = "The size of the deployment."
+  type        = string
+  default     = "small"
+  validation {
+    condition     = contains(["small", "medium", "large"], var.size)
+    error_message = "Please use \"small\", \"medium\" or \"large\"."
+  }
+}
+
 locals {
-  my_location    = "westeurope"
-  my_name        = "robertebock"
-  my_environment = "test"
+  _vm_sizes = {
+    small  = "Standard_A1_v2"
+    medium = "Standard_A2_v2"
+    large  = "Standard_A4_v2"
+  }
+  vm_size = local._vm_sizes[var.size]
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = "rg-${local.my_name}-${local.environment}"
-  location = local.my_location
-}
-
-resource "azurerm_virtual_network" "vnet" {
-  name                = "vnet-${local.my_name}-${local.environment}"
-  address_space       = ["10.0.0.0/16"]
-  location            = local.my_location
-  resource_group_name = azurerm_resource_group.rg.name
+resource "azurerm_virtual_machine" "default" {
+  name    = "my_name"
+  vm_size = local.vm_size
+  ...
 }
 ```
 
