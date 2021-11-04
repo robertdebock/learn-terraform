@@ -81,6 +81,49 @@ In the example above, both the `key` (left from `=`) and the `value` (right from
 
 This is a little more complex, so use it with caution; newcomers to Terraform may be confused.
 
+### Conditionals
+
+Both with `count` and `for_each`, you can make a resource ["conditional"](https://www.terraform.io/docs/language/expressions/conditionals.html), meaning: Maybe make the resource.
+
+#### Count
+
+```hcl
+variable "feature_enabled" {
+  description = "Enable some feature."
+  type        = bool
+  default     = true
+}
+
+resource "x" "default" {
+  count = var.feature_enabled ? 1 : 0
+  ...
+}
+```
+
+#### For each
+
+```hcl
+variable "feature_enabled" {
+  description = "Enable some feature."
+  type        = bool
+  default     = true
+}
+
+variable "my_map" {
+  description = "Some map."
+  type        = map
+  default     = {
+    x = "y"
+    y = "z"
+  }
+}
+
+resource "y" "default" {
+  for_each = var.feature_enabled ? my_map : {}
+  ...
+}
+```
+
 ## Assignment
 
 - [ ] Rewrite [example 1](count_or_for_each_assignments.md#example-1) to use `count.`
