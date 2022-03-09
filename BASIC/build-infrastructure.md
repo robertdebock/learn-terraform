@@ -22,7 +22,7 @@ Let's build your first resources with Terraform, this does differ per provider.
 
 You'll likely have questions, don't hesitate to ask them.
 
-## Using variables
+## Using variables (Azure only)
 
 You can also tell Terraform to use Azure using variables.
 
