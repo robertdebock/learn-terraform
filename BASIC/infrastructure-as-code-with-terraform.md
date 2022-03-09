@@ -21,11 +21,18 @@ Not specifically Terraform, but IaC (Infrastructure as Code) in general has thes
 - It's easy to work together.
 - Faster. (After you've learned the tools)
 - Code can have a version.
+- Code is auditable.
 - Modules (or units) can be tested.
 - Easy to test on a non-production environment.
 - Easy to learn by reading, less documentation.
 
 [Benefits are listed here](https://phoenixnap.com/blog/infrastructure-as-code-best-practices-tools)
+
+There are some drawback too:
+
+- Higher abstraction level/harder. We'll try to address that here!
+- Hard to combine with manual work.
+- Requires tooling. (Terraform, GitLab/GitHub/BitBucket)
 
 ## Terraform
 
@@ -37,7 +44,7 @@ Let's learn a bit more on Terraform:
 
 There are many [providers](https://registry.terraform.io/browse/providers) and [modules](https://registry.terraform.io/browse/modules).
 
-Terraform keeps [state](https://www.terraform.io/docs/state/index.html). This means it can compare the (local) state to the desired state, making deployment faster and allowing users to clean-up resources remove from the configuration. This also allows people or teams to collaborate.
+Terraform keeps [state](https://www.terraform.io/docs/state/index.html). State is sort of a book-keeping of what Terraform has created. This means it can compare the (local) state to the desired state, making deployment faster and allowing users to clean-up resources remove from the configuration. This also allows people or teams to collaborate.
 
 ```text
 +----- Team A ------+     +----- Team B ------+
@@ -57,21 +64,25 @@ Having state means Terraform will remove resources that are not described anymor
 
 ## Demo
 
-Let's create and destroy [some infrastructure](https://github.com/robertdebock/learn-terraform-azure).
-
 Actually; let's create [your machines](https://github.com/robertdebock/terraform-playground).
+
+- Username: username
+- Password: password
+
+You are free to use this machine. If you'd like to run Terraform from another machine, maybe your laptop, please [install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli).
 
 ## Questions
 
 1. Terraform keeps state, what is the benefit?
 2. Terraform and configuration management differ, for what situation would you use either?
 3. In your own words, what are some benefits of infrastructure as code?
+4. You (maybe) have see it can take a while for the "playground" machines to be ready. What could you do to make this deployment quicker?
 
-## What tools to use when
+## What tools to use when?
 
 There is no clear answer to this question. I suggest to use the right tool for the type of work. Most companies use Terraform and some other configuration management system, for example.
 
 - Terraform to manage infrastructure.
 - Ansible, Puppet, Chef or SaltStack for the configuration of the instances.
 
-In other words, just Terraform is not sufficient in most cases.
+In other words, just Terraform is not always sufficient.

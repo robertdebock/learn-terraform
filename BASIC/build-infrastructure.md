@@ -16,7 +16,7 @@ In this lab Terraform will connect to a cloud provider for the first time, it wi
 
 Let's build your first resources with Terraform, this does differ per provider.
 
-- [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started).
+- [AWS](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-build?in=terraform/gcp-get-started).
 - [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-build?in=terraform/azure-get-started).
 - [GCP](https://learn.hashicorp.com/collections/terraform/gcp-get-started).
 

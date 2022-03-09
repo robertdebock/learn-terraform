@@ -11,8 +11,8 @@ Goal: Get to know each other and hear about how the course will be held.
 Please tell something about yourself.
 
 - [ ] Who are you?
-- [ ] From 0 to 10, what's your experience with: linux, cloud, git, terraform?
-- [ ] What do you want to learn?
+- [ ] From 0 to 10, what's your experience with: git, cloud, infrastructure as code, terraform?
+- [ ] What do you want to achieve? (Hint: Put this on a Post-it®.)
 
 ## Terraform?
 
@@ -22,7 +22,7 @@ Please tell something about yourself.
 
 Let's break that down:
 
-- Open-source: You can view the [code](https://github.com/hashicorp/terraform). There is an [enterprise](https://www.terraform.io/docs/enterprise/index.html) and [cloud offering](https://www.terraform.io/docs/cloud/index.html) too.
+- Open-source: You can view the [code](https://github.com/hashicorp/terraform). There is an [enterprise](https://www.terraform.io/docs/enterprise/index.html) and [cloud offering](https://www.terraform.io/docs/cloud/index.html) too, the "language" is freely available.
 - Infrastructure as code: You can describe in [plain text](https://github.com/robertdebock/terraform-demo/blob/master/do.tf) what infrastructure you need.
 - CLI workflow: From a Linux machines, you can use the `terraform` binary.
 - Cloud services: Terraform describes "resources", which can be: machines, ip-addresses, loadbalancers, etc.
@@ -31,7 +31,7 @@ Let's break that down:
 ## How
 
 - Please ask questions when you have them.
-- Please keep your camera on most of the time.
+- Please keep your camera on regularly.
 - If you run into issues, please share your screen to troubleshoot together.
 - A typical chapter has an explanation, exercises and a summary.
-- You can take a break whenever you need to. 
+- You can take a break whenever you need to, we'll try to take a break every hour or so.
