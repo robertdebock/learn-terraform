@@ -38,3 +38,4 @@
 - [Remote state](remote-state.md)
 - [CI/CD Concepts](ci-cd-concepts.md)
 - [Terraform & Azure demos](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure)
+- [Structures](structures.md)
