@@ -20,6 +20,31 @@ hello = resource.identifier.id
 
 Would assign the value of `resource.identifier.id` to the varialbe `hello`.
 
+## Number
+
+Almost like a string, but not quoted and numeric:
+
+```hcl
+value = 123
+other_value = 123.123
+```
+
+You can do arithmetic operations with numbers:
+
+```hcl
+value = 2
+other_value = "${var.value * 3}"
+```
+
+## Boolean
+
+May look like an unquoted string, but can only be `true` or `false`:
+
+```hcl
+enable_feature_x = true
+enable_feature_y = false
+```
+
 ## List
 
 A list is a sequence of values. For example:
@@ -75,9 +100,19 @@ list = [
 ]
 ```
 
-## Advice
+## Simplicity ordering
 
 (A bit opinionated...)
 
-1. Try to use the simplest structure. (1: string, 2: list, 3: map)
+From simple to complex:
+
+1. boolean - Can only be `true` or `false`.
+2. number - Can only be a number, with or without a decimal point.
+3. string - Can be a sequence of characters.
+4. list - Can be a list of strings, maps, numbers or even list.
+5. map - Just like list, can contain anything.
+
+## Advice
+
+1. Try to use the simplest structure.
 2. For user-facing structures: keep it as simple as possible.
