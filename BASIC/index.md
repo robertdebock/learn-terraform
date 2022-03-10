@@ -14,13 +14,14 @@
 
 ## Day 2: Building (6 hours, 45 minutes)
 
-1. [Build a K8s cluster](build-infrastructure-k8s-cluster.md). (60 minutes)
-2. [Deploy a container group](build-infrastructure-container-group.md). (60 minutes)
-3. [Build a DBAAS service](build-infrastructure-dbaas.md). (60 minutes)
-4. [Build a CDN](build-infrastructure-cdn-endpoint.md). (45 minutes)
-5. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
-6. [Make a Scale Set](build-infrastructure-scale-set.md). (60 minutes)
-7. [Using a Firewall](build-infrastructure-firewall.md). (30 minutes)
+1. [Build a K8s cluster(Azure)](build-infrastructure-k8s-cluster-azure.md). (60 minutes)
+2. [Build a K8s cluster(GCP)](build-infrastructure-k8s-cluster-gcp.md). (60 minutes)
+3. [Deploy a container group](build-infrastructure-container-group.md). (60 minutes)
+4. [Build a DBAAS service](build-infrastructure-dbaas.md). (60 minutes)
+5. [Build a CDN](build-infrastructure-cdn-endpoint.md). (45 minutes)
+6. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
+7. [Make a Scale Set](build-infrastructure-scale-set.md). (60 minutes)
+8. [Using a Firewall](build-infrastructure-firewall.md). (30 minutes)
 
 ## Day 3: Combining things (5 hours, 30 minutes)
 
