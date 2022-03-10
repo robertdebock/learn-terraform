@@ -64,7 +64,8 @@ az account set --subscription x-y-z-a-b
 
 ## Demo
 
-See [this repository](https://github.com/robertdebock/learn-terraform-azure/tree/just-resourcegroup).
+- [Azure](https://github.com/robertdebock/learn-terraform-azure/tree/just-resourcegroup).
+- [GCP](https://github.com/robertdebock/learn-terraform-gcp)
 
 ## Assignment
 
