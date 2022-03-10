@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|45 minutes   |none        |
+| 45 minutes  | none       |
 
 Goal: Get to know each other and hear about how the course will be held.
 

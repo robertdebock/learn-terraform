@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|30 minutes   |a computer  |
+| 30 minutes  | a computer |
 
 Goal: Get an account to play with Azure.
 

@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|30 minutes   |a computer  |
+| 30 minutes  | a computer |
 
 Goal: Learn how to create Azure firewall using Terraform.
 

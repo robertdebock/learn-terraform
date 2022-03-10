@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|60 minutes   |none        |
+| 60 minutes  | none       |
 
 Goal: Understand what Infrastructure as code is.
 

@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|15 minutes   |A computer with Terraform installed.            |
+| 15 minutes  | A computer with Terraform installed.           |
 
 Goal: Learn how to destroy infrastructure.
 

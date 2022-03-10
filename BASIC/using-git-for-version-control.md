@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|60 minutes   |A browser.  |
+| 60 minutes  | A browser. |
 
 Goal: Learn to work with Git.
 

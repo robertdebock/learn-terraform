@@ -1,8 +1,8 @@
 # Use cases
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|120 minutes  |A computer with Terraform installed, terraform knowledge.|
+|expected time|requirements                                               |
+|-------------|-----------------------------------------------------------|
+| 120 minutes | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Write Terraform code for the cloud provider of your choice.
 

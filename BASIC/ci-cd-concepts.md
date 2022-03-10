@@ -1,8 +1,8 @@
 # CI/CD Concepts
 
-|expected time|requirements              |
-|-------------|--------------------------|
-|60 minutes   |Basic Terraform knowledge.|
+|expected time|requirements                |
+|-------------|----------------------------|
+| 60 minutes  | Basic Terraform knowledge. |
 
 Goal: Now that you are familiar with Terraform, you can automate deployments.
 

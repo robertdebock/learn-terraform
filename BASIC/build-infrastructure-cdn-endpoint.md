@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|60 minutes   |a computer  |
+| 60 minutes  | a computer |
 
 Goal: Learn how to create a CDN on Azure using Terraform.
 

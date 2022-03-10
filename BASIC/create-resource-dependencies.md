@@ -2,7 +2,7 @@
 
 |expected time|requirements                                    |
 |-------------|------------------------------------------------|
-|30 minutes   |A computer with Terraform installed.            |
+| 30 minutes  | A computer with Terraform installed.           |
 
 Goal: Learn how dependencies work in Terraform.
 
