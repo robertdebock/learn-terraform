@@ -20,6 +20,8 @@ Follow the steps described below.
 
 ## Demo
 
+- [GCP](https://github.com/robertdebock/learn-terraform-gcp/tree/change)
+
 ## Assignment
 
 - [ ] Follow the step in the `Howto` section for your cloud provider.
@@ -39,4 +41,6 @@ Follow the steps described below.
 
 ## Solution
 
-It's described in [this section](https://learn.hashicorp.com/tutorials/terraform/azure-change?in=terraform/azure-get-started#update-your-configuration)
+It's described in this section:
+- [Azure](https://learn.hashicorp.com/tutorials/terraform/azure-change?in=terraform/azure-get-started#update-your-configuration)
+- [GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-change?in=terraform/gcp-get-started)
