@@ -46,6 +46,6 @@ Some machines have `mysql` installed: `mysql -u YOUR_USER -p -h YOUR_FQDN`.
 
 ## Questions
 
-1. What are valid choises for `version`?
+1. What are valid choices for `version`?
 2. What happens if I change the `version` to this resource?
 3. Could I make a virtual machine and install MySQL myself?
