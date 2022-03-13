@@ -2,7 +2,7 @@
 
 |expected time|requirements|
 |-------------|------------|
-|15 minutes   |A computer. |
+| 15 minutes  | A computer |
 
 Goal: Be able to use Visual Studio Code with Terraform code.
 
