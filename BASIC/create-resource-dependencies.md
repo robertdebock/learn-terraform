@@ -76,11 +76,12 @@ resource "azurerm_virtual_machine" "reversed_proxy" {
 
 ## Demo
 
-See [here](https://github.com/robertdebock/terraform-azurerm-dependencies)
+See [Azure](https://github.com/robertdebock/terraform-azurerm-dependencies) or [GCP](https://github.com/robertdebock/terraform-gcp-dependencies)
 
 ## Assignment
 
-- [ ] In the [example repository] add an extra `azurerm_virtual_machine`. (Be aware; a lot of values need to be made unique...)
+- [ ] Azure: In the [example repository](https://github.com/robertdebock/terraform-azurerm-dependencies) add an extra `azurerm_virtual_machine`. (Be aware; a lot of values need to be made unique...)
+- [ ] GCP: In the [example repository](https://github.com/robertdebock/terraform-gcp-dependencies) add an extra `google_compute_instance`.
 - [ ] Build in a dependency between the 2 virtual machines.
 - [ ] Apply the code and see if the first machine was indeed provisioned first.
 
@@ -91,5 +92,3 @@ See [here](https://github.com/robertdebock/terraform-azurerm-dependencies)
 3. Can you explain what this means: `resource_group_name = azurerm_resource_group.rg.name`?
 4. How can you express a list in [HCL](https://github.com/hashicorp/hcl)?
 5. Can you login to the machine you've created?
-6. Please change the machine to Ubuntu 18.04. (`sku = 18.04-LTS`)
-7. Google for "terraform input sensitive". How can I set an environment variable to prevent me from typing (and seeing) the username and password?
