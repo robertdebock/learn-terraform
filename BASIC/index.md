@@ -22,8 +22,9 @@
 6. [Build a CDN (Azure)](build-infrastructure-cdn-endpoint.md). (45 minutes)
 7. [Built a CDN (GCP)](build-infrastructure-cdn-gcp). (45 minutes)
 8. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
-9. [Make a Scale Set](build-infrastructure-scale-set.md). (60 minutes)
-10. [Using a Firewall](build-infrastructure-firewall.md). (30 minutes)
+9. [Make a Scale Set (Azure)](build-infrastructure-scale-set.md). (60 minutes)
+10. [Make an autoscaler (GCP)](build-infrastructure-compute-autoscaler.md). (60 minutes)
+11. [Using a Firewall](build-infrastructure-firewall.md). (30 minutes)
 
 ## Day 3: Combining things (5 hours, 30 minutes)
 
