@@ -8,7 +8,7 @@ Goal: Experiment with a Virtual Machine Scale Set.
 
 ## Explanation
 
-A scale set allow you to treat a set of machines as one resource. Typically a loadbalancer sends traffic to healthy members of a scale set.
+A scale set allow you to treat a set of machines as one resource. Typically a load balancer sends traffic to healthy members of a scale set.
 
 A scaleset is easier to maintain than individual VM's, for example; a single number (`instances`) can scale up (or down) the amount of machines in a scale set.
 
