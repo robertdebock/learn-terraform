@@ -24,7 +24,8 @@
 8. [Create Resource Dependencies](create-resource-dependencies.md). (30 minutes)
 9. [Make a Scale Set (Azure)](build-infrastructure-scale-set.md). (60 minutes)
 10. [Make an autoscaler (GCP)](build-infrastructure-compute-autoscaler.md). (60 minutes)
-11. [Using a Firewall](build-infrastructure-firewall.md). (30 minutes)
+11. [Using a Firewall (Azure)](build-infrastructure-firewall-azure.md). (30 minutes)
+12. [Using a Firewall (GCP)](build-infrastructure-firewall-gcp.md). (30 minutes)
 
 ## Day 3: Combining things (5 hours, 30 minutes)
 
