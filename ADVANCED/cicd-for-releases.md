@@ -12,6 +12,8 @@ When you've used Terraform modules, you can start to integrate different modules
 
 ## Howto
 
+This howto is specific for bitbucket, from the [CI/CD for Modules](cicd-for-modules.md) chapter, you can steal code for GitHub and continue to develop.
+
 Start with a `bitbucket-pipelines.yml`:
 
 
@@ -30,7 +32,7 @@ In this case, we want to also `plan` and `apply`. BitBucket needs to [pass some 
 
 ## Assignment
 
-- [ ] Write a pipline to apply terraform code. Use a manual step after all verification steps (validate, lint, etc) are done.
+- [ ] Write a pipeline to apply terraform code. Use a manual step after all verification steps (validate, lint, etc) are done.
 
 ## Questions
 
