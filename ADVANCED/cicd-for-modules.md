@@ -1,8 +1,8 @@
 # CI/CD for modules
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|75 minutes   |A computer with Terraform installed, terraform knowledge.|
+|expected time|requirements                                               |
+|-------------|-----------------------------------------------------------|
+| 75 minutes  | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Setup CI/CD for Terraform modules.
 
@@ -14,7 +14,9 @@ Testing helps you to keep your modules in a good state and makes it easier to co
 
 ## Howto
 
-Let's take an example BitBucket CI/CD file. (It's not compelete, you'll make it complate later.)
+### BitBucket
+
+Let's take an example BitBucket CI/CD file. (It's not complete, you'll make it complete later.)
 
 Add a file to the repository containing a Terraform module called `bitbucket-pipelines.yml`:
 
@@ -31,11 +33,17 @@ pipelines:
 
 And a [GitHub actions example](https://github.com/robertdebock/terraform-aws-cluster/blob/master/.github/workflows/terraform.yml). Be aware the the different scenarios (directories in `examples` need to be listed in the action.
 
+### GitHub
+
+There are [many actions](https://github.com/marketplace?query=terraform&type=actions) that you can use. Pick one that suits your situation.
+
+A realistic example can be found [here](https://github.com/robertdebock/terraform-aws-vault/blob/master/.github/workflows/terraform.yml).
+
 ## Assignment
 
 - [ ] For your version control system, write a CI/CD file that tests a module. The tests may be simple, they can be extended later.
 
-This may take some time, but it's well worth the effort as these pipelines will run quite frequently. We'll compare eachothers code later to learn from each other.
+This may take some time, but it's well worth the effort as these pipelines will run quite frequently. We'll compare each others code later to learn from each other.
 
 With CI/CD, always start with the smallest unit/component. This ensures you can deliver value incrementally instead of a "waterfall" approach.
 
