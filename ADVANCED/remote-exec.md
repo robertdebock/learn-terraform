@@ -1,14 +1,14 @@
 # `remote-exec`
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|60 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 60 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Be able to make use of `remote-exec` when required.
 
 ## Explanation
 
-The `remote-exec` provisioner executes a command on the remote resource after creating the resource. This is typically applied when spinning up a machine, for example using `azurerm_virtual_machine`.
+The `remote-exec` provisioner executes a command on the remote resource after creating the resource. This is typically applied when spinning up a machine.
 
 A few use-cases:
 
@@ -18,6 +18,8 @@ A few use-cases:
 Generally speaking; try to [limit](https://www.terraform.io/docs/language/resources/provisioners/syntax.html#provisioners-are-a-last-resort) the commands to the bare minimum to get going; there are better ways to configure a system.
 
 For Azure virtual machines, there is also a resource [azurerm_virtual_machine_extension](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine_extension) which is more suitable to execute commands. Since most other cloud providers do not have such a resource, understanding `remote-exec` is quite useful.
+
+For Google instances, there is a parameter [metadata_startup_script](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance#metadata_startup_script) in the resource compute_instance, that does something similar.
 
 ## Howto
 
@@ -124,10 +126,15 @@ resource "null_resource" "default" {
 }
 ```
 
-## Assignment
+## Assignment Azure
 
 - [ ] Create a `azurerm_virtual_machine` and have update all packages. (Two commands: `sudo apt-get update` and `sudo apt-get upgrade -y`)
 - [ ] Find out if the `null_resource` is stored in the state.
+
+## Assignment GCP
+
+- [ ] Create a `compute_instance` and have all packages updated. (`apt-get update` and `apt-get upgrade -y`).
+- [ ] Find out if the `metadata_startup_script` is stored in the state.
 
 ## Questions
 
