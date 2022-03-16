@@ -1,8 +1,8 @@
 # local values
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|45 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 45 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Be able to create and use `locals` to further abstract your data.
 
@@ -90,7 +90,7 @@ resource "azurerm_resource_group" "rg" {
 }
 ```
 
-## Assignment
+## Assignment Azure
 
 - [ ] Introduce `locals` to maps `size` to these values: Standard_A1_v2, Standard_A2_v2 or Standard_A4_v2 using the below starting point:
 
@@ -111,6 +111,26 @@ resource "azurerm_virtual_machine" "default" {
   ...
 }
 ```
+
+## Assignment GCP
+
+- [ ] Start with [this example repository](https://github.com/robertdebock/terraform-gcp-database/blob/master/main.tf)
+
+The is a value `tier = "db-f1-micro"` that needs to be simplified.
+
+- [ ] Lookup available `tier`s [here](https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1beta4/tiers/list?apix_params=%7B%22project%22%3A%22roberts-project-23%22%7D).
+
+- [ ] Make a locals map:
+
+| simple_name | tier name        | RAM (GB) |
+|-------------|------------------|----------|
+| small       |db-f1-micro       | 0.6      |
+| medium      | db-n1-standard-2 | 8        |
+| large       | db-n1-standard-4 | 16       |
+
+- [ ] Make a variable "size" (or so), allowing "small", "medium" or "large".
+- [ ] Lookup the tier name based on the variable.
+- [ ] Modify the resource `google_sql_database_instance` to use your newly created local.
 
 ## Questions
 
