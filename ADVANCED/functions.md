@@ -1,8 +1,8 @@
 # Functions
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 30 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Understand what functions are and how to apply (some of) them.
 
@@ -59,7 +59,7 @@ The validation should:
 
 ## Solution
 
-```hcl`
+```hcl
 variable "example" {
   type        = string
   description = "Some variable"

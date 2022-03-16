@@ -1,14 +1,14 @@
 # Sentinel
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|60 minutes   |A computer with Sentinel installed, terraform knowledge. |
+| expected time | requirements                                             |
+|---------------|----------------------------------------------------------|
+| 60 minutes    | A computer with Sentinel installed, terraform knowledge. |
 
 Goal: Understand what Sentinel is and how to write rules.
 
 ## Explanation
 
-Sentinel is a HashiCorp tool that can enforce policies (or rules). Sentinel ties into Terraform Enterprise and Terraform Cloud, both commercial producs.
+Sentinel is a HashiCorp tool that can enforce policies (or rules). Sentinel ties into Terraform Enterprise and Terraform Cloud, both commercial products.
 
 ```
 +--- code ---+    +--- Terraform -------+    +----------+
@@ -30,6 +30,10 @@ Another way to explain the order is this list:
 The intent of Sentinel is that a security person (SEC) write a policy (rules) and the developers (DEV) write terraform code. After Terraform has rendered a plan, Sentinel checks for violations and continues execution when all rules are passed.
 
 There are alternative methods, but none are as convenient or secure as Sentinel:
+
+### GCP Organization policies
+
+Quite complete, but only on GCP: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_organization_policy
 
 ### Azure policies
 
@@ -106,7 +110,7 @@ Now lets have a look at a [realistic example](https://github.com/robertdebock/se
 
 If you don't have or can't have Sentinel installed, try the [Sentinel playground](https://play.sentinelproject.io/)
 
-- [ ] Install [HashiCorp Sentinel](https://docs.hashicorp.com/sentinel/downloads).
+- [ ] Install [HashiCorp Sentinel](https://docs.hashicorp.com/sentinel/downloads). (It's already installed on the playground/lab machines.)
 - [ ] Clone this [example repository](https://github.com/robertdebock/sentinel-azure-policies).
 - [ ] Find the `mandatory_tags` in `mandatory_tags.sentinel`.
 - [ ] Expend the tags with `costcenter`.
