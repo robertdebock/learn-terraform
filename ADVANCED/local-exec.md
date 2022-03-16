@@ -1,8 +1,8 @@
 # `local-exec`
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 30 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Know when and how to use the `local-exec` provisioner.
 
@@ -16,6 +16,8 @@ A few use-cases:
 2. Add a machines (ip or hostname) to an inventory so Ansible can use it.
 3. Add a resource to the CMDB.
 4. Start a configuration management system for that host.
+
+Using local-exec has a few drawbacks, so use it when there is no other solution.
 
 ## Howto
 
@@ -33,7 +35,11 @@ resource "azurerm_resource_group" "example" {
 
 ## Assignment
 
-- [ ] Use the `local-exec` provisioner to write an IP-address into a file for this Terraform code. You will need to use the [documentation for azurerm_network_interface](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface) to get the `private_ip_address`.
+- [ ] Use the `local-exec` provisioner to write an IP-address into a file for this Terraform code.
+
+For Azure you will need to use the [documentation for azurerm_network_interface](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface) to get the `private_ip_address`.
+
+### Azure
 
 ```hcl
 resource "azurerm_resource_group" "rg" {
@@ -100,13 +106,53 @@ resource "azurerm_virtual_machine" "vm" {
 }
 ```
 
+### GCP
+
+```hcl
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "4.13.0"
+    }
+  }
+}
+
+provider "google" {
+  # Change this for your project.
+  project = "roberts-project-23"
+  region  = "us-central1"
+}
+
+resource "google_compute_instance" "default" {
+  name         = "default"
+  machine_type = "e2-medium"
+  zone         = "us-central1-a"
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
+  network_interface {
+    network = "default"
+    access_config {}
+  }
+  metadata = {
+    # This required a file called id_rsa.pub.
+    ssh-keys = "username:${file("id_rsa.pub")}"
+  }
+}
+```
+
 ## Questions
 
 1. Will the `local-exec` provisioner run again when running `terraform apply`?
-2. If I change a detail in `azurerm_network_interface`, will the `local-exec` provisioner run again?
+2. If I change a detail in `azurerm_network_interface` or `network_interface`, will the `local-exec` provisioner run again?
 3. Is the `local-exec` provisioner stored in the state?
+4. What are drawbacks of using `local-exec`?
+5. What are alternatives for `local-exec`?
 
-## Solution
+## Solution Azure
 
 ```hcl
 # skipped a few resources
@@ -123,6 +169,37 @@ resource "azurerm_network_interface" "nic" {
   }
   provisioner "local-exec" {
     command = "echo ${self.private_ip_address} >> my_file.txt"
+  }
+}
+
+# skipped a few resources
+```
+
+## Solution GCP
+
+```hcl
+# skipped a few resources
+
+resource "google_compute_instance" "default" {
+  name         = "default"
+  machine_type = "e2-medium"
+  zone         = "us-central1-a"
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
+  network_interface {
+    network = "default"
+    access_config {}
+  }
+  metadata = {
+    # This required a file called id_rsa.pub.
+    ssh-keys = "username:${file("id_rsa.pub")}"
+  }
+
+  provisioner "local-exec" {
+    command = "echo ${self.google_compute_instance.proxy.network_interface[0].access_config[0].nat_ip} >> my_file.txt"
   }
 
 }
