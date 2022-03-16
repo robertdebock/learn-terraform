@@ -1,8 +1,8 @@
 # CI/CD for releases
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 30 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Setup CI/CD for Terraform releases.
 
