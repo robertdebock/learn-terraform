@@ -1,8 +1,8 @@
 # `try`
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|30 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 30 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Write modules that have optional parameters.
 
@@ -49,7 +49,8 @@ module "github" {
 
 ## Solution
 
-See [this repository](https://github.com/robertdebock/terraform-github-deployment).
+See [this repository](https://github.com/robertdebock/terraform-github-deployment/blob/master/examples/repositories/main.tf).
+Or [more complex](https://github.com/robertdebock/terraform-aws-vault).
 
 ## Sources
 
