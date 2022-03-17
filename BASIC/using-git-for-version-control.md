@@ -1,8 +1,8 @@
 # Using GIT for version control.
 
-|expected time|requirements|
-|-------------|------------|
-| 60 minutes  | A browser. |
+| expected time |requirements |
+|---------------|-------------|
+| 60 minutes    | A browser.  |
 
 Goal: Learn to work with Git.
 
