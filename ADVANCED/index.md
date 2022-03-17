@@ -23,7 +23,7 @@
 8. [Try](try-something.md) (30 minutes)
 9. [Sentinel](sentinel.md) (60 minutes)
 
-## Day 3 (5 hours, 45 minutes)
+## Day 3 (6 hours)
 
 1. [Lifecycle](lifecycle.md) (60 minutes)
 2. [Packer](packer.md) (60 minutes)
@@ -32,6 +32,7 @@
 5. [Troubleshooting (bonus)](troubleshooting.md) (15 minutes)
 6. [Use Cases (bonus)](../BASIC/use-cases.md) (90 minuten)
 7. [Best practices](best-practices.md) (90 minutes)
+8. [Upgrading Terraform](upgrading-terraform.md) (15 minutes)
 
 ## Reference material
 
