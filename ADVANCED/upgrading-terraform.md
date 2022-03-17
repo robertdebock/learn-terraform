@@ -30,14 +30,17 @@ You may not specify a version of the provider. That may give unstable results; `
 
 Typically try to keep the providers up to date. Just as with any software; not updating for a long period of time may cause a difficult upgrade path.
 
+Providers (and modules) can be updated using `terraform init -upgrade`.
+
 ### Modules
 
 Very similar to providers; although some modules will not be maintained. These modules may stop working.
 
 Any module has a version. Specifying the version to use makes your root-module more stable, but you may need to modify the version to ensure no deprecations occur.
 
-## Howto
+Modules (and providers) can be updated using `terraform init -upgrade`.
 
+## Howto
 
 Here is an example of version pinning.
 
@@ -63,4 +66,4 @@ module "vault" {
 
 The upgrade of Terraform depends a bit on how the installation was done. In case packages are used, simply `apt-get update && apt-get upgrade terraform`, `yum update terraform`, and so on.
 
-You can also place a binary in a path that's in your `PATH` variable to temporarily try a specific version. 
+You can also place a binary in a path that's in your `PATH` variable to temporarily try a specific version.
