@@ -1,4 +1,4 @@
 # Learn Terraform
 
-- [Basic](BASIC)
-- [Advanced](ADVANCED)
+- [Basic](BASIC).
+- [Advanced](ADVANCED).
