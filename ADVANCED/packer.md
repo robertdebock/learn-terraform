@@ -19,19 +19,21 @@ In those situations it can be useful to create your own image using [Packer](htt
 
 ## Howto
 
-Let's go over the [README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md).
+Let's go over the [Azure README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md) or [GCP README.md](https://github.com/robertdebock/packer-gcp-centos/blob/master/README.md).
 
 ## Assignment
 
-- [ ] Clone [this](https://github.com/robertdebock/packer-azure-arm) repository.
+- [ ] Azure: Clone [this](https://github.com/robertdebock/packer-azure-arm) repository.
+- [ ] GCP: Clone [this](https://github.com/robertdebock/packer-gcp-centos) repository.
 - [ ] Install [Packer](https://www.packer.io/).
-- [ ] Follow the steps in the [README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md) to build an image.
-- [ ] Bonus; `16.04-LTS` is a bit old. Find a newer `sku`.
+- [ ] Follow the steps in the [Azure README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md) or [GCP README.md](https://github.com/robertdebock/packer-gcp-centos/blob/master/README.m) to build an image.
+- [ ] Azure Bonus: `16.04-LTS` is a bit old. Find a newer `sku`.
+- [ ] GPC Bonus: Make the script nicer, add some `/etc/motd`, packages, services, etc.
 
 ## Questions
 
 1. Would building images be something for your organization?
-2. Conceptually, can I build an Amazon image on Azure?
+2. Conceptually, can I build an Amazon image on Azure or GCP?
 
 ## Solution
 
