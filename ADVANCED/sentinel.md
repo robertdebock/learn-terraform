@@ -33,7 +33,7 @@ There are alternative methods, but none are as convenient or secure as Sentinel:
 
 ### GCP Organization policies
 
-Quite complete, but only on GCP: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_organization_policy
+Quite complete, but only on [GCP](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_organization_policy).
 
 ### Azure policies
 
