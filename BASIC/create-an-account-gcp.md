@@ -4,7 +4,7 @@
 |---------------|--------------|
 | 30 minutes    | a computer   |
 
-Goal: Get an account to play with Azure.
+Goal: Get an account to play with GCP.
 
 ## Explanation
 
