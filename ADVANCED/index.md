@@ -29,6 +29,7 @@
 2. [Packer](packer.md) (60 minutes)
 3. [Workspaces](workspaces.md) (30 minutes)
 4. [Functions](functions.md) (30 minutes)
+5. [Conditionals](conditionals.md) (30 minutes)
 5. [Troubleshooting (bonus)](troubleshooting.md) (15 minutes)
 6. [Use Cases (bonus)](../BASIC/use-cases.md) (90 minuten)
 7. [Best practices](best-practices.md) (90 minutes)
