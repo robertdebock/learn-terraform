@@ -44,7 +44,7 @@ You can test quite some things/conditions, here are some examples:
 var.variable == "something" ? 1 : 0
 
 # Negative compare:
-var.variable != "something ? 1 : 0
+var.variable != "something" ? 1 : 0
 
 # You can also return some value on a condition. (That would not be in the `count` parameter.)
 var.variable == "europe" ? "amsterdam": "other"
@@ -100,6 +100,8 @@ variable "my_var" {
 
 resource "example" "default" {
   count = var.my_var % 2 != 0 ? 1 : 0
+  # Or the reverse:
+  # count = var.my_var % 2 == 1 ? 1 : 0
   name = "whatever"
 }
 ```
