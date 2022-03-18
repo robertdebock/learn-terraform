@@ -26,14 +26,16 @@ This [code](https://github.com/robertdebock/git-terraform-demo) is connected to 
 
 The file `versions.tf` can be modified to use remote state as well.
 
+Another (CLI based) [repo](https://github.com/robertdebock/terraform-cloud-my_ws) to show `terraform apply`.
+
 ## Assignment
 
-There is a great [track](https://learn.hashicorp.com/collections/terraform/cloud-get-started) for this. That track covers much more than just workspaces, so I suggest to finish these labs:
+There is a great [track](https://learn.hashicorp.com/collections/terraform/cloud-get-started) for this. That track covers much more than just workspaces, please finish these labs:
 
 - [ ] Sign up for Terraform Cloud
 - [ ] Create a Workspace
 
-The rest of the labs work with AWS, which is not always true for this course.
+The rest of the labs work with AWS, which is not always applicable for this course.
 
 ## Questions:
 
