@@ -1,14 +1,15 @@
 # Writing modules
 
-|expected time|requirements                                     |
-|-------------|-------------------------------------------------|
-| 60 minutes  | A computer with Terraform installed.            |
+| expected time | requirements                                  |
+|---------------|-----------------------------------------------|
+| 60 minutes    | A computer with Terraform installed.          |
 
 Goal: learn how to write Terraform modules.
 
 ## Explanation
 
 You've learned how to write Terraform code. When you write code, you'll see that you will be [repeating](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) yourself. That can be a waste.
+
 Modules to the rescue; with Terraform modules you can write (small) pieces of Terraform code that other (or yourself) can reuse. This prevents double code and makes maintaining your code much easier.
 
 Imaging this example:
@@ -49,7 +50,7 @@ Many vendors do not use [SemVer](https://semver.org/), rather use a new version 
 
 ## Howto
 
-1. Make a new directory, maybe `terraform-module-azurerm-resource_group`.
+1. Make a new directory, maybe `terraform-azurerm-resource_group`.
 2. Describe all input in `variables.tf`.
 3. Describe all output in `outputs.tf`
 4. Add a `README.md`.
@@ -64,7 +65,7 @@ The [documentation](https://www.terraform.io/docs/modules/index.html) may also h
 
 ## Demo
 
-See [this repository](https://github.com/robertdebock/terraform-azurerm-azurerm_resource_group)
+See [this Azure repository](https://github.com/robertdebock/terraform-azurerm-azurerm_resource_group) or [this AWS repository](https://registry.terraform.io/modules/robertdebock/vault/aws/latest).
 
 ## Assignment
 
@@ -85,6 +86,7 @@ See [this repository](https://github.com/robertdebock/terraform-azurerm-azurerm_
 6. Create a `README.md` explaining the features.
 7. Add a `LICENSE` before publishing.
 8. Put `terraform.tfstate`, `terraform.tfstate.backup`, `.terraform` and `*.tfvars` in [`.gitignore`](https://github.com/github/gitignore/blob/master/Terraform.gitignore).
+9. Bonus: add an `examples` directory, and in there `default` (or others). Write `examples/*/main.tf` to try your own module.
 
 ## Questions:
 
