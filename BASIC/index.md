@@ -4,13 +4,14 @@
 
 1. [Introduction](introduction.md). (45 minutes)
 2. [Infrastructure as Code with Terraform](infrastructure-as-code-with-terraform.md). (60 minutes)
-3. [Create an account](create-an-account.md). (30 minutes)
-4. [Install Terraform](install-terraform.md). (60 minutes)
-5. [Using GIT for version control](using-git-for-version-control.md). (60 minutes)
-6. [Setup Visual Studio Code](visual-studio-code.md). (15 minutes)
-7. [Build infrastructure](build-infrastructure.md). (60 minutes)
-8. [Change infrastructure](change-infrastructure.md). (15 minutes)
-9. [Destroy infrastructure](destroy-infrastructure.md). (15 minutes)
+3. [Create an account (Azure)](create-an-account-azure.md). (30 minutes)
+4. [Create an account (GCP)](create-an-account-gcp.md). (30 minutes)
+5. [Install Terraform](install-terraform.md). (60 minutes)
+6. [Using GIT for version control](using-git-for-version-control.md). (60 minutes)
+7. [Setup Visual Studio Code](visual-studio-code.md). (15 minutes)
+8. [Build infrastructure](build-infrastructure.md). (60 minutes)
+9. [Change infrastructure](change-infrastructure.md). (15 minutes)
+10. [Destroy infrastructure](destroy-infrastructure.md). (15 minutes)
 
 ## Day 2: Building (6 hours, 45 minutes)
 

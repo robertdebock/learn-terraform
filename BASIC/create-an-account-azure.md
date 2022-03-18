@@ -1,8 +1,8 @@
-# Create an account
+# Create an account (Azure)
 
-|expected time|requirements|
-|-------------|------------|
-| 30 minutes  | a computer |
+| expected time | requirements |
+|---------------|--------------|
+| 30 minutes    | a computer   |
 
 Goal: Get an account to play with Azure.
 
