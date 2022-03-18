@@ -1,8 +1,8 @@
 # Querying data with output variables
 
-|expected time|requirements                                    |
-|-------------|------------------------------------------------|
-| 60 minutes  | A computer with Terraform installed.           |
+| expected time | requirements                                   |
+|---------------|------------------------------------------------|
+| 60 minutes    | A computer with Terraform installed.           |
 
 Goal: Learn how to define input variables
 
@@ -121,6 +121,30 @@ data "azurerm_public_ip" "ip" {
 }
 ```
 
+Or in this example the image to start a machine is found using a `data` object.
+
+```hcl
+data "google_compute_image" "my_image" {
+  family  = "debian-9"
+  project = "debian-cloud"
+}
+
+resource "google_compute_instance" "default" {
+  # ...
+
+  boot_disk {
+    initialize_params {
+      image = data.google_compute_image.my_image.self_link
+    }
+  }
+}
+```
+
+Most providers have two sides to a resource:
+
+1. `resource` - To describe the resources to created.
+2. `data` - To find resources.
+
 ## Howto
 
 - [AWS](https://learn.hashicorp.com/tutorials/terraform/aws-outputs?in=terraform/aws-get-started).
@@ -129,7 +153,8 @@ data "azurerm_public_ip" "ip" {
 
 ## Demo
 
-See [this file](https://github.com/robertdebock/learn-terraform-azure/blob/master/outputs.tf).
+See [this Azure file](https://github.com/robertdebock/learn-terraform-azure/blob/master/outputs.tf).
+See [this GCP file](https://github.com/robertdebock/terraform-gcp-output)
 
 ## Assignment
 
