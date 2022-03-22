@@ -2,7 +2,7 @@
 
 ## Day 1: Warming up (5 hours)
 
-1. [Introduction](introduction.md). (45 minutes)
+1. [**Introduction**](introduction.md). (45 minutes)
 2. [Infrastructure as Code with Terraform](infrastructure-as-code-with-terraform.md). (60 minutes)
 3. [Create an account (Azure)](create-an-account-azure.md). (30 minutes)
 4. [Create an account (GCP)](create-an-account-gcp.md). (30 minutes)
