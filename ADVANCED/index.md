@@ -1,6 +1,6 @@
 # Learn Terraform Advanced
 
-## Day 1 (6 hours)
+## Day 1 (6 hours, 15 minutes)
 
 1. [**Introduction**](introduction) (30 minutes)
 2. [**Templates**](templates.md) (45 minutes)
@@ -9,6 +9,7 @@
 5. [**Using multiple resources and providers**](multiple-resources.md) (120 minutes)
 6. [**Terraform Cloud**](terraform-cloud.md) (30 minutes)
 7. [**Terraform Cloud workspace design**](terraform-cloud-workspace-design) (30 minutes)
+8. [Manage Terraform Versions using tfenv](tfenv) (15 minutes)
 
 ## Day 2 (8 hours)
 
