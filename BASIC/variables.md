@@ -9,7 +9,7 @@ The variables can be overwritten, the ordering below. (Where the first item on t
 1. CLI (`-var`).
 2. Specific variable files (`-var-file=`).
 3. `*.auto.tfvars`.
-4. *.tfvars
+4. terraform.tfvars
 5. Environment variables (`TF_VAR_variable`).
 6. root-module variables (`variable "identifier" { default="value" }`).
 7. module variables (`variable "identifier" { default="value" }`).
