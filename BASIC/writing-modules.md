@@ -65,7 +65,9 @@ The [documentation](https://www.terraform.io/docs/modules/index.html) may also h
 
 ## Demo
 
-See [this Azure repository](https://github.com/robertdebock/terraform-azurerm-azurerm_resource_group) or [this AWS repository](https://registry.terraform.io/modules/robertdebock/vault/aws/latest).
+- [Azure](https://github.com/robertdebock/terraform-azurerm-azurerm_resource_group).
+- [AWS](https://registry.terraform.io/modules/robertdebock/vault/aws/latest).
+- [GCP](https://github.com/robertdebock/terraform-gcp-module).
 
 ## Assignment
 
