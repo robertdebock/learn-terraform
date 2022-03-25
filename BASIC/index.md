@@ -31,6 +31,7 @@
 ## Day 3: Combining things (5 hours, 30 minutes)
 
 1. [**Define Input Variables**](define-input-variables.md). (60 minutes)
+2. [**Show output**](output). (30 minutes)
 2. [**Query Data with Output Variables**](query-data-with-output-variables.md). (60 minutes)
 3. [**Organising files**](organizing-files.md). (30 minutes)
 4. [**Writing modules**](writing-modules.md). (60 minutes)
