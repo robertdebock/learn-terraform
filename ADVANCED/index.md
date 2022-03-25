@@ -19,10 +19,10 @@
 4. [**locals**](local-values) (45 minutes)
 5. [**Module dependencies**](create-module-dependencies) (60 minutes)
 6. [**GIT strategy**](git-strategy) (30 minutes)
-6. [Using Terragrunt](terragrunt) (90 minutes)
-7. [Self-service options](self-service) (30 minutes)
-8. [**Try**](try-something) (30 minutes)
-9. [**Sentinel**](sentinel) (60 minutes)
+7. [Using Terragrunt](terragrunt) (90 minutes)
+8. [Self-service options](self-service) (30 minutes)
+9. [**Try**](try-something) (30 minutes)
+10. [**Sentinel**](sentinel) (60 minutes)
 
 ## Day 3 (6 hours)
 
@@ -31,10 +31,11 @@
 3. [Workspaces](workspaces) (30 minutes)
 4. [**Functions**](functions) (30 minutes)
 5. [**Conditionals**](conditionals) (30 minutes)
-5. [**Troubleshooting (bonus)**](troubleshooting) (15 minutes)
-6. [Use Cases (bonus)](../BASIC/use-cases) (90 minuten)
-7. [Best practices](best-practices) (90 minutes)
-8. [**Upgrading Terraform**](upgrading-terraform) (15 minutes)
+6. [**Troubleshooting (bonus)**](troubleshooting) (15 minutes)
+7. [Use Cases (bonus)](../BASIC/use-cases) (90 minuten)
+8. [Best practices](best-practices) (90 minutes)
+9. [**Upgrading Terraform**](upgrading-terraform) (15 minutes)
+10. [**Testing experiment**](testing-experiment) (30 minutes)
 
 ## Reference material
 

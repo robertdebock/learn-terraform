@@ -32,10 +32,10 @@
 
 1. [**Define Input Variables**](define-input-variables). (60 minutes)
 2. [**Show output**](output). (30 minutes)
-2. [**Query Data with Output Variables**](query-data-with-output-variables). (60 minutes)
-3. [**Organising files**](organizing-files). (30 minutes)
-4. [**Writing modules**](writing-modules). (60 minutes)
-5. [Use-cases (bonus)](use-cases). (120 minutes)
+3. [**Query Data with Output Variables**](query-data-with-output-variables). (60 minutes)
+4. [**Organising files**](organizing-files). (30 minutes)
+5. [**Writing modules**](writing-modules). (60 minutes)
+6. [Use-cases (bonus)](use-cases). (120 minutes)
 
 ## Reference material
 
