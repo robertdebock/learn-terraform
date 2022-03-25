@@ -19,7 +19,7 @@ Once installed you can:
 - List locally installed versions: `tfenv list`.
 - List remotely available versions: `tfenv list-remote`.
 - Install new Terraform versions: `tfenv install 1.1.7`.
-- Select Terraform versions: `tfenv set 1.1.7`.
+- Select Terraform versions: `tfenv use 1.1.7`.
 - Install the latest Terraform version: `tfvar install latest`.
 - Install the minimum required Terraform version: `tfvar install min-required`.
 
