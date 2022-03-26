@@ -40,3 +40,4 @@
 ## Reference material
 
 - [SaaS or PaaS](saas-or-paas)
+- [Console](console) (30 minutes)
