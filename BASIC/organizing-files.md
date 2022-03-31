@@ -18,8 +18,10 @@ The files you place in a repository can be split up. [Hashicorp](https://www.ter
 │   └── default      # <- You can have other scenarios as well.
 │       └── main.tf  # <- This is a root-module, using this module.
 ├── LICENSE
+├── locals.tf        # <- Here is where you store "logic".
 ├── main.tf          # <- Here is where you store "logic".
 ├── outputs.tf       # <- The output is described here.
+├── providers.tf     # <- Provider configuration in here.
 ├── README.md
 ├── variables.tf     # <- The input is described here.
 └── versions.tf      # <- Uses providers/modules go heere.
