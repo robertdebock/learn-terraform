@@ -22,20 +22,20 @@
 5. [**Build a database (GCP)**](build-infrastructure-sql-db). (60 minutes)
 6. [Build a CDN (Azure)](build-infrastructure-cdn-endpoint). (45 minutes)
 7. [**Built a CDN (GCP)**](build-infrastructure-cdn-gcp). (45 minutes)
-8. [**Create Resource Dependencies**](create-resource-dependencies). (30 minutes)
-9. [Make a Scale Set (Azure)](build-infrastructure-scale-set). (60 minutes)
-10. [**Make an autoscaler (GCP)**](build-infrastructure-compute-autoscaler). (60 minutes)
-11. [Using a Firewall (Azure)](build-infrastructure-firewall-azure). (30 minutes)
-12. [**Using a Firewall (GCP)**](build-infrastructure-firewall-gcp). (30 minutes)
+8. [Make a Scale Set (Azure)](build-infrastructure-scale-set). (60 minutes)
+9. [**Make an autoscaler (GCP)**](build-infrastructure-compute-autoscaler). (60 minutes)
+10. [Using a Firewall (Azure)](build-infrastructure-firewall-azure). (30 minutes)
+11. [**Using a Firewall (GCP)**](build-infrastructure-firewall-gcp). (30 minutes)
 
 ## Day 3: Combining things (5 hours, 30 minutes)
 
-1. [**Define Input Variables**](define-input-variables). (60 minutes)
-2. [**Show output**](output). (30 minutes)
-3. [**Query Data with Output Variables**](query-data-with-output-variables). (60 minutes)
-4. [**Organising files**](organizing-files). (30 minutes)
-5. [**Writing modules**](writing-modules). (60 minutes)
-6. [Use-cases (bonus)](use-cases). (120 minutes)
+1. [**Create Resource Dependencies**](create-resource-dependencies). (30 minutes)
+2. [**Define Input Variables**](define-input-variables). (60 minutes)
+3. [**Show output**](output). (30 minutes)
+4. [**Query Data with Output Variables**](query-data-with-output-variables). (60 minutes)
+5. [**Organising files**](organizing-files). (30 minutes)
+6. [**Writing modules**](writing-modules). (60 minutes)
+7. [Use-cases (bonus)](use-cases). (120 minutes)
 
 ## Reference material
 
