@@ -24,6 +24,8 @@ This example looks at Google mostly, but there are many more place where you can
 4. Azure Storage.
 5. Many more.
 
+Do not confuse the data object [remote state](https://www.terraform.io/language/state/remote-state-data) with remote state. (Although it's interesting!)
+
 ## Demo
 
 See [this](https://github.com/robertdebock/terraform-gcp-backend) repo.
