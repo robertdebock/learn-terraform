@@ -10,6 +10,7 @@
 6. [**Terraform Cloud**](terraform-cloud) (30 minutes)
 7. [**Terraform Cloud workspace design**](terraform-cloud-workspace-design) (30 minutes)
 8. [Manage Terraform Versions using tfenv](tfenv) (15 minutes)
+9. [**Store state on GCP**](state-on-gcp) (45 minutes)
 
 ## Day 2 (8 hours)
 
