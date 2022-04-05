@@ -28,6 +28,23 @@ TF_LOG=DEBUG TF_LOG_PATH="./DEBUG.txt" terraform apply
 
 Crashlogs (`crash.log`) can be use to let HashiCorp troubleshoot issues.
 
+Sometimes, you may want to see some data. With failing builds this can be a challenge. Here is a trick to inspect data.
+
+```hcl
+resource "null_resource" "terraform-debug" {
+  provisioner "local-exec" {
+    command = "echo $VARIABLE1 >> debug.txt ; echo $VARIABLE2 >> debug.txt"
+
+    environment = {
+        VARIABLE1 = jsonencode(var.your_variable_name)
+        VARIABLE2 = jsonencode(local.piece_of_data)
+    }
+  }
+}
+```
+
+The above code has no dependencies (except for the varialbe and local) so will execute early. This means you can inspect variables, locals, but also created resources. (Although that would introduce a dependency...)
+
 ## Assignment
 
 - [ ] Run a plan and save the debugging output to `debug-output.txt`.
