@@ -8,7 +8,10 @@ Goal: Using multiple (related) resources and providers.
 
 ## Explanation
 
-Sometimes you need to build infrastructure on more than 1 provider. Maybe you've got resources running on Azure and would like to add Cloudflare as a CDN.
+Sometimes you need to build infrastructure on more than 1 provider.
+
+- Azure: Maybe you've got resources running on Azure and would like to add Cloudflare as a CDN.
+- GCP: You can combine GCP resources with Docker running locally.
 
 Terraform can deal with multiple providers and basically becomes an [orchestrator](https://en.wikipedia.org/wiki/Orchestration_(computing)).
 
@@ -40,7 +43,7 @@ provider "azurerm" {
 }
 ```
 
-### Refering
+### Referring
 
 In Terraform you can refer to resources:
 
@@ -113,12 +116,25 @@ resource "azurerm_resource_group" "foo" {
 
 The example above use the `german` `environment` and can be use by adding `provider = NAME`.
 
-## Assignment
+## Assignment Azure
 
 - [ ] In the Terraform code that you have, add a [checkly](https://www.checklyhq.com/) resource to monitor your instance. Use references to named values to dynamically configure checkly.
 - [ ] If time permits it, experiment with the [uptime robot status page](https://registry.terraform.io/providers/louy/uptimerobot/latest/docs).
 
 You need to sign-up to checkly. You can use your github account or email.
+
+## Assignment GCP
+
+You are going to create an instance on GCP and a Docker container that proxies traffic to the GCP instance.
+
+![architecture](images/gcp-docker.png "Architecture")
+
+- [ ] Create an instance with a public IP.
+- [ ] Install [apache](https://github.com/robertdebock/terraform-gcp-docker/blob/master/script.sh)
+- [ ] Find an image and create the [container](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/container). Use the `image`: `robertdebock/mirror:latest`. Expose a unique [port](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/container#example).
+- [ ] Set the `env` (enviroment variable) `URL` to point to the IP-address of the GCP instance.
+
+You can find the [solution](https://github.com/robertdebock/terraform-gcp-docker) in case you are stuck.
 
 ## Questions
 
