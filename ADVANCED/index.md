@@ -24,6 +24,7 @@
 8. [Self-service options](self-service) (30 minutes)
 9. [**Try**](try-something) (30 minutes)
 10. [**Sentinel**](sentinel) (60 minutes)
+11. [**Reading remote state**](reading-remote-state) (30 minute)
 
 ## Day 3 (6 hours)
 
