@@ -26,7 +26,7 @@ Let's go over the [Azure README.md](https://github.com/robertdebock/packer-azure
 - [ ] Azure: Clone [this](https://github.com/robertdebock/packer-azure-arm) repository.
 - [ ] GCP: Clone [this](https://github.com/robertdebock/packer-gcp-centos) repository.
 - [ ] Install [Packer](https://www.packer.io/).
-- [ ] Follow the steps in the [Azure README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md) or [GCP README.md](https://github.com/robertdebock/packer-gcp-centos/blob/master/README.m) to build an image.
+- [ ] Follow the steps in the [Azure README.md](https://github.com/robertdebock/packer-azure-arm/blob/master/README.md) or [GCP README.md](https://github.com/robertdebock/packer-gcp-centos/blob/master/README.md) to build an image.
 - [ ] Azure Bonus: `16.04-LTS` is a bit old. Find a newer `sku`.
 - [ ] GPC Bonus: Make the script nicer, add some `/etc/motd`, packages, services, etc.
 
