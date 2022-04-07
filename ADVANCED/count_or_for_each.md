@@ -128,6 +128,10 @@ resource "y" "default" {
 
 [Here](https://github.com/robertdebock/terraform-gcp-spread-instances) is a trick to spread machines over GCP availability zones.
 
+## Generic example including output
+
+Have a look at some example [counting and for-each-ing](https://github.com/robertdebock/terraform-local-loop).
+
 ## Assignment
 
 - [ ] Rewrite [example 1](count_or_for_each_assignments.md#example-1) to use `count.`
