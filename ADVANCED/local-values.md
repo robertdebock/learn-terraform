@@ -49,18 +49,20 @@ You can also use locals to lookup values and define data structures.
 Here you define a map of data.
 
 ```hcl
-azure_data_map = {
-  development = {
-    location = "West Europe"
-    size     = "small"
-  }
-  production = {
-    location = "Central US"
-    size     = "medium"
-  }
+locals {
+  azure_data_map = {
+    development = {
+      location = "West Europe"
+      size     = "small"
+    }
+    production = {
+      location = "Central US"
+      size     = "medium"
+    }
 
-  location  = local.azure_data_map[var.environment].location
-  size      = local.azure.data_map[var.environment].size
+    location  = local.azure_data_map[var.environment].location
+    size      = local.azure_data_map[var.environment].size
+  }
 }
 ```
 
