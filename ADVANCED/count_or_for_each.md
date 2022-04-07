@@ -124,6 +124,10 @@ resource "y" "default" {
 }
 ```
 
+## Nice
+
+[Here](https://github.com/robertdebock/terraform-gcp-spread-instances) is a trick to spread machines over GCP availability zones.
+
 ## Assignment
 
 - [ ] Rewrite [example 1](count_or_for_each_assignments.md#example-1) to use `count.`
