@@ -46,6 +46,8 @@ Host ${ip}
   User ${username}
 ```
 
+A [GCP example](https://github.com/robertdebock/terraform-gcp-template) to get you started.
+
 ## Questions:
 
 1. How can you pin the version of `local_file`?
