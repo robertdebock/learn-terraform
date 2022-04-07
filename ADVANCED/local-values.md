@@ -170,4 +170,4 @@ resource "azurerm_virtual_machine" "default" {
 ## Sources
 
 - [locals](https://www.terraform.io/docs/language/values/locals.html)
-- [varialbe](https://www.terraform.io/docs/language/values/variables.html)
+- [variables](https://www.terraform.io/docs/language/values/variables.html)
