@@ -29,6 +29,10 @@ The example above shows a map of two entries; `my_repo_5` and `my_repo_6`. The `
 
 `null` means the whole parameter is removed, as if it was not described.
 
+## Demo
+
+See [here](https://github.com/robertdebock/terraform-try).
+
 ## Howto
 
 Here is how to `try` parameters:
