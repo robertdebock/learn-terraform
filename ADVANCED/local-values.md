@@ -59,10 +59,9 @@ locals {
       location = "Central US"
       size     = "medium"
     }
-
-    location  = local.azure_data_map[var.environment].location
-    size      = local.azure_data_map[var.environment].size
   }
+  location  = local.azure_data_map[var.environment].location
+  size      = local.azure_data_map[var.environment].size
 }
 ```
 
