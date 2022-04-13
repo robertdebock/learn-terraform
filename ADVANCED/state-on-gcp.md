@@ -50,7 +50,7 @@ When you've answered 'yes', your state is remote. We're going to migrate back to
 1. Comment all lines in, or remove `terraform.tf`.
 2. Run `terraform init -migrate-state`.
 
-When you've answerd 'yes', youre state is not local again.
+When you've answerd 'yes', your state is now local again.
 
 ## Questions:
 
