@@ -33,7 +33,7 @@ ${ip}
 
 ## Demo
 
-Have a look [here](https://github.com/robertdebock/terraform-aws-cluster/blob/master/examples/vault/main.tf#L6).
+Have a look [here](https://github.com/robertdebock/terraform-aws-vault/blob/master/main.tf#L485).
 
 ## Assignment
 
