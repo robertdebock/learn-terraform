@@ -1,8 +1,8 @@
 # lifecycle
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|60 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                              |
+|---------------|-----------------------------------------------------------|
+| 60 minutes    | A computer with Terraform installed, terraform knowledge. |
 
 Goal: Be able to decide when to use the `lifecycle` meta argument and implement it.
 
