@@ -30,7 +30,7 @@
 
 1. [Lifecycle](lifecycle) (60 minutes)
 2. [**Packer**](packer) (60 minutes)
-3. [Workspaces](workspaces) (30 minutes)
+3. [**Workspaces**](workspaces) (30 minutes)
 4. [**Functions**](functions) (30 minutes)
 5. [**Conditionals**](conditionals) (30 minutes)
 6. [**Troubleshooting (bonus)**](troubleshooting) (15 minutes)
