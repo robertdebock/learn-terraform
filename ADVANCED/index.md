@@ -38,6 +38,7 @@
 8. [Best practices](best-practices) (90 minutes)
 9. [**Upgrading Terraform**](upgrading-terraform) (15 minutes)
 10. [**Testing experiment**](testing-experiment) (30 minutes)
+11. [Dynamic blocks](dynamic-blocks) (45 minutes)
 
 ## Reference material
 
