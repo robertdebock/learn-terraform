@@ -16,7 +16,7 @@ The variables can be overwritten, the ordering below. (Where the first item on t
 
 ## Locals or local variables
 
-You can set variables that are only usable in the (root) module. For example, you could take a regulare variable, prefix or suffix and use the local variable.
+You can set variables that are only usable in the (root) module. For example, you could take a regular variable, prefix or suffix and use the local variable.
 
 ```hcl
 # You can define a mandatory input variable.
@@ -32,6 +32,12 @@ resource "azurerm_resource_group" "rg" {
   name     = local.default_name
 }
 ```
+
+| Tool      | exposed  | internal |
+|-----------|----------|----------|
+| Terraform | variable | local    |
+| Ansible   | defaults | vars     |
+| Bicep     | param    | var      |
 
 ## Mapping values
 
