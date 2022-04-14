@@ -45,6 +45,8 @@ resource "null_resource" "terraform-debug" {
 
 The above code has no dependencies (except for the varialbe and local) so will execute early. This means you can inspect variables, locals, but also created resources. (Although that would introduce a dependency...)
 
+Here is a [sample repository](https://github.com/robertdebock/terraform-troubleshooting) demonstrating the null_resource trick.
+
 ## Assignment
 
 - [ ] Run a plan and save the debugging output to `debug-output.txt`.
