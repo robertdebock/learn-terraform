@@ -16,7 +16,7 @@ This type of deployment is ofter referred to as [blue-green deployment](https://
 
 ## Howto
 
-See [this demo](https://github.com/robertdebock/terraform-docker-lifecycle)
+See [this Docker demo](https://github.com/robertdebock/terraform-docker-lifecycle) or [this local-file demo](https://github.com/robertdebock/terraform-local-lifecycle)
 
 ## Assignment
 
