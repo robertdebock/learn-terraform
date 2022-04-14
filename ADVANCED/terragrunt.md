@@ -1,8 +1,8 @@
 # Terragrunt
 
-|expected time|requirements                                             |
-|-------------|---------------------------------------------------------|
-|90 minutes   |A computer with Terraform installed, terraform knowledge.|
+| expected time | requirements                                             |
+|---------------|----------------------------------------------------------|
+| 90 minutes    |A computer with Terraform installed, terraform knowledge. |
 
 Goal: Learn how to use [Terragrunt](https://terragrunt.gruntwork.io/).
 
@@ -81,11 +81,15 @@ With those files, it's time to create infrastructure.
 
 ## Demo
 
+Have a [look](https://github.com/robertdebock/terragrunt-demo).
+
 ## Assignment
 
-1. Take an [example repository](https://github.com/robertdebock/learn-terraform-azure) containing Terraform code.
+1. Take any directory containing Terraform code with a variable.
 2. Introduce Terragrunt so that you can use different values for different environments. You could create "development" & "production" or "belgium" & "germany". (Or use a separation that applies to your company.)
-3. Have a different `location` for each environment.
+3. Have a different `environment` or `location`.
+
+When going into the folders containing `terragrunt.hcl`, try `terragrunt apply`.
 
 ## Questions
 
