@@ -12,9 +12,9 @@ Let's go over a few best practices. Likey you/your company also has best practic
 
 ### Variables
 
-- Put variables. Either in a `variables.tf`, [tfvars file](https://www.terraform.io/docs/configuration/variables.html#variable-definitions-tfvars-files), or set them in the environment.
+- Use variables. Define them in `variables.tf`, assign them in [tfvars file](https://www.terraform.io/docs/configuration/variables.html#variable-definitions-tfvars-files), or set them in the environment.
 - Set sensitive variables in [environment variables](https://www.terraform.io/docs/commands/environment-variables.html#tf_var_name).
-- Use [Terragrunt](https://terragrunt.gruntwork.io/) for environmental differences.
+- Use [Terragrunt](https://terragrunt.gruntwork.io/) for environmental differences. (Workspaces can also be used...)
 
 ### Dependencies
 
