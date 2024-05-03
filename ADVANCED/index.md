@@ -6,7 +6,7 @@
 2. [Templates](templates) (45 minutes)
 3. [CI/CD for modules](cicd-for-modules) (75 minutes)
 4. [CI/CD for releases](cicd-for-releases) (30 minutes)
-5. *Using multiple resources and providers](multiple-resources) (120 minutes)
+5. [Using multiple resources and providers](multiple-resources) (120 minutes)
 6. [Terraform Cloud](terraform-cloud) (30 minutes)
 7. [Terraform Cloud workspace design](terraform-cloud-workspace-design) (30 minutes)
 8. [Manage Terraform Versions using tfenv](tfenv) (15 minutes)
@@ -24,7 +24,7 @@
 8. [Self-service options](self-service) (30 minutes)
 9. [Try](try-something) (30 minutes)
 10. [Sentinel](sentinel) (60 minutes)
-11. [Reading remote state](reading-remote-state) (30 minute)
+11. [**Reading remote state**](reading-remote-state) (30 minute)
 
 ## Day 3 (6 hours)
 
