@@ -27,6 +27,7 @@ HashiCorp has a [Terraform Style Guide](https://developer.hashicorp.com/terrafor
 ### State
 
 - Save the [state remotely](https://www.terraform.io/docs/state/remote.html).
+- Restrict access to state, it contains [sensitive information](https://developer.hashicorp.com/terraform/language/state/sensitive-data).
 
 ### General
 
