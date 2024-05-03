@@ -1,8 +1,8 @@
 # Store state on GCP
 
-| expected time | requirements                                             |
-|---------------|----------------------------------------------------------|
-| 45 minutes    | A computer with Sentinel installed, terraform knowledge. |
+| expected time | requirements                        |
+|---------------|-------------------------------------|
+| 45 minutes    | A computer and terraform knowledge. |
 
 Goal: See how remote state on GCP works.
 
