@@ -10,6 +10,8 @@ Goal: Use the most common best practices
 
 Let's go over a few best practices. Likey you/your company also has best practices. There is time to discuss these.
 
+HashiCorp has a [Terraform Style Guide](https://developer.hashicorp.com/terraform/language/style) as well, which covers a lot!
+
 ### Variables
 
 - Use variables. Define them in `variables.tf`, assign them in [tfvars file](https://www.terraform.io/docs/configuration/variables.html#variable-definitions-tfvars-files), or set them in the environment.

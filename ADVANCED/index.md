@@ -36,7 +36,7 @@
 5. [Conditionals](conditionals) (30 minutes)
 6. [Troubleshooting (bonus)](troubleshooting) (15 minutes)
 7. [Use Cases (bonus)](../BASIC/use-cases) (90 minuten)
-8. [Best practices](best-practices) (90 minutes)
+8. [**Best practices**](best-practices) (90 minutes)
 9. [Upgrading Terraform](upgrading-terraform) (15 minutes)
 10. [Testing experiment](testing-experiment) (30 minutes)
 11. [Dynamic blocks](dynamic-blocks) (45 minutes)
