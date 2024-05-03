@@ -13,7 +13,7 @@
 9. [Store state on GCP](state-on-gcp) (45 minutes)
 10. [**Store state on Azure**](state-on-azure) (45 minutes)
 
-## Day 2 (8 hours)
+## Day 2 (8, 30 minutes hours)
 
 1. [Count or for_each](count_or_for_each) (45 minutes)
 2. [local-exec](local-exec) (30 minutes)
