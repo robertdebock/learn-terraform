@@ -3,8 +3,8 @@
 ## Day 1 (6 hours, 15 minutes)
 
 1. [Introduction](introduction) (30 minutes)
-2. [Templates](templates) (45 minutes)
-3. [CI/CD for modules](cicd-for-modules) (75 minutes)
+2. [**Templates**](templates) (45 minutes)
+3. [**CI/CD for modules**](cicd-for-modules) (75 minutes)
 4. [CI/CD for releases](cicd-for-releases) (30 minutes)
 5. [**Using multiple resources and providers**](multiple-resources) (120 minutes)
 6. [Terraform Cloud](terraform-cloud) (30 minutes)
