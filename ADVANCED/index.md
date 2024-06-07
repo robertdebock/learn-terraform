@@ -40,6 +40,7 @@
 9. [Upgrading Terraform](upgrading-terraform) (15 minutes)
 10. [Testing experiment](testing-experiment) (30 minutes)
 11. [Dynamic blocks](dynamic-blocks) (45 minutes)
+12. [**Exam prep**](https://developer.hashicorp.com/terraform/tutorials/certification-003) (30 minutes)
 
 ## Reference material
 
